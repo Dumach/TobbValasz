@@ -49,6 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
       .then((response) => response.json())
       .then((data) => {
         quizData = data;
+        quizData.questions = shuffleArray(quizData.questions); // Shuffle questions
         quizTitle.textContent = quizData.title; // Update title correctly
         currentQuestionIndex = 0;
         showQuestion();
@@ -56,6 +57,15 @@ document.addEventListener('DOMContentLoaded', () => {
       .catch((error) => {
         console.error('Error loading quiz data:', error);
       });
+  }
+
+  // Shuffle array utility function
+  function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
   }
 
   // Show a question
@@ -66,6 +76,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     const questionData = quizData.questions[currentQuestionIndex];
+    const shuffledOptions = shuffleArray([...questionData.options]); // Shuffle options
+
     questionContainer.innerHTML = `
       <h2>${questionData.question}</h2>
       ${
@@ -74,7 +86,7 @@ document.addEventListener('DOMContentLoaded', () => {
           : ''
       }
       <div class="options-container">
-        ${questionData.options
+        ${shuffledOptions
           .map((option, index) => `<button class="option-button" data-index="${index}">${option}</button>`)
           .join('')}
       </div>
@@ -113,7 +125,9 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
       }
 
-      const correctAnswers = new Set(questionData.answer);
+      const correctAnswers = new Set(
+        questionData.answer.map((answer) => shuffledOptions.indexOf(answer)) // Map correct answers to shuffled indices
+      );
       const isCorrect =
         [...selectedIndices].every((index) => correctAnswers.has(index)) &&
         selectedIndices.size === correctAnswers.size;
