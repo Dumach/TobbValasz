@@ -99,21 +99,28 @@ button:hover {
   border-radius: 8px;
 }
 
-nav#test-menu {
+nav#quiz-nav {
   display: flex;
   justify-content: center;
-  background-color: #007bff;
-  padding: 10px;
+  align-items: center;
+  background: linear-gradient(90deg, #007bff, #0056b3);
+  padding: 15px;
   margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-nav#test-menu .menu-item {
+nav#quiz-nav .menu-item {
   color: #fff;
   text-decoration: none;
-  margin: 0 15px;
-  font-size: 1rem;
+  margin: 0 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: color 0.3s, transform 0.3s;
 }
 
-nav#test-menu .menu-item:hover {
-  text-decoration: underline;
+nav#quiz-nav .menu-item:hover {
+  color: #ffc107;
+  text-decoration: none;
+  transform: scale(1.1);
 }
