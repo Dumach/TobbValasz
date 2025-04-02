@@ -52,10 +52,19 @@ body {
 .status-bar {
   margin-top: 20px;
   padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 4px;
   color: #fff;
   text-align: center;
   font-size: 1rem;
+}
+
+#status-message {
+  padding-right: 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 
 button {

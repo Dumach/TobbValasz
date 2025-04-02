@@ -76,7 +76,10 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     const questionData = quizData.questions[currentQuestionIndex];
+    const correctAnswers = [...questionData.answer]; // Store correct answers before shuffling
+    console.log('Correct Answers:', correctAnswers); // Log correct answers for debugging
     const shuffledOptions = shuffleArray([...questionData.options]); // Shuffle options
+    console.log('Shuffled Options:', shuffledOptions); // Log shuffled options for debugging
 
     questionContainer.innerHTML = `
       <h2>${questionData.question}</h2>
@@ -125,18 +128,18 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
       }
 
-      const correctAnswers = new Set(
-        questionData.answer.map((answer) => shuffledOptions.indexOf(answer)) // Map correct answers to shuffled indices
-      );
+      const selectedAnswers = [...selectedIndices].map((index) => shuffledOptions[index]); // Map selected indices to options
+      console.log('Selected Answers:', selectedAnswers);
       const isCorrect =
-        [...selectedIndices].every((index) => correctAnswers.has(index)) &&
-        selectedIndices.size === correctAnswers.size;
+        selectedAnswers.every((answer) => correctAnswers.includes(answer)) &&
+        selectedAnswers.length === correctAnswers.length;
 
       if (isCorrect) {
         statusMessage.textContent = 'Correct!';
         statusBar.style.backgroundColor = '#28a745'; // Green for correct
       } else {
         statusMessage.textContent = 'Wrong!';
+        statusMessage.textContent += ` Correct answers: ${correctAnswers.join(', ')}`;
         statusBar.style.backgroundColor = '#dc3545'; // Red for wrong
       }
 
