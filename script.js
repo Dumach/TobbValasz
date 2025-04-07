@@ -34,7 +34,9 @@ document.addEventListener('DOMContentLoaded', () => {
         menuItem.textContent = test.title;
         menuItem.href = '#';
         menuItem.className = 'menu-item';
-        menuItem.addEventListener('click', () => loadTest(test.path));
+        menuItem.id = test.path;
+        console.log(menuItem.id);
+        menuItem.addEventListener('click', () => loadTest(menuItem.id));
         testMenu.appendChild(menuItem);
       });
     })
@@ -77,6 +79,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const questionData = quizData.questions[currentQuestionIndex];
     const correctAnswers = [...questionData.answer]; // Store correct answers before shuffling
+    if (correctAnswers.length == 0) alert('No correct answers provided for this question!');
     console.log('Correct Answers:', correctAnswers); // Log correct answers for debugging
     const shuffledOptions = shuffleArray([...questionData.options]); // Shuffle options
     console.log('Shuffled Options:', shuffledOptions); // Log shuffled options for debugging
