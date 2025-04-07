@@ -3,13 +3,13 @@ document.addEventListener('DOMContentLoaded', () => {
   const quizContainer = document.getElementById('quiz-container');
   const quizTitle = document.getElementById('quiz-title');
   const questionContainer = document.getElementById('question-container');
+  const homeButton = document.getElementById('home-button');
 
   let currentQuestionIndex = 0;
   let quizData = null;
   let statusBar = null;
   let IMAGE_BASE_PATH = '';
 
-  const homeButton = document.getElementById('home-button');
   homeButton.addEventListener('click', () => {
     quizTitle.textContent = 'Select a Test';
     questionContainer.style.textAlign = 'left';
@@ -35,7 +35,6 @@ document.addEventListener('DOMContentLoaded', () => {
         menuItem.href = '#';
         menuItem.className = 'menu-item';
         menuItem.id = test.path;
-        console.log(menuItem.id);
         menuItem.addEventListener('click', () => loadTest(menuItem.id));
         testMenu.appendChild(menuItem);
       });
@@ -78,19 +77,28 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     const questionData = quizData.questions[currentQuestionIndex];
-    const correctAnswers = [...questionData.answer]; // Store correct answers before shuffling
+    const correctAnswers = [...questionData.answers]; 
     if (correctAnswers.length == 0) alert('No correct answers provided for this question!');
-    console.log('Correct Answers:', correctAnswers); // Log correct answers for debugging
-    const shuffledOptions = shuffleArray([...questionData.options]); // Shuffle options
-    console.log('Shuffled Options:', shuffledOptions); // Log shuffled options for debugging
+    const shuffledOptions = shuffleArray([...questionData.options]); 
+    const questionImages = questionData.images;
 
     questionContainer.innerHTML = `
-      <h2>${questionData.question}</h2>
-      ${
-        questionData.image
-          ? `<img src="${IMAGE_BASE_PATH}${questionData.image}" alt="Question Image" class="question-image">`
-          : ''
-      }
+      <h4>${questionData.question}</h4>
+      <ul class="image-container">
+      ${(questionImages && questionImages.length > 0) ? 
+        questionImages.map(
+          (image, index) =>
+            `<li>
+              <figure>
+                <img src="${IMAGE_BASE_PATH}${image}" alt="Question Image" class="question-image" data-index="${index}">
+                <figcaption>${image}</figcaption>
+              </figure>
+            </li>
+          `
+        )
+        .join('')
+      : ''}      
+      </ul>
       <div class="options-container">
         ${shuffledOptions
           .map((option, index) => `<button class="option-button" data-index="${index}">${option}</button>`)
@@ -132,7 +140,6 @@ document.addEventListener('DOMContentLoaded', () => {
       }
 
       const selectedAnswers = [...selectedIndices].map((index) => shuffledOptions[index]); // Map selected indices to options
-      console.log('Selected Answers:', selectedAnswers);
       const isCorrect =
         selectedAnswers.every((answer) => correctAnswers.includes(answer)) &&
         selectedAnswers.length === correctAnswers.length;

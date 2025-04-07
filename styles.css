@@ -15,7 +15,7 @@ body {
   background: #fff;
   padding: 20px;
   border-radius: 8px;
-  max-width: 1120px;
+  max-width: 80%;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
@@ -30,7 +30,7 @@ body {
 }
 
 .option-button {
-  padding: 10px;
+  padding: 5px 15px;
   background-color: #007bff;
   color: #fff;
   border: none;
@@ -63,6 +63,10 @@ body {
   padding-right: 20px;
   font-size: 1.2rem;
   font-weight: bold;
+}
+
+h4 {
+  text-align: left;
 }
 
 button {
@@ -98,8 +102,16 @@ button:hover {
   background-color: #0056b3;
 }
 
+.image-container {
+  list-style: none;
+}
+
+.image-container figure{
+  margin: 4px 8px;
+}
+
 .question-image {
-  max-width: 800px;
+  max-width: 600px;
   height: auto;
   margin: 10px 0;
   border-radius: 8px;

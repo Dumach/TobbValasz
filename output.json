@@ -1,7 +1,8 @@
 {
+  "title": ".NET Programozás tárgy NAPPALIS/LEVELEZO vizsgakérdések COEDU-hoz",
   "questions": [
     {
-      "question": ".NET Programozás tárgy NAPPALIS/LEVELEZO vizsgakérdések COEDU-hoz: Minden kérdés feleletválasztós, zölddel jelölve a jó válaszok\n\n\nKérdés: Nagyon sok elem feldolgozására van szükség. Minden elemen egy komplx számítást kell ehhez elvégezni. Melyik technikát alkalmazná?",
+      "question": "Kérdés: Nagyon sok elem feldolgozására van szükség. Minden elemen egy komplx számítást kell ehhez elvégezni. Melyik technikát alkalmazná?",
       "options": [
         "Minden elemre egy Task létrehozása, majd megvárni, míg minden Task befejezodik.",
         "Parallel.For használatával a feldolgozást párhuzamosítani.",
