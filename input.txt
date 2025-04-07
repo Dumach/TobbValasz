@@ -628,6 +628,8 @@ XmlIgnore|x
 NonSerialized
 
 
+
+
 Kérdés: Egy rendelés-csoportot szeretnénk tárolni, és biztosítani kell, hogy a felhasználók rendelési szám alapján könnyen kiválaszthassanak egyet. Melyik kollekció-típust választaná?
 +++
 List<Order>

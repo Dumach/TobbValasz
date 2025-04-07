@@ -1,0 +1,29 @@
+{
+  "title": "JavaScript Basics Quiz",
+  "questions": [
+    {
+      "question": "What is the correct way to declare a variable in JavaScript?",
+      "options": ["let x;", "var x;", "const x;", "x = 10;"],
+      "answer": [0, 1, 2],
+      "image": null
+    },
+    {
+      "question": "Which keyword is used to define a function in JavaScript?",
+      "options": ["function", "def", "lambda", "fn"],
+      "answer": [0],
+      "image": "images/variable_declaration.png"
+    },
+    {
+      "question": "What is the output of console.log(5 + 3);?",
+      "options": ["53", "8", "Error", "None of the above"],
+      "answer": [1],
+      "image": "images/console_output.png"
+    },
+    {
+      "question": "True or False? JavaScript is a case-sensitive language.",
+      "options": ["True", "False"],
+      "answer": [0],
+      "image": null
+    }
+  ]
+}

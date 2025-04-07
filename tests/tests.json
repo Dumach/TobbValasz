@@ -1,0 +1,12 @@
+{
+  "tests": [
+    {
+      "title": ".Net programozás",
+      "path": "tests/dotnet_programozas/test.json"
+    },
+    {
+      "title": "JavaScript Fundamentals Quiz",
+      "path": "tests/javascript_fundamentals/test.json"
+    }
+  ]
+}
