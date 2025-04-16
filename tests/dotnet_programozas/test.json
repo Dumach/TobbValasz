@@ -2315,7 +2315,9 @@
         "C.C opció",
         "D.D opció"
       ],
-      "answers": [],
+      "answers": [        
+        "A.A lehetoség"
+    ],
       "images": [
         "images/image_0116.png",
         "images/image_0117.png"
