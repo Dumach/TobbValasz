@@ -65,8 +65,9 @@ body {
   font-weight: bold;
 }
 
-h4 {
+.quiz-subtitle {
   text-align: left;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 button {

@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const questionImages = questionData.images;
 
     questionContainer.innerHTML = `
-      <h4>${questionData.question}</h4>
+      <h2 class="quiz-subtitle">${questionData.question}</h2>
       <ul class="image-container">
       ${(questionImages && questionImages.length > 0) ? 
         questionImages.map(
@@ -149,7 +149,10 @@ document.addEventListener('DOMContentLoaded', () => {
         statusBar.style.backgroundColor = '#28a745'; // Green for correct
       } else {
         statusMessage.textContent = 'Wrong!';
-        statusMessage.textContent += ` Correct answers: ${correctAnswers.join(', ')}`;
+        statusMessage.textContent += ' Correct answers: ';
+        correctAnswers.forEach(answer => {
+          statusMessage.innerHTML += `<p>${answer}</p>`
+        })
         statusBar.style.backgroundColor = '#dc3545'; // Red for wrong
       }
 
