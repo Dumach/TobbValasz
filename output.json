@@ -1103,13 +1103,13 @@
     {
       "question": "Olyan alkalmazást fejlesztesz, amely tartalmazza a ConvertAmount és TransferFunds nevu metódusokat. Biztosítani kell, hogy a változójának összege és értéke ne sérüljön, ha a TransferFunds() metódust hívják. Melyik kódszegmens jó?\n[image_0019]",
       "options": [
-        "A.",
-        "B.",
-        "C.",
-        "D."
+        "A",
+        "B",
+        "C",
+        "D"
       ],
       "answers": [
-        "A."
+        "A"
       ],
       "images": [
         "images/image_0019.png"
@@ -1118,13 +1118,13 @@
     {
       "question": "Adott a következo kód:\n[image_0020]\nBiztosítani kell, hogy új kapcsolatok létrehozása csak más osztályok számára legyen lehetséges, ha meghívják a Create metódust. A megoldásban lehetové kell tenni, hogy az osztályok örököljék a Connectiont. Mit kéne tenni?\n[image_0021]",
       "options": [
-        "A,",
-        "B,",
-        "C,",
+        "A",
+        "B",
+        "C",
         "D"
       ],
       "answers": [
-        "B,"
+        "B"
       ],
       "images": [
         "images/image_0020.png",
@@ -2371,8 +2371,7 @@
         "User1",
         "User2",
         "User3",
-        "User4",
-        "Írjon egy olyan eljárást, amely adatokat nyer a Microsoft Access 2013 adatbázisból. A metódusnak meg kell felelnie a következo követelmények: Legyen csak olvasható. Képes elérni az adatokat, mielott megkapja a DataSetet Minimálisra csökkentse a rendszer memóriahasználat. Milyen típusú objektumot kell használni a metódusban?"
+        "User4"
       ],
       "answers": [
         "User3"
@@ -2381,6 +2380,19 @@
         "images/image_0120.png",
         "images/image_0121.png"
       ]
+    },
+    {
+      "question": "Írjon egy olyan eljárást, amely adatokat nyer a Microsoft Access 2013 adatbázisból. A metódusnak meg kell felelnie a következo követelmények: Legyen csak olvasható. Képes elérni az adatokat, mielott megkapja a DataSetet Minimálisra csökkentse a rendszer memóriahasználat. Milyen típusú objektumot kell használni a metódusban?",
+      "options": [
+        "DbDataReader",
+        "DataContext",
+        "unTyped DataSet",
+        "DbDataAdapter"
+      ],
+      "answers": [
+        "DbDataReader"
+      ],
+      "images": null
     },
     {
       "question": "Ön egy olyan alkalmazással foglalkozik, amely egy FullName névvel rendelkezo osztályt használ. Az osztály DataContractAttribute attribútummal rendelkezik. Az alkalmazás a következo kódot tartalmazza. (A sorszámok csak a referenciaként szerepelnek.) Biztosítani kell, hogy a teljes FullName objektum a memóriafolyamra szerializálódjon. Melyik kódszegmenst kell beillesztenie a 09-es sorba?\n[image_0122]",
@@ -2420,12 +2432,25 @@
         "1",
         "2,",
         "3,",
-        "4",
-        "A következo kód használatával definiálhat egy osztályt: Ahhoz, hogy válaszoljon, töltse ki az egyes utasításokat a kódban szereplo információk alapján.A tárolt tulajdonság a kimeneten",
-        "[image_0125]"
+        "4"
       ],
       "answers": [
         "2,"
+      ],
+      "images": [
+        "images/image_0125.png"
+      ]
+    },
+    {
+      "question": "A következo kód használatával definiálhat egy osztályt: Ahhoz, hogy válaszoljon, töltse ki az egyes utasításokat a kódban szereplo információk alapján.A tárolt tulajdonság a kimeneten\n[image_0125]",
+      "options": [
+        "byte.",
+        "int,",
+        "string,",
+        "var"
+      ],
+      "answers": [
+        "int,"
       ],
       "images": [
         "images/image_0125.png"
