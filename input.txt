@@ -1299,7 +1299,7 @@ Alkalmazza a következo attribútumot a módszer aláírására: [MethodImpl (Me
 +++
 Cserélje a 04-es sort a következo kódszegmensre: decimal loanRate = 0.0325m;
 Cserélje ki a 17 sort a következo kódszegmenssel: interestAmount = loanAmount * 0.0825m * loanTerm;
-Cserélje ki a 15. sort a következo kódszegmenssel: loanRate = 0,0825m;
+Cserélje ki a 15. sort a következo kódszegmenssel: loanRate = 0,0825m;|x
 Cserélje a 07-es sort a következo kódszegmenssel: loanRate = 0,0825m;
 ---------------
 Ön létrehoz egy Appl nevu konzolalkalmazást. Az App1 az adatokat az Internetrol a JavaScript Object Notation (JSON) segítségével nyeri . Ön a következo kódszegmenseket fejleszti (a sorszámok csak a referenciaként szerepelnek):
@@ -1327,7 +1327,7 @@ A következo kódot kapta: (a sorszámok csak a referenciaként szerepelnek):
 Biztosítani kell, hogy kivétel esetén a kivételt naplózzák. Melyik kódot kell beillesztenie a 28. sorba?
 [image_0117]
 +++
-A lehetoség
+A lehetoség|x
 B opció
 C opció
 D opció
@@ -1442,7 +1442,7 @@ Meg kell gyozodni arról, hogy az egység tesztje megfelelo. Mit kéne tenned?
 [image_0132]
 +++
 A lehetoség
-B opció
+B opció|x
 C opció
 D opció
 ---------------
@@ -2456,8 +2456,8 @@ Replace line 05 with the following code segment: protected get;
 Replace line 06 with the following code segment:  private set;
 Replace line 03 with the following code segment: public string EmployeeType
 Replace line 05 with the following code segment: private get;
-E.Replace line 03 with the following code segment:  protected string EmployeeType
-F.Replace line 06 with the following code segment: protected set;
+E.Replace line 03 with the following code segment:  protected string EmployeeType|x
+F.Replace line 06 with the following code segment: protected set;|x
 ---------------
 Egy alkalmazást fejlesztesz a C # segítségével. Az alkalmazás olyan objektumot tartalmaz, amely hosszú futási folyamatot hajt végre. Meg kell gyozodnie arról, hogy a szemétgyujto nem engedje el az objektum eroforrásait, amíg a folyamat befejezodik. Melyik szemétgyujto módszert használja?
 +++

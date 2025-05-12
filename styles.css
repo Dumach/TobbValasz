@@ -25,9 +25,10 @@ body {
   flex-direction: row;
   align-items: start;
   justify-content: space-between;
-  overflow-x: auto;
+  overflow-wrap: break-word;
   gap: 5px;
   margin-top: 20px;
+  padding-bottom: 1.2rem;
 }
 
 .option-button {
@@ -41,6 +42,8 @@ body {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  min-width: 150px;
+  max-width: 300px;
 }
 
 .option-button:hover {
@@ -134,7 +137,6 @@ nav#quiz-nav {
   background: linear-gradient(90deg, #007bff, #0056b3);
   padding: 15px;
   margin-bottom: 20px;
-  border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 

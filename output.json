@@ -2281,7 +2281,9 @@
         "Cserélje ki a 15. sort a következo kódszegmenssel: loanRate = 0,0825m;",
         "Cserélje a 07-es sort a következo kódszegmenssel: loanRate = 0,0825m;"
       ],
-      "answers": [],
+      "answers": [
+        "Cserélje ki a 15. sort a következo kódszegmenssel: loanRate = 0,0825m;"
+      ],
       "images": [
         "images/image_0111.png"
       ]
@@ -2326,7 +2328,9 @@
         "C opció",
         "D opció"
       ],
-      "answers": [],
+      "answers": [
+        "A lehetoség"
+      ],
       "images": [
         "images/image_0116.png",
         "images/image_0117.png"
@@ -2510,7 +2514,9 @@
         "C opció",
         "D opció"
       ],
-      "answers": [],
+      "answers": [
+        "B opció"
+      ],
       "images": [
         "images/image_0130.png",
         "images/image_0131.png",
@@ -4323,7 +4329,10 @@
         "E.Replace line 03 with the following code segment:  protected string EmployeeType",
         "F.Replace line 06 with the following code segment: protected set;"
       ],
-      "answers": [],
+      "answers": [
+        "E.Replace line 03 with the following code segment:  protected string EmployeeType",
+        "F.Replace line 06 with the following code segment: protected set;"
+      ],
       "images": [
         "images/image_0252.png"
       ]

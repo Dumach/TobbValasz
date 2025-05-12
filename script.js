@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
   let quizData = null;
   let statusBar = null;
   let IMAGE_BASE_PATH = '';
+  let points = 0;
 
   homeButton.addEventListener('click', () => {
     quizTitle.textContent = 'Select a Test';
@@ -60,13 +61,12 @@ document.addEventListener('DOMContentLoaded', () => {
       });
   }
 
-  // Shuffle array utility function
+  // Shuffle array utility function ES6 / ECMAScript 2015
   function shuffleArray(array) {
-    for (let i = array.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [array[i], array[j]] = [array[j], array[i]];
-    }
-    return array;
+    return array
+      .map((value) => ({ value, sort: Math.random() }))
+      .sort((a, b) => a.sort - b.sort)
+      .map(({ value }) => value);
   }
 
   // Show a question
@@ -77,28 +77,38 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     const questionData = quizData.questions[currentQuestionIndex];
-    const correctAnswers = [...questionData.answers]; 
+
+    // Get asnwers
+    const correctAnswers = [...questionData.answers];
     if (correctAnswers.length == 0) alert('No correct answers provided for this question!');
-    const shuffledOptions = shuffleArray([...questionData.options]); 
+
+    // Shuffle options
+    const shuffledOptions = shuffleArray([...questionData.options]);
     const questionImages = questionData.images;
+    if (questionImages && questionImages.includes('images/image_0125.png')) {
+      alert(questionData);
+    }
 
     questionContainer.innerHTML = `
-      Showing question ${currentQuestionIndex + 1} of ${quizData.questions.length}
+      Showing question ${currentQuestionIndex + 1} of ${quizData.questions.length}, ${points} points
       <h2 class="quiz-subtitle">${questionData.question}</h2>
       <ul class="image-container">
-      ${(questionImages && questionImages.length > 0) ? 
-        questionImages.map(
-          (image, index) =>
-            `<li>
+      ${
+        questionImages && questionImages.length > 0
+          ? questionImages
+              .map(
+                (image, index) =>
+                  `<li>
               <figure>
                 <img src="${IMAGE_BASE_PATH}${image}" alt="Question Image" class="question-image" data-index="${index}">
                 <figcaption>${image}</figcaption>
               </figure>
             </li>
           `
-        )
-        .join('')
-      : ''}      
+              )
+              .join('')
+          : ''
+      }      
       </ul>
       <div class="options-container">
         ${shuffledOptions
@@ -147,14 +157,15 @@ document.addEventListener('DOMContentLoaded', () => {
         selectedAnswers.length === correctAnswers.length;
 
       if (isCorrect) {
+        points += 1;
         statusMessage.textContent = 'Correct!';
         statusBar.style.backgroundColor = '#28a745'; // Green for correct
       } else {
         statusMessage.textContent = 'Wrong!';
         statusMessage.textContent += ' Correct answers: ';
-        correctAnswers.forEach(answer => {
-          statusMessage.innerHTML += `<p>${answer}</p>`
-        })
+        correctAnswers.forEach((answer) => {
+          statusMessage.innerHTML += `<p>${answer}</p>`;
+        });
         statusBar.style.backgroundColor = '#dc3545'; // Red for wrong
       }
 
