@@ -67,9 +67,13 @@ if __name__ == "__main__":
     #text = input_text.replace('\n\n\n\n', '\n---------------\n')
     with open('input.txt', 'r', encoding='utf-8') as f:
         input_text = f.read()
-
-    text = input_text.replace('\n\n\n\n', '\n---------------\n')
+        
+    text = input_text.replace('\n\n\n\n', '\n---------------')
     parsed = parse_questions(text)
+
+    with open('input.txt', 'w', encoding='utf-8') as f:
+        f.write(text)
+        
 
     # Save to JSON file
     with open('output.json', 'w', encoding='utf-8') as f:
