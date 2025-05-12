@@ -83,6 +83,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const questionImages = questionData.images;
 
     questionContainer.innerHTML = `
+      Showing question ${currentQuestionIndex + 1} of ${quizData.questions.length}
       <h2 class="quiz-subtitle">${questionData.question}</h2>
       <ul class="image-container">
       ${(questionImages && questionImages.length > 0) ? 
@@ -106,7 +107,8 @@ document.addEventListener('DOMContentLoaded', () => {
       </div>
       <div id="status-bar" class="status-bar">
         <span id="status-message"></span>
-        <button id="verify-button">Verify</button>
+        <button id="verify-button">Verify<br>
+        Num of answers: ${correctAnswers.length}</button>
         <button id="next-button" style="display: none;">Next</button>
       </div>
     `;
