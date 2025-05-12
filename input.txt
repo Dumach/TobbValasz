@@ -549,6 +549,8 @@ SqlConnection|x
 TransactionScope
 
 
+
+
 Kérdés: Egy új objektumorientált alkalmazás fejlesztésén gondolkozik. Várhatóan egyszerre több felhasználó fogja használni. Melyik technológiát választaná?
 +++
 XML fájlok
@@ -1823,11 +1825,11 @@ A következo kódot írja le egy metódusnak (csak a referenciaszámok szerepeln
 Ahhoz, hogy válaszoljon, töltse ki az egyes utasításokat a kódban szereplo információk alapján. A metódus 7ik sora kiírja :
 [image_0121]
 +++
- 0,
- 1,
- 2,
- 3,
- 4|x
+0
+1
+2
+3
+4|x
 
 
 
@@ -1838,11 +1840,11 @@ A következo kódot írja le egy metódusnak (csak a referenciaszámok szerepeln
 Ahhoz, hogy válaszoljon, töltse ki az egyes utasításokat a kódban szereplo információk alapján. A metódus 9ik sora kiírja :
 [image_0121]
 +++
-User1,
-User2,
-User3,|x
+User1
+User2
+User3|x
 User4
- 
+
  
  
  

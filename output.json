@@ -43,7 +43,7 @@
       "question": "Kérdés: Hozzáférés-szinkronizációt szeretnénk végezni lock segítségével. Melyik attribútum használható?",
       "options": [
         "this",
-        "string _lock = \"mylock\"",
+        "string _lock = &quot;mylock&quot;",
         "int _lock = 42;",
         "object _lock = new object();"
       ],
@@ -385,13 +385,13 @@
     {
       "question": "Kérdés: Cél olyan delegátum készítése, mely képes string listát szurni, adott értékre. Melyik típus használata ajánlható?",
       "options": [
-        "Action<bool, IEnumerable<string>>.",
-        "Func<IEnumerable<string>, IEnumerable<string>>",
-        "Func<string, IEnumerable<string>, IEnumerable<string>>.",
-        "Func<IEnumerable<string>>"
+        "Action&lt;bool, IEnumerable&lt;string&gt;&gt;.",
+        "Func&lt;IEnumerable&lt;string&gt;, IEnumerable&lt;string&gt;&gt;",
+        "Func&lt;string, IEnumerable&lt;string&gt;, IEnumerable&lt;string&gt;&gt;.",
+        "Func&lt;IEnumerable&lt;string&gt;&gt;"
       ],
       "answers": [
-        "Func<string, IEnumerable<string>, IEnumerable<string>>."
+        "Func&lt;string, IEnumerable&lt;string&gt;, IEnumerable&lt;string&gt;&gt;."
       ],
       "images": null
     },
@@ -437,13 +437,13 @@
     {
       "question": "Kérdés: Adott egy DateTime, melynek csak a dátum részét szeretnénk megjeleníteni, Francia nyelvi beállítások alapján. Melyik metódus használható?",
       "options": [
-        "dt.ToString(new CultureInfo(\"fr-FR\"))",
-        "dt.ToString(\"M\", new CultureInfo(\"fr-FR\"));",
-        "dt.ToString(\"d\");",
-        "dt.ToString(\"d\", new CultureInfo(\"fr-FR\"));"
+        "dt.ToString(new CultureInfo(&quot;fr-FR&quot;))",
+        "dt.ToString(&quot;M&quot;, new CultureInfo(&quot;fr-FR&quot;));",
+        "dt.ToString(&quot;d&quot;);",
+        "dt.ToString(&quot;d&quot;, new CultureInfo(&quot;fr-FR&quot;));"
       ],
       "answers": [
-        "dt.ToString(\"d\", new CultureInfo(\"fr-FR\"));"
+        "dt.ToString(&quot;d&quot;, new CultureInfo(&quot;fr-FR&quot;));"
       ],
       "images": null
     },
@@ -572,7 +572,7 @@
         "Eros névvel ellátni",
         "Az alkalmazásokban, melyek felhasználják, konfigurációben kell beállítani",
         "Az assemblyt GAC-ban kell elhelyezni.",
-        "A konfigurációban az assemblyBinding-ot kell használni, 'probing' opcióval"
+        "A konfigurációban az assemblyBinding-ot kell használni, &#39;probing&#39; opcióval"
       ],
       "answers": [
         "Eros névvel ellátni",
@@ -703,12 +703,24 @@
         "SqlCommand",
         "SqlDataReader",
         "SqlConnection",
-        "TransactionScope",
-        "Kérdés: Egy új objektumorientált alkalmazás fejlesztésén gondolkozik. Várhatóan egyszerre több felhasználó fogja használni. Melyik technológiát választaná?"
+        "TransactionScope"
       ],
       "answers": [
         "SqlCommand",
         "SqlConnection"
+      ],
+      "images": null
+    },
+    {
+      "question": "Kérdés: Egy új objektumorientált alkalmazás fejlesztésén gondolkozik. Várhatóan egyszerre több felhasználó fogja használni. Melyik technológiát választaná?",
+      "options": [
+        "XML fájlok",
+        "Entity Framework",
+        "ADO.NET",
+        "Web Service"
+      ],
+      "answers": [
+        "Entity Framework"
       ],
       "images": null
     },
@@ -728,14 +740,14 @@
     {
       "question": "Kérdés: Adott egy dátumlista. Aktuális évre szeretné szurni, majd kiválasztani a legnagyobbat. Melyik lekérdezést használná?",
       "options": [
-        "DateTime result = dates.Where(d => d == DateTime.Now).OrderBy(d => d).First();",
-        "DateTime result = dates.Where(d => d.Year == DateTime.Now.Year). OrderByDescending(d => d).FirstOrDefault();",
-        "DateTime result = dates.Where(d => d.Year == DateTime.Now.Year). OrderByDescending(d => d).First();",
-        "DateTime result = dates.Where(d => d.Year == DateTime.Now.Year). OrderByDescending(d => d).Single();"
+        "DateTime result = dates.Where(d =&gt; d == DateTime.Now).OrderBy(d =&gt; d).First();",
+        "DateTime result = dates.Where(d =&gt; d.Year == DateTime.Now.Year). OrderByDescending(d =&gt; d).FirstOrDefault();",
+        "DateTime result = dates.Where(d =&gt; d.Year == DateTime.Now.Year). OrderByDescending(d =&gt; d).First();",
+        "DateTime result = dates.Where(d =&gt; d.Year == DateTime.Now.Year). OrderByDescending(d =&gt; d).Single();"
       ],
       "answers": [
-        "DateTime result = dates.Where(d => d.Year == DateTime.Now.Year). OrderByDescending(d => d).FirstOrDefault();",
-        "DateTime result = dates.Where(d => d.Year == DateTime.Now.Year). OrderByDescending(d => d).Single();"
+        "DateTime result = dates.Where(d =&gt; d.Year == DateTime.Now.Year). OrderByDescending(d =&gt; d).FirstOrDefault();",
+        "DateTime result = dates.Where(d =&gt; d.Year == DateTime.Now.Year). OrderByDescending(d =&gt; d).Single();"
       ],
       "images": null
     },
@@ -812,13 +824,13 @@
     {
       "question": "Kérdés: Egy rendelés-csoportot szeretnénk tárolni, és biztosítani kell, hogy a felhasználók rendelési szám alapján könnyen kiválaszthassanak egyet. Melyik kollekció-típust választaná?",
       "options": [
-        "List<Order>",
-        "Dictionary<int,Order>",
-        "HashSet<Order>",
-        "Queue<Order>"
+        "List&lt;Order&gt;",
+        "Dictionary&lt;int,Order&gt;",
+        "HashSet&lt;Order&gt;",
+        "Queue&lt;Order&gt;"
       ],
       "answers": [
-        "Dictionary<int,Order>"
+        "Dictionary&lt;int,Order&gt;"
       ],
       "images": null
     },
@@ -839,19 +851,19 @@
     {
       "question": "Kérdés: Családnév objektumok nagy csoportjával dolgozik. El kell távolítani minden ismétlodést, majd utónév szerint csoportosítani. Melyik kollekció-típust használná?",
       "options": [
-        "List<T>",
-        "Stack<T>",
-        "Dictionary<string,T>",
+        "List&lt;T&gt;",
+        "Stack&lt;T&gt;",
+        "Dictionary&lt;string,T&gt;",
         "T[]"
       ],
       "answers": [
-        "List<T>",
-        "Dictionary<string,T>"
+        "List&lt;T&gt;",
+        "Dictionary&lt;string,T&gt;"
       ],
       "images": null
     },
     {
-      "question": "Hogy fejezné be a kódot? DRAG DROP. Van egy Ügyfél és egy Order nevu osztály. Az ügyfélosztálynak olyan tulajdonsága van, amely rendelési objektumok listáját tartalmazza. A Order osztálynak van egy OrderDate nevu tulajdonsága, amely tartalmazza a Megrendelés dátumát. Hozzon létre LINQ lekérdezést , amely az összes olyan ügyfelet visszaadja, akinek legalább egy megrendelése volt a 2005-ös év során. A következo kódot írja. Hogy fejezné be a kódot? Adja meg a sorrendet! Nem kell mindent felhasználni: ==; =>; Any; Join; Select; Where\n[image_0002]",
+      "question": "Hogy fejezné be a kódot? DRAG DROP. Van egy Ügyfél és egy Order nevu osztály. Az ügyfélosztálynak olyan tulajdonsága van, amely rendelési objektumok listáját tartalmazza. A Order osztálynak van egy OrderDate nevu tulajdonsága, amely tartalmazza a Megrendelés dátumát. Hozzon létre LINQ lekérdezést , amely az összes olyan ügyfelet visszaadja, akinek legalább egy megrendelése volt a 2005-ös év során. A következo kódot írja. Hogy fejezné be a kódot? Adja meg a sorrendet! Nem kell mindent felhasználni: ==; =&gt;; Any; Join; Select; Where\n[image_0002]",
       "options": [
         "6,3,2,1",
         "3,2,1,5",
@@ -912,7 +924,7 @@
       ]
     },
     {
-      "question": "A következo kódot látja: string MessageString = \"This is the original message!\"; A MessageString SHA1 hash értékét a HashValue nevu változóban kell tárolni. Melyik kódot kell használni? Fejtse ki a megoldást azáltal, hogy kiválasztja és elrendezi a szükséges kódblokkot a helyes sorrendben. Nem feltétlenül szükséges az összes kódblokk.",
+      "question": "A következo kódot látja: string MessageString = &quot;This is the original message!&quot;; A MessageString SHA1 hash értékét a HashValue nevu változóban kell tárolni. Melyik kódot kell használni? Fejtse ki a megoldást azáltal, hogy kiválasztja és elrendezi a szükséges kódblokkot a helyes sorrendben. Nem feltétlenül szükséges az összes kódblokk.",
       "options": [
         "byte[] HashValue = SHhash.ComputeHash(MessageBytes);",
         "SHA1Managed SHhash = new SHA1Managed();",
@@ -960,15 +972,15 @@
       "question": "Ön tesztel egy alkalmazást. Az alkalmazás a CalculateInterest és a LogLine nevu módszereket tartalmazza. A CalculateInterest () módszer kiszámítja a hitel kamatot. A LogLine () módszer diagnosztikai üzeneteket küld a konzolablakba. A következo kód végrehajtja a módszereket.(A sorszámok csak a referenciaként szerepelnek.) A következo követelményeknek kell megfelelnie: A CalculateInterest () módszernek minden konfigurációhoz futtatnia kell. A LogLine () metódus csak a hibakeresményekre használható. Biztosítani kell, hogy a módszerek megfeleloen muködjenek. Mi a két lehetséges út a cél eléréséhez? (Minden helyes válasz teljes megoldást nyújt.)\n[image_0007]",
       "options": [
         "Elso sor: #region DEBUG 10. sor:: #endregion",
-        "Elso sor: [Conditional(\"DEBUG\")]",
+        "Elso sor: [Conditional(&quot;DEBUG&quot;)]",
         "sor 05:#region DEBUG sor 07: #endregion",
-        "sor: *Conditional(\"DEBUG\")",
+        "sor: *Conditional(&quot;DEBUG&quot;)",
         "E.sor 01:#if DEBUG sor 10: #endif",
-        "F.sor 10: [Conditional(\"RELEASE\")]",
+        "F.sor 10: [Conditional(&quot;RELEASE&quot;)]",
         "G. sor 05: #if DEBUG sor 07:#endif"
       ],
       "answers": [
-        "sor: *Conditional(\"DEBUG\")",
+        "sor: *Conditional(&quot;DEBUG&quot;)",
         "G. sor 05: #if DEBUG sor 07:#endif"
       ],
       "images": [
@@ -1278,7 +1290,7 @@
       ]
     },
     {
-      "question": "C # alkalmazást fejlesztesz. Az alkalmazás tartalmaz egy Rate nevu osztályt. A következo kódszegmens implementálja a Rate osztályt:\n[image_0038]\nAz RateCollection nevu gyujteményt a következo kódszegmens segítségével határozhatja meg: Collection<Rate> rateCollection = new Collection<Rate>() ;\nAz alkalmazás egy olyan XML fájlt kap, amely tartalmazza a rate információt az alábbi formátumban:\n[image_0039]\nMeg kell vizsgálni az XML fájlt, és fel kell töltened a RateCollection gyujteményt Rate objektumokkal. Mi tartozik a Targe 1, 2, 3, ill 4, helyéhez?\n[image_0040]",
+      "question": "C # alkalmazást fejlesztesz. Az alkalmazás tartalmaz egy Rate nevu osztályt. A következo kódszegmens implementálja a Rate osztályt:\n[image_0038]\nAz RateCollection nevu gyujteményt a következo kódszegmens segítségével határozhatja meg: Collection&lt;Rate&gt; rateCollection = new Collection&lt;Rate&gt;() ;\nAz alkalmazás egy olyan XML fájlt kap, amely tartalmazza a rate információt az alábbi formátumban:\n[image_0039]\nMeg kell vizsgálni az XML fájlt, és fel kell töltened a RateCollection gyujteményt Rate objektumokkal. Mi tartozik a Targe 1, 2, 3, ill 4, helyéhez?\n[image_0040]",
       "options": [
         "Target 1:B",
         "Target 1:A",
@@ -1306,7 +1318,7 @@
       ]
     },
     {
-      "question": "Adott a következo kód:\n[image_0041]\nFutás során kapunk egy hibát! Biztosítani kell, hogy a B_Products tartalmazza az összes olyan terméket, amely a \"B\" betuvel kezdodik. Melyik a helyes megoldás? Adja meg a betujelét!\n[image_0042]",
+      "question": "Adott a következo kód:\n[image_0041]\nFutás során kapunk egy hibát! Biztosítani kell, hogy a B_Products tartalmazza az összes olyan terméket, amely a &quot;B&quot; betuvel kezdodik. Melyik a helyes megoldás? Adja meg a betujelét!\n[image_0042]",
       "options": [
         "A",
         "B",
@@ -1322,7 +1334,7 @@
       ]
     },
     {
-      "question": "Már meglévo alkalmazást módosít. Az alkalmazás magában foglalja a Loan osztályt és a Customer osztályt. A következo kódszegmens határozza meg az osztályokat.\n[image_0043]\nA Customerhez tartozó gyujteményt az Customer- és Loan objektumokkal töltheti be a következo kódszegmens segítségével:\n[image_0044]\nHozzon létre egy largeCustomerLoans gyujteményt a Loan objektumok tárolásához a következo kódszegmens segítségével:\nCollection<Loan> largeCustomerLoans = new Collection<Loan>(); Minden olyan összeget, amelynek összege 4000-nél nagyobb vagy azzal egyenlo, nyomon kell követni. Be kell töltenie a largeCustomerLoans gyujteményt Loan objektumokkal. Melyik betujelu a helyes?\n[image_0045]",
+      "question": "Már meglévo alkalmazást módosít. Az alkalmazás magában foglalja a Loan osztályt és a Customer osztályt. A következo kódszegmens határozza meg az osztályokat.\n[image_0043]\nA Customerhez tartozó gyujteményt az Customer- és Loan objektumokkal töltheti be a következo kódszegmens segítségével:\n[image_0044]\nHozzon létre egy largeCustomerLoans gyujteményt a Loan objektumok tárolásához a következo kódszegmens segítségével:\nCollection&lt;Loan&gt; largeCustomerLoans = new Collection&lt;Loan&gt;(); Minden olyan összeget, amelynek összege 4000-nél nagyobb vagy azzal egyenlo, nyomon kell követni. Be kell töltenie a largeCustomerLoans gyujteményt Loan objektumokkal. Melyik betujelu a helyes?\n[image_0045]",
       "options": [
         "A",
         "B",
@@ -1381,7 +1393,7 @@
       "images": null
     },
     {
-      "question": "C # alkalmazást fejlesztesz. Az alkalmazás tartalmaz egy Rate nevu osztály.t A következo kódszegmens implementálja a Rate osztályt:\n[image_0047]\nAz RateCollection nevu gyujteményt a következo kódszegmens határozhatja meg: Collection<Rate> rateCollection = new Collection<Rate>(); Az alkalmazás egy olyan XML fájlt kap, amely a rate információt tartalmazza az alábbi formátumban:\n[image_0048]\nVizsgálja meg az XML féjlt és töltse fel a RateCollections gyujtemént Rate\nobjektumokkal! A megoldásnak adja meg a kódrészletek sorszámát egymás után felsorolva!\n[image_0049]",
+      "question": "C # alkalmazást fejlesztesz. Az alkalmazás tartalmaz egy Rate nevu osztály.t A következo kódszegmens implementálja a Rate osztályt:\n[image_0047]\nAz RateCollection nevu gyujteményt a következo kódszegmens határozhatja meg: Collection&lt;Rate&gt; rateCollection = new Collection&lt;Rate&gt;(); Az alkalmazás egy olyan XML fájlt kap, amely a rate információt tartalmazza az alábbi formátumban:\n[image_0048]\nVizsgálja meg az XML féjlt és töltse fel a RateCollections gyujtemént Rate\nobjektumokkal! A megoldásnak adja meg a kódrészletek sorszámát egymás után felsorolva!\n[image_0049]",
       "options": [
         "2,4,6,7",
         "1,2,3,4",
@@ -1460,7 +1472,7 @@
       ]
     },
     {
-      "question": "Egy alkalmazást fejlesztesz a C # segítségével. Az alkalmazás egy SendMessage nevu eljárást tartalmaz. SendMessage () metódus string inputot igényel. Ki kell cserélnie a \"Hello\" szót a \"Goodbye\" -ra a SendMessage () metódussal átadott paraméterben Adja meg a jó megoldások betujhelét: \n[image_0055]",
+      "question": "Egy alkalmazást fejlesztesz a C # segítségével. Az alkalmazás egy SendMessage nevu eljárást tartalmaz. SendMessage () metódus string inputot igényel. Ki kell cserélnie a &quot;Hello&quot; szót a &quot;Goodbye&quot; -ra a SendMessage () metódussal átadott paraméterben Adja meg a jó megoldások betujhelét: \n[image_0055]",
       "options": [
         "A",
         "B",
@@ -1476,7 +1488,7 @@
       ]
     },
     {
-      "question": "C # alkalmazást fejlesztesz. Az alkalmazás a következo kódszegmenset tartalmazza: \n[image_0056]\nAz fordítás során a következo hibaüzenet jelenik meg a 17-ik sorban: \"An item with the same key has already been added.\" A hibát meg kell oldani! Melyik kódszegmens kell a 16ik sorba? Add meg a betujelét!\n[image_0057]",
+      "question": "C # alkalmazást fejlesztesz. Az alkalmazás a következo kódszegmenset tartalmazza: \n[image_0056]\nAz fordítás során a következo hibaüzenet jelenik meg a 17-ik sorban: &quot;An item with the same key has already been added.&quot; A hibát meg kell oldani! Melyik kódszegmens kell a 16ik sorba? Add meg a betujelét!\n[image_0057]",
       "options": [
         "A",
         "B",
@@ -1507,7 +1519,7 @@
       ]
     },
     {
-      "question": "Olyan alkalmazást fejlesztesz, amely tartalmazza az Customer nevu osztályt és az ügyfelek generikus listáját. A következo kódszegmens jeléenti az ügyfelek listáját: List<Customer> customersList = new List<Customer> () A customersList több száz Customer objektumot tartalmaz. Az alkalmazásnak egyszerre öt ügyfél adatait kell megjeleníteni. Olyan eljárást kell létrehoznia, amely visszaadja a megfelelo számú Customer objektumot. Add meg a helyes válasz betujelét: \n[image_0059]",
+      "question": "Olyan alkalmazást fejlesztesz, amely tartalmazza az Customer nevu osztályt és az ügyfelek generikus listáját. A következo kódszegmens jeléenti az ügyfelek listáját: List&lt;Customer&gt; customersList = new List&lt;Customer&gt; () A customersList több száz Customer objektumot tartalmaz. Az alkalmazásnak egyszerre öt ügyfél adatait kell megjeleníteni. Olyan eljárást kell létrehoznia, amely visszaadja a megfelelo számú Customer objektumot. Add meg a helyes válasz betujelét: \n[image_0059]",
       "options": [
         "A",
         "B",
@@ -1656,7 +1668,7 @@
       "question": "Olyan alkalmazást hoz létre, amely egy adatbázisból olvas értékeket. Különbözo adatbázisokat kell használni a fejlesztési fázis és a tesztelési fázis során feltételes összeállítási technikák használatával. Mit kéne tenni?",
       "options": [
         "Konfigurálni a TRACE konstanst a Microsoft Visual Studio alkalmazásban.",
-        "A kódot a [DebuggerDisplay (\"Mydebug\")] attribútummal kell kiegészíteni.",
+        "A kódot a [DebuggerDisplay (&quot;Mydebug&quot;)] attribútummal kell kiegészíteni.",
         "Konfigurálni a DEBUG állandó beállítását a Microsoft Visual Studio alkalmazásban.",
         "Le kell tiltani a Microsoft .NET-keretrendszer strong-name bypass feature tulajdonságát a rendszerleíró adatbázisban."
       ],
@@ -1742,7 +1754,7 @@
       ]
     },
     {
-      "question": "Végrehajt egy ProcessData nevu eljárást, amely long-runningot valósít meg. A ProcessData () metódus a következo aláírással rendelkezik: public void ProcessData(List<decimal> values, CancellationTokenSource source, CancellationToken token) Ha a kód megszakítást kér, a metódusnak a következo muveleteket kell végrehajtania: long-running feladat törlése. Állítsa a feladat állapotát TaskStatus.Canceled-re.Meg kell gyozodni arról, hogy a ProcessData () módszer végrehajtja a szükséges muveleteket. Melyik kódszegmenst kell használni a módszer törzsében?",
+      "question": "Végrehajt egy ProcessData nevu eljárást, amely long-runningot valósít meg. A ProcessData () metódus a következo aláírással rendelkezik: public void ProcessData(List&lt;decimal&gt; values, CancellationTokenSource source, CancellationToken token) Ha a kód megszakítást kér, a metódusnak a következo muveleteket kell végrehajtania: long-running feladat törlése. Állítsa a feladat állapotát TaskStatus.Canceled-re.Meg kell gyozodni arról, hogy a ProcessData () módszer végrehajtja a szükséges muveleteket. Melyik kódszegmenst kell használni a módszer törzsében?",
       "options": [
         "if (token.IsCancellationRequested) return;",
         "throw new AggregateException();",
@@ -1788,7 +1800,7 @@
       ]
     },
     {
-      "question": "DRAG DROP metódust ad hozzá egy meglévo alkalmazáshoz. A metódus bemenetként egy statusCode nevu egész számot használ, és az állapotkódot karakterláncként adja vissza. A metódusnak meg kell felelnie a következo követelményeknek: Visszatérés \"Error\", ha az állapotkód 0. Visszatérés \"Success\", ha az állapotkód 1. Visszatérés \"Unauthorized\", ha az állapotkód bármilyen 0 vagy l érték. Meg kell valósítani a metódus úgy, hogy megfeleljen a követelményeknek. Hogyan kell kitöltenie az adott kódot? Adja meg a szavak helyes sorrendjét!\n[image_0076]",
+      "question": "DRAG DROP metódust ad hozzá egy meglévo alkalmazáshoz. A metódus bemenetként egy statusCode nevu egész számot használ, és az állapotkódot karakterláncként adja vissza. A metódusnak meg kell felelnie a következo követelményeknek: Visszatérés &quot;Error&quot;, ha az állapotkód 0. Visszatérés &quot;Success&quot;, ha az állapotkód 1. Visszatérés &quot;Unauthorized&quot;, ha az állapotkód bármilyen 0 vagy l érték. Meg kell valósítani a metódus úgy, hogy megfeleljen a követelményeknek. Hogyan kell kitöltenie az adott kódot? Adja meg a szavak helyes sorrendjét!\n[image_0076]",
       "options": [
         "2,4,3,4,3,1,3",
         "1,3,2,4,3,2,3",
@@ -1912,13 +1924,13 @@
     {
       "question": "Ön egy új metódust fejleszt ProcessData néven. A ProcessData () metódus egy olyan harmadik féltol származó összetevot hív, amely long-running muveletet hajt végre a készletinformáció letöltéséhez webszolgáltatásból. A harmadik fél összetevoje az IAsyncResult mintát használja a long-running muvelet befejezésének jelzésére, hogy az UI frissítheto legyen az új értékekkel. Biztosítani kell, hogy a hívó kód kezelje a long-running muveletet System.Threading.Tasks.Task objektumként, hogy elkerülje az UI szál blokkolását Mit kell tenni? Több válasz a jó!",
       "options": [
-        "TaskCompletionSource <T> objektum létrehozása.",
+        "TaskCompletionSource &lt;T&gt; objektum létrehozása.",
         "Hívja meg az összetevot a TaskFactory.FromAsync () metódus használatával.",
         "Alkalmazza a következo attribútumot a ProcessData () metódus aláírására: [Methodlmpl (MethodlmplOptions.Synchronized)]",
         "Alkalmazza az async-módosítót a ProcessData () metódus aláírására."
       ],
       "answers": [
-        "TaskCompletionSource <T> objektum létrehozása.",
+        "TaskCompletionSource &lt;T&gt; objektum létrehozása.",
         "Hívja meg az összetevot a TaskFactory.FromAsync () metódus használatával."
       ],
       "images": null
@@ -2000,7 +2012,7 @@
       "images": null
     },
     {
-      "question": "C # alkalmazást fejlesztesz. Az alkalmazás referenciákat és egy RESTful webes szolgáltatást hív EmployeeService néven. Az EmployeeService webszolgáltatás magában foglal egy GetEmployee nevu metódustz, amely elfogadja egy alkalmazott azonosítóját paraméterként. A webszolgáltatás a következo JSON adatokat adja vissza a metódusból. {\"Id\":1,\"Name\":\"David Jones\"> \n[image_0091]\nA következo kódszegmens hívja meg a szolgáltatást, és tárolja az eredményt: A visszaküldött JSON-adatokat az alkalmazást használó Employee objektumra kell konvertálni. Melyik kódszegmenst használja?\n[image_0092]",
+      "question": "C # alkalmazást fejlesztesz. Az alkalmazás referenciákat és egy RESTful webes szolgáltatást hív EmployeeService néven. Az EmployeeService webszolgáltatás magában foglal egy GetEmployee nevu metódustz, amely elfogadja egy alkalmazott azonosítóját paraméterként. A webszolgáltatás a következo JSON adatokat adja vissza a metódusból. {&quot;Id&quot;:1,&quot;Name&quot;:&quot;David Jones&quot;&gt; \n[image_0091]\nA következo kódszegmens hívja meg a szolgáltatást, és tárolja az eredményt: A visszaküldött JSON-adatokat az alkalmazást használó Employee objektumra kell konvertálni. Melyik kódszegmenst használja?\n[image_0092]",
       "options": [
         "A lehetoség",
         "B opció",
@@ -2047,7 +2059,7 @@
       ]
     },
     {
-      "question": "Ön fejleszt egy alkalmazást. Az alkalmazás a következo kódot tartalmazza: A kód foprdításakor a következo szintaktikai hibaüzenet jelenik meg: \"A previous catch clause already catches all exceptions of this or a super type ('System.Exception').\" Biztosítani kell, hogy a kód fordítható legyen. Mit kéne tenni? \n[image_0095]",
+      "question": "Ön fejleszt egy alkalmazást. Az alkalmazás a következo kódot tartalmazza: A kód foprdításakor a következo szintaktikai hibaüzenet jelenik meg: &quot;A previous catch clause already catches all exceptions of this or a super type (&#39;System.Exception&#39;).&quot; Biztosítani kell, hogy a kód fordítható legyen. Mit kéne tenni? \n[image_0095]",
       "options": [
         "Elkapni az ArgumentException kivételt az ArgumentNullException kivétel helyett.",
         "Dobjon egy új kivételt a második fogási blokkban.",
@@ -2141,7 +2153,7 @@
         "B opció",
         "C opció",
         "D opció",
-        "Olyan alkalmazást fejlesztesz, amely magában foglalja az Employee nevu osztályt és a munkavállalók általános listáját. a kódszegmens deklarálja az alkalmazottak listáját: List<Employee> employeesList = new List<Employee>(); A EmployeeList objektum több száz Employee objektummal tölt fel. Az alkalmazásnak egyidejuleg öt Employee objektum adatait kell megjelenítenie. Olyan eljárást kell létrehozni, amely visszaadja az Employee objektumok megfelelo számát. Melyik kódszegmenst használja?",
+        "Olyan alkalmazást fejlesztesz, amely magában foglalja az Employee nevu osztályt és a munkavállalók általános listáját. a kódszegmens deklarálja az alkalmazottak listáját: List&lt;Employee&gt; employeesList = new List&lt;Employee&gt;(); A EmployeeList objektum több száz Employee objektummal tölt fel. Az alkalmazásnak egyidejuleg öt Employee objektum adatait kell megjelenítenie. Olyan eljárást kell létrehozni, amely visszaadja az Employee objektumok megfelelo számát. Melyik kódszegmenst használja?",
         "[image_0101]"
       ],
       "answers": [
@@ -2200,7 +2212,7 @@
     {
       "question": "Az alkalmazás olyan kódot tartalmaz, amely a reakcióidoket méri. A kód az idõzítõt a kezelõfelületen elhelyezett szálon futtatja. Az alkalmazás a következo kódot tartalmazza. (A sorszámok csak a referenciaként szerepelnek.) Biztosítani kell, hogy az alkalmazás törli az idozítot, amikor a felhasználó megnyomja az Enter billentyut. Melyik kódszegmenst kell beilleszteni a 14. sorba?\n[image_0106]",
       "options": [
-        "tokenSource.Token.Register (() => tokenSource.Cancel ());",
+        "tokenSource.Token.Register (() =&gt; tokenSource.Cancel ());",
         "tokenSource.Cancel ();",
         "tokenSource.IsCancellationRequested = true;",
         "tokenSource.Dispose ();"
@@ -2251,13 +2263,13 @@
       "question": "Ön egy új metódust fejleszt ProcessData néven. A ProcessData () eljárás harmadik féltol származó komponenst hív, amely long-running muveletet hajt végre. A harmadik fél összetevoje az IAsyncResult mintát használja long-running muvelet befejezésének jelzésére. Biztosítani kell, hogy a hívó kód kezelje a long-running muveletet System.Threading.Tasks.Task objektumként. Mely két lépést kell végrehajtania? (Válassz kettot.)",
       "options": [
         "Hívd meg a komponenst aTaskFactory.FromAsync() methodus használatával.",
-        "Hozzad létre a TaskCompletionSource<T> objektumot .",
+        "Hozzad létre a TaskCompletionSource&lt;T&gt; objektumot .",
         "Alkalmazza az async-módosítót a módszer aláírására.",
         "Alkalmazza a következo attribútumot a módszer aláírására: [MethodImpl (MethodImplOptions.Synchronized)]"
       ],
       "answers": [
         "Hívd meg a komponenst aTaskFactory.FromAsync() methodus használatával.",
-        "Hozzad létre a TaskCompletionSource<T> objektumot ."
+        "Hozzad létre a TaskCompletionSource&lt;T&gt; objektumot ."
       ],
       "images": null
     },
@@ -2339,10 +2351,10 @@
     {
       "question": "A következo kód használatával definiálhat egy osztályt:\n[image_0120]\nA következo kódot írja le egy metódusnak (csak a referenciaszámok szerepelnek):\nAhhoz, hogy válaszoljon, töltse ki az egyes utasításokat a kódban szereplo információk alapján. A metódus 7ik sora kiírja :\n[image_0121]",
       "options": [
-        "0,",
-        "1,",
-        "2,",
-        "3,",
+        "0",
+        "1",
+        "2",
+        "3",
         "4"
       ],
       "answers": [
@@ -2356,14 +2368,14 @@
     {
       "question": "A következo kód használatával definiálhat egy osztályt:\n[image_0120]\nA következo kódot írja le egy metódusnak (csak a referenciaszámok szerepelnek):\nAhhoz, hogy válaszoljon, töltse ki az egyes utasításokat a kódban szereplo információk alapján. A metódus 9ik sora kiírja :\n[image_0121]",
       "options": [
-        "User1,",
-        "User2,",
-        "User3,",
+        "User1",
+        "User2",
+        "User3",
         "User4",
         "Írjon egy olyan eljárást, amely adatokat nyer a Microsoft Access 2013 adatbázisból. A metódusnak meg kell felelnie a következo követelmények: Legyen csak olvasható. Képes elérni az adatokat, mielott megkapja a DataSetet Minimálisra csökkentse a rendszer memóriahasználat. Milyen típusú objektumot kell használni a metódusban?"
       ],
       "answers": [
-        "User3,"
+        "User3"
       ],
       "images": [
         "images/image_0120.png",
@@ -2436,7 +2448,7 @@
       ]
     },
     {
-      "question": "Módosít egy meglévo banki alkalmazást. Az alkalmazás tartalmaz egy Account és egy Customer osztályt. A következo kódszegmens meghatározza a osztályokat.\n[image_0127]\nA CustomerCollection nevu Customer és Account objektumokat tartalmazó gyujtemény feltöltése az alábbiak segítségével történik:\n[image_0128]\nHozzon létre egy largeCustomerAccounts gyujteményt az Account objektumok tárolásához az alábbi kód használatával segment:Collection<Account> largeCustomerAccounts = new Collection<Account> () Minden olyan számlát, amelynek mérlegszáma nagyobb vagy egyenlo mint 1 000 000, nyomon kell követni. A LargeCustomerAccounts gyujteményt fel kell tölteni a Account objektumokkal. Melyik kódszegmen használjon?\n[image_0129]",
+      "question": "Módosít egy meglévo banki alkalmazást. Az alkalmazás tartalmaz egy Account és egy Customer osztályt. A következo kódszegmens meghatározza a osztályokat.\n[image_0127]\nA CustomerCollection nevu Customer és Account objektumokat tartalmazó gyujtemény feltöltése az alábbiak segítségével történik:\n[image_0128]\nHozzon létre egy largeCustomerAccounts gyujteményt az Account objektumok tárolásához az alábbi kód használatával segment:Collection&lt;Account&gt; largeCustomerAccounts = new Collection&lt;Account&gt; () Minden olyan számlát, amelynek mérlegszáma nagyobb vagy egyenlo mint 1 000 000, nyomon kell követni. A LargeCustomerAccounts gyujteményt fel kell tölteni a Account objektumokkal. Melyik kódszegmen használjon?\n[image_0129]",
       "options": [
         "A lehetoség",
         "B opció",
@@ -2600,15 +2612,15 @@
       ]
     },
     {
-      "question": "Ön egy alkalmazást fejleszt. Az alkalmazás a következo kódszegmenst tartalmazza (a sorszámok csak a referenciaként szerepelnek): A kód futtatásakor a következo hibaüzenet jelenik meg: \"Cannot implicitly convert type 'object\" to 'inf. An explicit conversion exists (are you missing a cast?). \" Biztosítani kell, hogy a kód fordítható legyen. Melyik kódot kell használni a 05-ös sor cseréjéhez?\n[image_0142]",
+      "question": "Ön egy alkalmazást fejleszt. Az alkalmazás a következo kódszegmenst tartalmazza (a sorszámok csak a referenciaként szerepelnek): A kód futtatásakor a következo hibaüzenet jelenik meg: &quot;Cannot implicitly convert type &#39;object&quot; to &#39;inf. An explicit conversion exists (are you missing a cast?). &quot; Biztosítani kell, hogy a kód fordítható legyen. Melyik kódot kell használni a 05-ös sor cseréjéhez?\n[image_0142]",
       "options": [
-        "var2 = ((List <int>) array1) [0];",
+        "var2 = ((List &lt;int&gt;) array1) [0];",
         "var2 = array1 [0] .Equals (typeof (int));",
         "var2 = Convert.ToInt32 (array1 [0]);",
         "var2 = ((int []) array1) [0];"
       ],
       "answers": [
-        "var2 = ((List <int>) array1) [0];"
+        "var2 = ((List &lt;int&gt;) array1) [0];"
       ],
       "images": [
         "images/image_0142.png"
@@ -2766,7 +2778,7 @@
       ]
     },
     {
-      "question": "A következo kódot kapja: Az alábbi állításoknál válassza az Igen lehetoséget, ha a kijelentés igaz. Ellenkezo esetben válassza a Nem lehetoséget. Amikor az alkalmazás fut akkor a \"First\" jelenik meg minden esetben a \"Second\" elott.\n[image_0147]",
+      "question": "A következo kódot kapja: Az alábbi állításoknál válassza az Igen lehetoséget, ha a kijelentés igaz. Ellenkezo esetben válassza a Nem lehetoséget. Amikor az alkalmazás fut akkor a &quot;First&quot; jelenik meg minden esetben a &quot;Second&quot; elott.\n[image_0147]",
       "options": [
         "igen",
         "nem"
@@ -2779,7 +2791,7 @@
       ]
     },
     {
-      "question": "A következo kódot kapja: Az alábbi állításoknál válassza az Igen lehetoséget, ha a kijelentés igaz. Ellenkezo esetben válassza a Nem lehetoséget. Amikor az alkalmazás fut akkor a \"Third\" egyszer jelenik meg. igen nem\n[image_0147]",
+      "question": "A következo kódot kapja: Az alábbi állításoknál válassza az Igen lehetoséget, ha a kijelentés igaz. Ellenkezo esetben válassza a Nem lehetoséget. Amikor az alkalmazás fut akkor a &quot;Third&quot; egyszer jelenik meg. igen nem\n[image_0147]",
       "options": [
         "igen",
         "nem"
@@ -2839,8 +2851,8 @@
       "question": "Az alábbi forráskódunk van: Az alábbi állítások közül melyek igazak:\n[image_0151]",
       "options": [
         "A: If there are no subscribers to the SendMessage even, the Execute method on the Alert class will throw an exception",
-        "B: When the application runs, \"First\" will always appear before \"Second\".",
-        "C: When the application runs, \"Third\" will be displayed once."
+        "B: When the application runs, &quot;First&quot; will always appear before &quot;Second&quot;.",
+        "C: When the application runs, &quot;Third&quot; will be displayed once."
       ],
       "answers": [
         "A: If there are no subscribers to the SendMessage even, the Execute method on the Alert class will throw an exception"
@@ -2974,8 +2986,8 @@
       "question": "következo metódus: Hogyan gyozödne meg róla, hogy a CreateObject sikeresen lefutott?\n[image_0162]",
       "options": [
         "Insert the following code at line 02:  where T : new()",
-        "Replace line 01 with the following code:public void CreateObject<T>()",
-        "Replace line 01 with the following code: public Object CreateObject<T>()",
+        "Replace line 01 with the following code:public void CreateObject&lt;T&gt;()",
+        "Replace line 01 with the following code: public Object CreateObject&lt;T&gt;()",
         "Insert the following code at line 02: where T : Object"
       ],
       "answers": [
@@ -2988,13 +3000,13 @@
     {
       "question": "You need to declare a delegate for a method that accepts an integer as a parameter, and then returns an integer. Milyen típusú küldöttet kell használni?",
       "options": [
-        "Action<int>",
-        "Action<int, int>",
-        "Func<int, int>",
-        "Func<int>,0 134:"
+        "Action&lt;int&gt;",
+        "Action&lt;int, int&gt;",
+        "Func&lt;int, int&gt;",
+        "Func&lt;int&gt;,0 134:"
       ],
       "answers": [
-        "Func<int, int>"
+        "Func&lt;int, int&gt;"
       ],
       "images": null
     },
@@ -3014,7 +3026,7 @@
       "images": null
     },
     {
-      "question": "Implementál egy ProcessReports nevu metódust, amely hosszú távon fut. A ProcessReports () metódus a következo metódus aláírással rendelkezik: public void ProcessReports (Lista <decimális> értékek, CancellationTokenSource cts, CancellationToken ct) Ha a hívószám törlést kér, a metódusnak a következo muveleteket kell végrehajtania: Hosszan futó feladat törlése. Állítsa a feladat állapotát TaskStatus.Canceled. Meg kell gyozodnie arról, hogy a ProcessReports () metódus végrehajtja a szükséges muveleteket. Melyik kódszegmenst kell használni a metódusr testében?",
+      "question": "Implementál egy ProcessReports nevu metódust, amely hosszú távon fut. A ProcessReports () metódus a következo metódus aláírással rendelkezik: public void ProcessReports (Lista &lt;decimális&gt; értékek, CancellationTokenSource cts, CancellationToken ct) Ha a hívószám törlést kér, a metódusnak a következo muveleteket kell végrehajtania: Hosszan futó feladat törlése. Állítsa a feladat állapotát TaskStatus.Canceled. Meg kell gyozodnie arról, hogy a ProcessReports () metódus végrehajtja a szükséges muveleteket. Melyik kódszegmenst kell használni a metódusr testében?",
       "options": [
         "if (ct.IsCancellationRequested) return;",
         "ct.ThrowIfCancellationRequested();",
@@ -3042,7 +3054,7 @@
       ]
     },
     {
-      "question": "Funkciót ad hozzá egy tagkövetési alkalmazáshoz. A függvény egy elnevezett egész számot használ memberCode, mint bemeneti paramétert, és a tagsági típust stringként adja vissza. A funkciónak meg kell felelnie a következo követelményeknek: Visszatérés \"Non-Member\", ha az memberCode 0. Visszatérés \"Member\", ha a tagkód 1. Visszatérés \"Érvénytelen\", ha az memberCode 0 vagy 1-tol eltéro érték. Meg kell valósítanod a funkciót a követelményeknek való megfelelés érdekében. Hogyan kell kitöltenie az adott kódot? \n[image_0164]",
+      "question": "Funkciót ad hozzá egy tagkövetési alkalmazáshoz. A függvény egy elnevezett egész számot használ memberCode, mint bemeneti paramétert, és a tagsági típust stringként adja vissza. A funkciónak meg kell felelnie a következo követelményeknek: Visszatérés &quot;Non-Member&quot;, ha az memberCode 0. Visszatérés &quot;Member&quot;, ha a tagkód 1. Visszatérés &quot;Érvénytelen&quot;, ha az memberCode 0 vagy 1-tol eltéro érték. Meg kell valósítanod a funkciót a követelményeknek való megfelelés érdekében. Hogyan kell kitöltenie az adott kódot? \n[image_0164]",
       "options": [
         "switch-case-default-case-break-default-break",
         "switch-case-break-break-break-default-break",
@@ -3057,7 +3069,7 @@
       ]
     },
     {
-      "question": "Ön a következo osztályokat fejleszti \"Class1 Class2 Class3\" Az osztályok mindegyike egy Assembly.dll nevu összeszerelés részét fogja képezni. A Assembly.dll-t többször használják az alkalmazások. Minden osztály végrehajtja a következo felületet, amely szintén része azAssembly.dll fájlnak:public interface Interface1 \\n {\\n void Method1(decimal amount);void Method2(decimal amount);\\n }\\n Biztosítani kell, hogy a Class2 osztályú Method2 módszer csak akkor hajtható végre, ha a osztály az Interface1 interfészen keresztül elérheto. A megoldásnak biztosítania kell a Method1 módszerre történo hívásokat akár az interfészen keresztül, akár az osztály egy példáján keresztül lehet. Melyik aláírást kell használni minden egyes módszerhez?\n[image_0165]",
+      "question": "Ön a következo osztályokat fejleszti &quot;Class1 Class2 Class3&quot; Az osztályok mindegyike egy Assembly.dll nevu összeszerelés részét fogja képezni. A Assembly.dll-t többször használják az alkalmazások. Minden osztály végrehajtja a következo felületet, amely szintén része azAssembly.dll fájlnak:public interface Interface1 \\n {\\n void Method1(decimal amount);void Method2(decimal amount);\\n }\\n Biztosítani kell, hogy a Class2 osztályú Method2 módszer csak akkor hajtható végre, ha a osztály az Interface1 interfészen keresztül elérheto. A megoldásnak biztosítania kell a Method1 módszerre történo hívásokat akár az interfészen keresztül, akár az osztály egy példáján keresztül lehet. Melyik aláírást kell használni minden egyes módszerhez?\n[image_0165]",
       "options": [
         "private void Method1(decimal amount) void Interface1. Method2 (decimal amount)",
         "internalvoid Method1(decimal amount) void Interface1. Method2 (decimal amount)",
@@ -3101,10 +3113,10 @@
       "images": null
     },
     {
-      "question": "Futtatásnál a következo hibaüzenet jelenik meg: \"Cannot implicitly convert type \"object\" to \"int\". Melyik kódot kell használni a 05-as sor cseréjéhez?\n[image_0168]",
+      "question": "Futtatásnál a következo hibaüzenet jelenik meg: &quot;Cannot implicitly convert type &quot;object&quot; to &quot;int&quot;. Melyik kódot kell használni a 05-as sor cseréjéhez?\n[image_0168]",
       "options": [
         "var2 = arrayl[0] is int;",
-        "var2 = ((List<int>)arrayl) [0];",
+        "var2 = ((List&lt;int&gt;)arrayl) [0];",
         "var2 = arrayl[0].Equals(typeof(int));",
         "var2 = (int) arrayl [0];"
       ],
@@ -3116,7 +3128,7 @@
       ]
     },
     {
-      "question": "142\n[image_0169]\nMeg kell vizsgálnia, hogy az objektum nulla-e. \"private bool IsNull(object obj) { _____;\\n return false;\" Melyik kódszegmenst kell beillesztenie a vonalon?\n[image_0170]",
+      "question": "142\n[image_0169]\nMeg kell vizsgálnia, hogy az objektum nulla-e. &quot;private bool IsNull(object obj) { _____;\\n return false;&quot; Melyik kódszegmenst kell beillesztenie a vonalon?\n[image_0170]",
       "options": [
         "A",
         "B",
@@ -3627,15 +3639,15 @@
       "question": "Ön tesztel egy alkalmazást. Az alkalmazás a CalculateInterest és a LogLine nevu módszereket tartalmazza. A CalculateInterest () módszer kiszámítja a hitel kamatot. A LogLine () módszer diagnosztikai üzeneteket küld a konzol ablaknak. A következo kód végrehajtja a metódusokat. A következo követelményeknek kell megfelelnie: A Calculatelnterest () metódusnak minden építési konfigurációhoz futnia kell. A LogLine () metódus csak a hibakeresésekre használható. Biztosítani kell, hogy a módszerek megfeleloen muködjenek. Mi a két lehetséges út a cél eléréséhez?\n[image_0208]",
       "options": [
         "Insert the following code segment at line 01: #region DEBUG \\nInsert the following code segment at line 10: #endregion",
-        "Insert the following code segment at line 10:  [Conditional(MDEBUG\")]",
+        "Insert the following code segment at line 10:  [Conditional(MDEBUG&quot;)]",
         "Insert the following code segment at line 05: #region DEBUG \\n Insert the following code segment at line 07: #endregion",
         "Insert the following code segment at line 01: #if DE30G \\n Insert the following code segment at line 10: #endif",
-        "E.Insert the following code segment at line 01: [Conditional(MDEBUG\")]",
+        "E.Insert the following code segment at line 01: [Conditional(MDEBUG&quot;)]",
         "F.Insert the following code segment at line 05:  #if DEBUG \\n Insert the following code segment at line 07:  #endif",
-        "G.Insert the following code segment at line 10: [Conditional(\"RELEASE\")]"
+        "G.Insert the following code segment at line 10: [Conditional(&quot;RELEASE&quot;)]"
       ],
       "answers": [
-        "Insert the following code segment at line 10:  [Conditional(MDEBUG\")]",
+        "Insert the following code segment at line 10:  [Conditional(MDEBUG&quot;)]",
         "F.Insert the following code segment at line 05:  #if DEBUG \\n Insert the following code segment at line 07:  #endif"
       ],
       "images": [
@@ -3660,13 +3672,13 @@
     {
       "question": "A hitelkamatot kiszámító alkalmazás hibakeresésére szolgál. Az alkalmazás a következo kódot tartalmazza. A következo követelményeknek kell megfelelnie: A debuggernek meg kell szakítania a végrehajtást a Calculatelnterest () metóduson belül, ha a loanAmount változó nulla vagy nulla. A kód kiadási verzióját semmilyen változtatás nem befolyásolhatja. Meg kell felelnie a követelményeknek. Mit kéne tenned?\n[image_0210]",
       "options": [
-        "Insert the following code segment at tine 05: Debug.Write(loanAmount > 0);",
-        "Insert the following code segment at line 05: Trace.Write(loanAmount > 0);",
-        "Insert the following code segment at line 03:  Debug.Assert(loanAmount > 0);",
-        "Insert the following code segment at line 03: Trace.Assert(loanAmount > 0);"
+        "Insert the following code segment at tine 05: Debug.Write(loanAmount &gt; 0);",
+        "Insert the following code segment at line 05: Trace.Write(loanAmount &gt; 0);",
+        "Insert the following code segment at line 03:  Debug.Assert(loanAmount &gt; 0);",
+        "Insert the following code segment at line 03: Trace.Assert(loanAmount &gt; 0);"
       ],
       "answers": [
-        "Insert the following code segment at line 03:  Debug.Assert(loanAmount > 0);"
+        "Insert the following code segment at line 03:  Debug.Assert(loanAmount &gt; 0);"
       ],
       "images": [
         "images/image_0210.png"
@@ -3677,7 +3689,7 @@
       "options": [
         "If (!int.TryParse(sLine, out number))",
         "If ((number = Int32.Parse(sLine)) == Single.NaN)",
-        "If ((number = int.Parse(sLine)) > Int32.MaxValue)",
+        "If ((number = int.Parse(sLine)) &gt; Int32.MaxValue)",
         "If (Int32.TryParse(sLine, out number))"
       ],
       "answers": [
@@ -3749,7 +3761,7 @@
       ]
     },
     {
-      "question": "A GetCustomers () módszernek meg kell felelnie a következo követelményeknek: Csatlakozás Microsoft SQL Server adatbázishoz. Az ügyfél objektumainak feltöltése az adatbázisból származó adatokkal. Visszaad egy IEnumerable <Ügyfél> gyujteményt, amely tartalmazza a lakott Vásárló objektumokat. Meg kell felelnie a követelményeknek. Mely két lépést kell végrehajtania? (Minden helyes válasz a megoldás részét képezi. Válassz kettot.)\n[image_0217]",
+      "question": "A GetCustomers () módszernek meg kell felelnie a következo követelményeknek: Csatlakozás Microsoft SQL Server adatbázishoz. Az ügyfél objektumainak feltöltése az adatbázisból származó adatokkal. Visszaad egy IEnumerable &lt;Ügyfél&gt; gyujteményt, amely tartalmazza a lakott Vásárló objektumokat. Meg kell felelnie a követelményeknek. Mely két lépést kell végrehajtania? (Minden helyes válasz a megoldás részét képezi. Válassz kettot.)\n[image_0217]",
       "options": [
         "Insert the following code segment at line 17: while (sqlDataReader.GetValues())",
         "Insert the following code segment at line 14:  sqlConnection.Open();",
@@ -3769,12 +3781,12 @@
       "question": "Az alkalmazás a következo formátumú JSON adatokat kapja:\n[image_0218]\nAz alkalmazás a következo kódszegmenseket tartalmazza. Biztosítani kell, hogy a ConvertToName () metódus megadja a JSON beviteli karakterláncot Name objektumként. Melyik kódszegmenst kell beillesztenie a 10. sorba?\n[image_0219]",
       "options": [
         "Return ser.Desenalize (json, typeof(Name));",
-        "Return ser.ConvertToType<Name>(json);",
-        "Return ser.Deserialize<Name>(json);",
+        "Return ser.ConvertToType&lt;Name&gt;(json);",
+        "Return ser.Deserialize&lt;Name&gt;(json);",
         "Return ser.ConvertToType (json, typeof (Name));"
       ],
       "answers": [
-        "Return ser.Deserialize<Name>(json);"
+        "Return ser.Deserialize&lt;Name&gt;(json);"
       ],
       "images": [
         "images/image_0218.png",
@@ -3812,7 +3824,7 @@
       ]
     },
     {
-      "question": "Egy alkalmazást fejlesztesz a C # segítségével. Az alkalmazás kiadja a \"First Line\" szöveget, majd a \"Second Line\" szöveget. Meg kell gyozodnie arról, hogy üres sor választja el a szöveges karakterláncokat. Melyik négy kódszegmens soronként használja? (A válaszhoz vigye a megfelelo kódszegmenseket a választerületre, és rendezze el oket a megfelelo sorrendben.)\n[image_0222]",
+      "question": "Egy alkalmazást fejlesztesz a C # segítségével. Az alkalmazás kiadja a &quot;First Line&quot; szöveget, majd a &quot;Second Line&quot; szöveget. Meg kell gyozodnie arról, hogy üres sor választja el a szöveges karakterláncokat. Melyik négy kódszegmens soronként használja? (A válaszhoz vigye a megfelelo kódszegmenseket a választerületre, és rendezze el oket a megfelelo sorrendben.)\n[image_0222]",
       "options": [
         "1-3-5-7",
         "2-4-5-3",
@@ -3885,7 +3897,7 @@
       "images": null
     },
     {
-      "question": "Ön olyan módszert alkalmaz, amely létrehoz egy User nevu nevu példányt. A felhasználói osztály tartalmaz egy átnevezett nyilvános eseményt. A következo kódszegmens meghatározza az Átnevezett eseményt: Nyilvános esemény EventHandler <RenameEventArgs> Átnevezve; Lambda kifejezés használatával létre kell hoznia egy eseménykezelot a Renamed eseményhez. Hogyan kell kitöltenie az adott kódot? (A válaszhoz húzza a megfelelo kódszegmenseket a megfelelo területre a választerületen: minden egyes kódszegmens egyszeri, többször is használható, vagy egyáltalán nem használható. .)\n[image_0225]",
+      "question": "Ön olyan módszert alkalmaz, amely létrehoz egy User nevu nevu példányt. A felhasználói osztály tartalmaz egy átnevezett nyilvános eseményt. A következo kódszegmens meghatározza az Átnevezett eseményt: Nyilvános esemény EventHandler &lt;RenameEventArgs&gt; Átnevezve; Lambda kifejezés használatával létre kell hoznia egy eseménykezelot a Renamed eseményhez. Hogyan kell kitöltenie az adott kódot? (A válaszhoz húzza a megfelelo kódszegmenseket a megfelelo területre a választerületen: minden egyes kódszegmens egyszeri, többször is használható, vagy egyáltalán nem használható. .)\n[image_0225]",
       "options": [
         "4-6",
         "6-4",
@@ -3906,10 +3918,10 @@
         "Assembly.Load();",
         "Assembly.GetExecutingAssembly();",
         "This.GetType();",
-        "Assembly.LoadFile(\"car.dll\");"
+        "Assembly.LoadFile(&quot;car.dll&quot;);"
       ],
       "answers": [
-        "Assembly.LoadFile(\"car.dll\");"
+        "Assembly.LoadFile(&quot;car.dll&quot;);"
       ],
       "images": null
     },
@@ -4007,13 +4019,13 @@
     {
       "question": "A hitelkamatot kiszámító alkalmazás hibakeresésére szolgál. Az alkalmazás a következo kódot tartalmazza. Biztosítani kell, hogy a debugger a CalculateInterest () metódusban szüneteltesse a végrehajtást, ha a loanAmount változó nulla vagy egyenlo nulla az alkalmazás összes összetevojében. Mit kéne tenned?\n[image_0233]",
       "options": [
-        "Insert the following code segment at line 03:  Trace.Assert(loanAmount > 0);",
-        "Insert the following code segment at line 03: Debug.Assert(loanAmount > 0);",
-        "Insert the following code segment at line 05: Debug.Write(loanAmount > 0);",
-        "Insert the following code segment at line 05: Trace.Write(loanAmount > 0);"
+        "Insert the following code segment at line 03:  Trace.Assert(loanAmount &gt; 0);",
+        "Insert the following code segment at line 03: Debug.Assert(loanAmount &gt; 0);",
+        "Insert the following code segment at line 05: Debug.Write(loanAmount &gt; 0);",
+        "Insert the following code segment at line 05: Trace.Write(loanAmount &gt; 0);"
       ],
       "answers": [
-        "Insert the following code segment at line 03:  Trace.Assert(loanAmount > 0);"
+        "Insert the following code segment at line 03:  Trace.Assert(loanAmount &gt; 0);"
       ],
       "images": [
         "images/image_0233.png"
@@ -4223,7 +4235,7 @@
     {
       "question": "A Task.Run () módszerrel hosszú távú adatfeldolgozási mûveletet indíthat el. Az adatfeldolgozási mûvelet gyakran sikertelen a nehéz hálózati torlódások idején. Ha az adatfeldolgozási mûvelet meghiúsul, egy második mûveletnek meg kell tisztítania az elsõ mûvelet eredményeit. Biztosítani kell, hogy a második mûvelet csak akkor kerüljön meghívásra, ha az adatfeldolgozási mûvelet nem kezelt kivételt eredményez. Mit kéne tenned?",
       "options": [
-        "Create a TaskCompletionSource<T> object and call the TrySetException() method of the object.",
+        "Create a TaskCompletionSource&lt;T&gt; object and call the TrySetException() method of the object.",
         "Create a task by calling the Task.ContinueWith() method.",
         "Examine the Task.Status property immediately after the call to the Task.Run() method.",
         "Create a task inside the existing Task.Run() method by using the AttachedToParent option"
@@ -4234,7 +4246,7 @@
       "images": null
     },
     {
-      "question": "Olyan könyvtári módszert alkalmaz, amely elfogad egy karakterparamétert, és visszaad egy karakterláncot. Ha a keresés sikeres, a módszernek vissza kell adnia a megfelelõ sztring értéket. Ha a keresés nem sikerül, a módszer visszaadja az \"érvénytelen választás\" értéket. El kell végeznie a keresési algoritmust. Hogyan kell kitöltenie az adott kódot? (A válaszhoz válassza ki a megfelelõ kulcsszót a legördülõ listában a választerületet.)\n[image_0250]",
+      "question": "Olyan könyvtári módszert alkalmaz, amely elfogad egy karakterparamétert, és visszaad egy karakterláncot. Ha a keresés sikeres, a módszernek vissza kell adnia a megfelelõ sztring értéket. Ha a keresés nem sikerül, a módszer visszaadja az &quot;érvénytelen választás&quot; értéket. El kell végeznie a keresési algoritmust. Hogyan kell kitöltenie az adott kódot? (A válaszhoz válassza ki a megfelelõ kulcsszót a legördülõ listában a választerületet.)\n[image_0250]",
       "options": [
         "SWITCH-CASE-IF-ELSE",
         "SWITCH-CASE-CASE-DEFAULT",
@@ -4431,13 +4443,13 @@
     {
       "question": "Az alkalmazás a következo formátumú JSON adatokat kapja:\n[image_0263]\nBiztosítani kell, hogy a ConvertToName () metódus megadja a JSON beviteli karakterláncot Name objektumként. Melyik kódszegmenst kell beillesztenie a 10. sorba? Az alkalmazás a következo kódszegmenseket tartalmazza.\n[image_0264]",
       "options": [
-        "Return ser.ConvertToType<Name>(json);",
+        "Return ser.ConvertToType&lt;Name&gt;(json);",
         "Return ser.DeserializeObject(json);",
-        "Return ser.Deserialize<Name>(json);",
+        "Return ser.Deserialize&lt;Name&gt;(json);",
         "Return (Name)ser.Serialize(json);"
       ],
       "answers": [
-        "Return ser.Deserialize<Name>(json);"
+        "Return ser.Deserialize&lt;Name&gt;(json);"
       ],
       "images": [
         "images/image_0263.png",
@@ -4476,13 +4488,13 @@
     {
       "question": "Olyan alkalmazást fejleszt, amely a Microsoft ADO.NET Entity Framework programot használja a rendelési információk Microsoft SQL Server adatbázisból való letöltésére. Az alkalmazás a következo kódot tartalmazza.  A kérelemnek a következo követelményeknek kell megfelelnie: Csak olyan megrendelések visszaküldése, amelyek rendelkeznek a nulltól eltéro OrderDate értékkel. Csak olyan rendeléseket küld vissza, amelyek a OrderDate tulajdonában meghatározott évre vagy egy késobbi évben kerültek elhelyezésre. Biztosítania kell, hogy az alkalmazás megfeleljen a követelményeknek. Melyik kódszegmenst kell beillesztenie a 08-as sorra?\n[image_0266]",
       "options": [
-        "Where order.OrderDate.Value != null && order.OrderDate.Value.Year > = year",
-        "Where order.OrderDate.Value = = null && order.OrderDate.Value.Year = = year",
-        "Where order.OrderDate.HasValue && order.OrderDate.Value.Year = = year",
+        "Where order.OrderDate.Value != null &amp;&amp; order.OrderDate.Value.Year &gt; = year",
+        "Where order.OrderDate.Value = = null &amp;&amp; order.OrderDate.Value.Year = = year",
+        "Where order.OrderDate.HasValue &amp;&amp; order.OrderDate.Value.Year = = year",
         "Where order.OrderDate.Value.Year = = year"
       ],
       "answers": [
-        "Where order.OrderDate.Value != null && order.OrderDate.Value.Year > = year"
+        "Where order.OrderDate.Value != null &amp;&amp; order.OrderDate.Value.Year &gt; = year"
       ],
       "images": [
         "images/image_0266.png"

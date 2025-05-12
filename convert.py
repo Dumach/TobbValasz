@@ -1,15 +1,27 @@
 import re
 import json
 
+def escape(htmlstring):
+    escapes = {'\"': '&quot;',
+               '\'': '&#39;',
+               '<': '&lt;',
+               '>': '&gt;'}
+    # This is done first to prevent escaping other escapes.
+    htmlstring = htmlstring.replace('&', '&amp;')
+    for seq, esc in escapes.items():
+        htmlstring = htmlstring.replace(seq, esc)
+    return htmlstring
+
 def parse_questions(text):
     questions = []
     parts = re.split('---------------', text.strip())  # Split by blank lines between questions
 
     for part in parts:
+        part = escape(part)
         test_arr = part.strip().split('+++')
         try:
-        question_text = test_arr[0].strip()
-        answers_text = test_arr[1].strip()
+            question_text = test_arr[0].strip()
+            answers_text = test_arr[1].strip()
         except IndexError:
             print(f"Error: No answers found for question: {test_arr}")
             continue
@@ -63,3 +75,4 @@ if __name__ == "__main__":
     with open('output.json', 'w', encoding='utf-8') as f:
         json.dump(parsed, f, indent=2, ensure_ascii=False)
     #print(json.dumps(parsed, indent=2, ensure_ascii=False))
+
