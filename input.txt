@@ -717,10 +717,10 @@ byte[] MessageBytes = UE.GetBytes(MessageString);|x
 
 Van egy C # alkalmazás. Az alkalmazás 500 MB szabad memóriát igényel. Meg kell állapítania, hogy elegendo szabad memória van-e az alkalmazás indításakor. Melyik osztályt kell használni?
 +++
-A.OutOfmemoryException
-B.MemoryStream
-C.PerformanceCounter|x
-D.DiagnosticsConfigurationHandler
+OutOfmemoryException
+MemoryStream
+PerformanceCounter|x
+DiagnosticsConfigurationHandler
 
 
 
@@ -739,10 +739,10 @@ D|x
 Ön tesztel egy alkalmazást. Az alkalmazás a CalculateInterest és a LogLine nevu módszereket tartalmazza. A CalculateInterest () módszer kiszámítja a hitel kamatot. A LogLine () módszer diagnosztikai üzeneteket küld a konzolablakba. A következo kód végrehajtja a módszereket.(A sorszámok csak a referenciaként szerepelnek.) A következo követelményeknek kell megfelelnie: A CalculateInterest () módszernek minden konfigurációhoz futtatnia kell. A LogLine () metódus csak a hibakeresményekre használható. Biztosítani kell, hogy a módszerek megfeleloen muködjenek. Mi a két lehetséges út a cél eléréséhez? (Minden helyes válasz teljes megoldást nyújt.)
 [image_0007]
 +++
-A.Elso sor: #region DEBUG 10. sor:: #endregion
-B.Elso sor: [Conditional("DEBUG")]
-C.sor 05:#region DEBUG sor 07: #endregion
-D.sor: *Conditional("DEBUG")|x
+Elso sor: #region DEBUG 10. sor:: #endregion
+Elso sor: [Conditional("DEBUG")]
+sor 05:#region DEBUG sor 07: #endregion
+sor: *Conditional("DEBUG")|x
 E.sor 01:#if DEBUG sor 10: #endif
 F.sor 10: [Conditional("RELEASE")]
 G. sor 05: #if DEBUG sor 07:#endif|x
@@ -762,10 +762,10 @@ D.
 
 Olyan alkalmazást hoz létre, amely egy adatbázisból olvas. Különbözo adatbázisokat kell használnia a fejlesztési és a tesztelési fázis során a feltételes összeállítási technikák használatával. Mit kéne tennie?
 +++
-A.Konfigurálja a TRACE állandó beállítását a Microsoft Visual Studio alkalmazásban.
-B.Adja meg a /define fordító opciót.|x
-C.Futtatni Assembly Linker tool-t (Windows SDK).
-D.A [assembly: AssemblyDelaySignAttribute (true)] attribútummal kiegészíteni a kódot.
+Konfigurálja a TRACE állandó beállítását a Microsoft Visual Studio alkalmazásban.
+Adja meg a /define fordító opciót.|x
+Futtatni Assembly Linker tool-t (Windows SDK).
+A [assembly: AssemblyDelaySignAttribute (true)] attribútummal kiegészíteni a kódot.
 
 
 
@@ -912,10 +912,10 @@ Class2 az INewInterface implicit végrehajtását használja
 
 Olyan alkalmazást fejleszt, amely egy TheaterCustomer osztályt és egy ProcessTheaterCustomer nevu metódust tartalmaz. A ProcessTheaterCustomer () metódust beviteli paraméterként fogadja el a TheaterCustomer objektumot. A következo követelményeknek kell megfelelnie: Tárolja a TheaterCustomer objektumokat egy gyujteményben. Gyozodjön meg róla, hogy a ProcessTheaterCustomer () módszer a TheaterCustomer objektumokat fordított sorrendben dolgozza fel, amelyek a gyujteménybe kerülnek. Mit kéne tenni?
 +++
-A.Hozzon létre egy System.Collections.Queue gyujteményt. Használja az Enqueue () metódust a TheaterCustomer objektumok felvételéhez a gyujteményhez. A Dequeue () metódus segítségével adja át az objektumokat a ProcessTheaterCustomer () metódusnak.
-B.Hozzon létre egy System.Collections.ArrayList gyujteményt. A Insert () metódus segítségével hozzáadhatja a TheaterCustomer objektumokat a gyujteményhez. A Remove () metódus adja át az objektumokat a ProcessTheaterCustomer () metódusnak.
-C.Hozzon létre egy System.Collections.Stack gyujteményt. Használja a Push () metódust a TheaterCustomer objektumok felvételéhez a gyujteményhez. Használja a Pop () metódus adja át az objektumok a ProcessTheaterCustomer () metódusnak.|x
-D.Hozzon létre egy System.Collections.Queue gyujteményt. Használja az Enqueue () metódust a TheaterCustomer objektumok felvételéhez a gyujteményhez. Használja a Peek () metódust az objektumok átadásához a ProcessTheaterCustomer () metódusnak.
+Hozzon létre egy System.Collections.Queue gyujteményt. Használja az Enqueue () metódust a TheaterCustomer objektumok felvételéhez a gyujteményhez. A Dequeue () metódus segítségével adja át az objektumokat a ProcessTheaterCustomer () metódusnak.
+Hozzon létre egy System.Collections.ArrayList gyujteményt. A Insert () metódus segítségével hozzáadhatja a TheaterCustomer objektumokat a gyujteményhez. A Remove () metódus adja át az objektumokat a ProcessTheaterCustomer () metódusnak.
+Hozzon létre egy System.Collections.Stack gyujteményt. Használja a Push () metódust a TheaterCustomer objektumok felvételéhez a gyujteményhez. Használja a Pop () metódus adja át az objektumok a ProcessTheaterCustomer () metódusnak.|x
+Hozzon létre egy System.Collections.Queue gyujteményt. Használja az Enqueue () metódust a TheaterCustomer objektumok felvételéhez a gyujteményhez. Használja a Peek () metódust az objektumok átadásához a ProcessTheaterCustomer () metódusnak.
 
 
 
@@ -1042,10 +1042,10 @@ D|x
 
 Olyan metódust kell írnia, amely ismeretlen számú karakterláncot kombinál. A megoldásnak minimálisra kell csökkentenie a metódus által használt memória mennyiségét, amikor az függvény futásra kerül. Mit kell bevennie a kódba?
 +++
-A.String.Concat method|x
-B.StringBuilder.Append method
-C.+ operator
-D.+= operator
+String.Concat method|x
+StringBuilder.Append method
++ operator
++= operator
 
 
 
@@ -1063,10 +1063,10 @@ D|x
 
 Olyan osztálykönyvtárat hoz létre, amelyet egy webes alkalmazásban fog használni. Meg kell gyozodnie arról, hogy az osztálykönyvtár-összeállítás a strongly-namedcsoportba tartozik! Mit kéne tenned?
 +++
-A.Assembly attribútumokat kell használni.|x
-B.Használni a csc.exe / target: Library opciót az alkalmazás létrehozásakor.
-C.Használni az xsd.exe parancssori eszközt.
-D.Használni az EdmGen.exe parancssori eszközt
+Assembly attribútumokat kell használni.|x
+Használni a csc.exe / target: Library opciót az alkalmazás létrehozásakor.
+Használni az xsd.exe parancssori eszközt.
+Használni az EdmGen.exe parancssori eszközt
 
 
 
@@ -1160,10 +1160,10 @@ D
 Olyan alkalmazást fejleszt, amely több aszinkron feladatot használ a teljesítmény optimalizálásához. Három feladatot hoz létre a következo kódszegmens használatával: Biztosítani kell, hogy a ProcessTasks () metódus addig várjon, amíg mind a három feladat befejezodik. Melyik kódszegmenst kell beillesztenie a 09-es sorba?
 [image_0058]
 +++
-A.Task.WaitFor (3);
-B.tasks.Yield ();
-C.tasks.WaitForCompletion ();
-D.Task.WaitAll(tasks);|x
+Task.WaitFor (3);
+tasks.Yield ();
+tasks.WaitForCompletion ();
+Task.WaitAll(tasks);|x
 
 
 
@@ -1182,10 +1182,10 @@ D
 Ön egy olyan metódust fejleszt, amely kiszámítja a hitel kamatát. Az alkalmazás a következo kódszegmenseket tartalmazza.Ha a loanlTerm értéke 5 és a loanAmount értéke 4500, akkor a loanRate-t 6,5 százalékra kell beállítani. Melyik a helyes megoldás? 
 [image_0060]
 +++
-A.Cserélje ki a 15. sort erre:: loanRate = 0,065m;|x
-B.Cserélje a 07-es sort erre: loanRate = 0,065m;
-C.Cserélje ki a 17 -es sort erre:interestAmount = loanAmount * 0.065m * loanTerm;
-D.Cserélje a 04-es sort erre: decimal loanRate = 0.065m;
+Cserélje ki a 15. sort erre:: loanRate = 0,065m;|x
+Cserélje a 07-es sort erre: loanRate = 0,065m;
+Cserélje ki a 17 -es sort erre:interestAmount = loanAmount * 0.065m * loanTerm;
+Cserélje a 04-es sort erre: decimal loanRate = 0.065m;
 
 
 
@@ -1205,30 +1205,30 @@ D
 
 Egy 64bites C# alkalmazást debuggol! A felhasználók System.OutOfMemoryException kivételeket jelentenek! A rendszer 2 GB-nál nagyobb tömböket próbál használni Biztosítania kell, hogy az alkalmazás 2 GB-nál nagyobb tömböket használhasson. Mit kéne tenni?
 +++
-A. Add hozzá a / 3GB kapcsolót az operációs rendszerhez boot.ini fáljához.
-B.Állítsa be az IMAGE_FILE_LARGE_ADDRESS_AWARE jelzot az alkalmazás végrehajtható fejlécében.
-C. Állítsa be a gcAllowVeryLargeObjects tulajdonság értékét az alkalmazáskonfigurációs fájlban true értékre.|x
-D. Állítsa az operációs rendszer felhasználói módú virtuális címtartományának értékét MAX értékre.
+ Add hozzá a / 3GB kapcsolót az operációs rendszerhez boot.ini fáljához.
+Állítsa be az IMAGE_FILE_LARGE_ADDRESS_AWARE jelzot az alkalmazás végrehajtható fejlécében.
+ Állítsa be a gcAllowVeryLargeObjects tulajdonság értékét az alkalmazáskonfigurációs fájlban true értékre.|x
+ Állítsa az operációs rendszer felhasználói módú virtuális címtartományának értékét MAX értékre.
 
 
 
 
 Olyan alkalmazást fejleszt, amely egy TheaterCustomer nevu osztályt és egy ProcessTheaterCustomer nevu metódust tartalmaz. A ProcessTheaterCustomer () metódus beviteli paraméterként elfogadja a TheaterCustomer objektumot. A következo követelményeknek kell megfelelni: Tárolja a TheaterCustomer objektumokat egy gyujteményben. Gyozodjön meg róla, hogy a ProcessTheaterCustomer () metódus a TheaterCustomer objektumokat a gyujteménybe sorolás sorrendjében feldolgozza. Mit kéne tenni?
 +++
-A.Hozzon létre egy System.Collections.Stack gyujteményt Használja a Push () metódust a TheaterCustomer objektumok a gyujteménybe való felvételéhez. Használja a Peek () metódust az objektumok átviteléhez a ProcessTheaterCustomer () metódus számára.
-B.Hozzon létre egy System.Collections.Queue gyujteményt. Használja az Enqueue () metódust a TheaterCustomer objektumok gyujteménybe való felvételéhez A Dequeue () metódus segítségével adja át az objektumokat a ProcessTheaterCustomer () metódusnak.|x
-C.Hozzon létre egy System.Collections.SortedList gyujteményt. Használja az Add () metódust a TheaterCustomer objektumok gyujteménybe adásához A Remove() metódussal adja át az objektumokat a ProcessTheaterCustomer () metódusnak.
-D.Hozzon létre egy System.Collections.ArrayList gyujteményt. Használja a Insert () metódust a TheaterCustomer objektumok gyujteménybe adásához A Remove () metódus adja át az objektumokat a ProcessTheaterCustomer () metódusnak.
+Hozzon létre egy System.Collections.Stack gyujteményt Használja a Push () metódust a TheaterCustomer objektumok a gyujteménybe való felvételéhez. Használja a Peek () metódust az objektumok átviteléhez a ProcessTheaterCustomer () metódus számára.
+Hozzon létre egy System.Collections.Queue gyujteményt. Használja az Enqueue () metódust a TheaterCustomer objektumok gyujteménybe való felvételéhez A Dequeue () metódus segítségével adja át az objektumokat a ProcessTheaterCustomer () metódusnak.|x
+Hozzon létre egy System.Collections.SortedList gyujteményt. Használja az Add () metódust a TheaterCustomer objektumok gyujteménybe adásához A Remove() metódussal adja át az objektumokat a ProcessTheaterCustomer () metódusnak.
+Hozzon létre egy System.Collections.ArrayList gyujteményt. Használja a Insert () metódust a TheaterCustomer objektumok gyujteménybe adásához A Remove () metódus adja át az objektumokat a ProcessTheaterCustomer () metódusnak.
 
 
 
 
 Olyan alkalmazást fejleszt, amelyet több számítógépre telepítenek. Az assermbly nevet be kell állítania. egyedi azonosítót kell létrehoznia az alkalmazás assemblyéhez. Mely két assembly azonosító attribútumot kell tartalmaznia a forráskódnak? Több jó válasz van!
 +++
-A.AssemblyDelaySignAttribute
-B.AssemblyCompanyAttribute
-C.AssemblyProductAttribute
-D.AssemblyCultureAttribute|x
+AssemblyDelaySignAttribute
+AssemblyCompanyAttribute
+AssemblyProductAttribute
+AssemblyCultureAttribute|x
 E.AssemblyVersionAttribute|x
 
 
@@ -1237,10 +1237,10 @@ E.AssemblyVersionAttribute|x
 Olyan alkalmazást hoz létre, amely feldolgozza számok listáját. Az alkalmazásnak meg kell határozni egy olyan metódust, amely lekérdezi a listát, és megjeleníti a számok egy részhalmazát a felhasználónak. A metódus nem frissíti a listát. LINQ használatával bovítendo lekérdezést kell létrehoznia. Mit kéne tenni? Adja meg a helyes válasz betujelét!
 [image_0063]
 +++
-A.A lehetoség
-B.B opció
-C.C opció|x
-D.D opció
+A lehetoség
+B opció
+C opció|x
+D opció
 
 
 
@@ -1248,10 +1248,10 @@ D.D opció
 Ön olyan alkalmazást fejleszt, amely a következo metódusokat tartalmazza: EvaluateLoan, ProcessLoan és FundLoan. Az alkalmazás meghatározza a TRIAL, a BASIC és az ADVANCED nevu build konfigurációkat. A következo követelményeknek kell megfelelnie: A TRIAL build konfigurációnak csak a EvaluateLoan () metódust kell futtatnia. A BASIC build konfigurációnak mindhárom metódust el kell végeznie. Az ADVANCED build konfigurációnak csak a EvaluateLoan () és a ProcessLoan () metódusokat kell futtatni. Meg kell felelnie a követelményeknek. Melyik kódszegmens jó? Adja meg a helyes válasz betujelét!
 [image_0064]
 +++
-A.A lehetoség
-B.B opció
-C.C opció|x
-D.D opció
+A lehetoség
+B opció
+C opció|x
+D opció
 
 
 
@@ -1261,49 +1261,49 @@ Hozzon létre egy App1 nevu konzolalkalmazást. Az App1 az adatokat az Internetr
 Biztosítani kell, hogy a kód érvényesítse a JSON-karakterláncot. Melyik kódot kell beillesztenie a 03-as sorba?
 [image_0066]
 +++
-A.A lehetoség
-B.B opció
-C.C opció
-D.D opció|x
+A lehetoség
+B opció
+C opció
+D opció|x
 
 
 
 
 Létrehoz egy Loan (hitel) nevu osztályt. A következo feltételek vannak: Adjon egy olyan tagot, amely a kölcsön mértékét képviseli. Egy külso kód segítségével kell értéket rendelni a kölcsön mértékéhez. Határozza meg a mérték taghoz rendelheto értékek tartományát. Meg kell valósítani a mérték tagot megfeleljen a követelményeknek. Milyen formában kell implementálni a mérték(rate) tagot?
 +++
-A.public static property
-B.public property|x
-C.public static field
-D.protected field
+public static property
+public property|x
+public static field
+protected field
 
 
 
 
 Olyan alkalmazást hoz létre, amely egy adatbázisból olvas értékeket. Különbözo adatbázisokat kell használni a fejlesztési fázis és a tesztelési fázis során feltételes összeállítási technikák használatával. Mit kéne tenni?
 +++
-A.Konfigurálni a TRACE konstanst a Microsoft Visual Studio alkalmazásban.
-B.A kódot a [DebuggerDisplay ("Mydebug")] attribútummal kell kiegészíteni.
-C.Konfigurálni a DEBUG állandó beállítását a Microsoft Visual Studio alkalmazásban.|x
-D.Le kell tiltani a Microsoft .NET-keretrendszer strong-name bypass feature tulajdonságát a rendszerleíró adatbázisban.
+Konfigurálni a TRACE konstanst a Microsoft Visual Studio alkalmazásban.
+A kódot a [DebuggerDisplay ("Mydebug")] attribútummal kell kiegészíteni.
+Konfigurálni a DEBUG állandó beállítását a Microsoft Visual Studio alkalmazásban.|x
+Le kell tiltani a Microsoft .NET-keretrendszer strong-name bypass feature tulajdonságát a rendszerleíró adatbázisban.
 
 
 
 
 Olyan metódust kell létrehoznod, amely különbözo paraméterek használatával hívható meg. Mit kell használni?
 +++
-A.derived classes
-B.interface
-C.enumeration
-D.method overloading|x
+derived classes
+interface
+enumeration
+method overloading|x
 
 
 Implementál egy GetValidPhoneNumbers nevu metódust. A GetValidPhoneNumbers() metódus egy telefonszámokat tartlmazó karakterláncok listája.A GetValidPhoneNumbers () metódusnak csak olyan telefonszámokat kell visszaadnia, amelyek érvényes formátumban vannak. Implementálni kella GetValidPhoneNumbers () metódust. Melyik két kódszegmens jó? Adja meg a helyes válaszok betujelét! 
 [image_0067]
 +++
-A.A lehetoség|x
-B.B opció|x
-C.C opció
-D.D opció
+A lehetoség|x
+B opció|x
+C opció
+D opció
 
 
 
@@ -1311,10 +1311,10 @@ D.D opció
 Olyan alkalmazást fejleszt, amely több aszinkron feladatot használ a teljesítmény optimalizálásához. Az alkalmazás egy elosztott környezetben kerül telepítésre.Az eredmények egy aszinkron web-servicebol származnak Az adatokat késobb egy külön feladattal elemezzük. Melyik kódszegmens jó?
 [image_0068]
 +++
-A.A lehetoség
-B.B opció|x
-C.C opció
-D.D opció
+A lehetoség
+B opció|x
+C opció
+D opció
 
 
 
@@ -1324,10 +1324,10 @@ C #-ben egy alkalmazást fejleszt. Az alkalmazás kivételkezelést alkalmaz a m
 Melyik sorba kell ielleszteni?
 [image_0070]
 +++
-A.01|x
-B.03
-C.05
-D.07
+01|x
+03
+05
+07
 
 
 
@@ -1356,10 +1356,10 @@ VS Debug console jelenik meg.
 
 Végrehajt egy ProcessData nevu eljárást, amely long-runningot valósít meg. A ProcessData () metódus a következo aláírással rendelkezik: public void ProcessData(List<decimal> values, CancellationTokenSource source, CancellationToken token) Ha a kód megszakítást kér, a metódusnak a következo muveleteket kell végrehajtania: long-running feladat törlése. Állítsa a feladat állapotát TaskStatus.Canceled-re.Meg kell gyozodni arról, hogy a ProcessData () módszer végrehajtja a szükséges muveleteket. Melyik kódszegmenst kell használni a módszer törzsében?
 +++
-A.if (token.IsCancellationRequested) return;
-B.throw new AggregateException();
-C.token.ThrowIfCancellationRequested();|x
-D.source.Cancel();
+if (token.IsCancellationRequested) return;
+throw new AggregateException();
+token.ThrowIfCancellationRequested();|x
+source.Cancel();
 
 
 
@@ -1369,10 +1369,10 @@ Olyan alkalmazást fejleszt, amely a következo kódszegmenseket tartalmazza:
 Meg kell valósítani az egyes interfészek Open () metódusát a UseResources nevu származtatott osztályban és az egyes interfészek Open () metódusának hívását. Mely két kódszegmenst használja?
 [image_0073]
 +++
-A.A lehetoség|x
-B.B opció
-C.C opció|x
-D.D opció
+A lehetoség|x
+B opció
+C opció|x
+D opció
 
 
 
@@ -1382,10 +1382,10 @@ D.D opció
 Vissza kell térnie a fileBytes változóban lévo byte-ok kriptográfiai hash-jához. Melyik kódszegmenst kell beillesztenie a 05 sorba?
 [image_0075]
 +++
-A.A lehetoség|x
-B.B opció
-C.C opció
-D.D opció
+A lehetoség|x
+B opció
+C opció
+D opció
 
 
 
@@ -1406,10 +1406,10 @@ Adott a következo osztály (a sorszámok csak a referenciaként szerepelnek):
 A ServiceProxy egy webszolgáltatás proxyja. Az Update metódusra vonatkozó hívások öt másodpercig tarthatnak. A teszt osztály az egyetlen osztály, amely a Class1. osztályt használja. Háromszor fut az Execute módszerrel, és a következo eredményeket adta: 213, 312, 231. Biztosítani kell, hogy minden érték hozzá legyen adva az Érték tulajdonsághoz ahogy a Modify metódus hivatkozott. Mit kéne tenni?
 [image_0078]
 +++
-A.A lehetoség
-B.B opció|x
-C.C opció
-D.D opció
+A lehetoség
+B opció|x
+C opció
+D opció
 
 
 
@@ -1417,10 +1417,10 @@ D.D opció
 Olyan konzolalkalmazást kell létrehoznia, amely megfelel a következo követelményeknek:Ha az alkalmazás Debug fordul, akkor a konzol kimenetén megjelenik az Entering hibakeresési mód. Ha az alkalmazást Relase módban fordul, akkor a konzol kimenetén megjelenik a Entering mód engedélyezése. Melyik kódot kell használni?
 [image_0079]
 +++
-A.A lehetoség
-B.B opció|x
-C.C opció
-D.D opció
+A lehetoség
+B opció|x
+C opció
+D opció
 
 
 
@@ -1428,10 +1428,10 @@ D.D opció
 Olyan alkalmazást fejlesztesz, amely tartalmazza a ConvertAmount és TransferFunds nevu metódusokat. Biztosítani kell, hogy az összeg változójának pontossága és tartománya ne vesszen el, amikor A TransferFunds () metódus meghívódik. Melyik kódszegmenst kell hasznáni?
 [image_0080]
 +++
-A.A lehetoség
-B.B opció
-C.C opció|x
-D.D opció
+A lehetoség
+B opció
+C opció|x
+D opció
 
 
 
@@ -1453,10 +1453,10 @@ CustormerName nem
 
 A jelszavakat a Windows Azure SQL adatbázis adatbázisban kívánja tárolni. Biztosítani kell, hogy a jelszavak az adatbázisban hash algoritmussal, legyenek eltárolva!Melyik kriptográfiai algoritmust kell használni?
 +++
-A.ECDSA
-B.RSA-768
-C.AES-256
-D.SHA-256|x
+ECDSA
+RSA-768
+AES-256
+SHA-256|x
 
 
 
@@ -1464,30 +1464,30 @@ D.SHA-256|x
 Egy alkalmazást fejlesztesz C # segítségével. Az alkalmazás eseményeket ír le egy eseménynaplóba. Az alkalmazást telepíteni kívánja egy kiszolgálóra. Hozzon létre egy MySource nevu eseményforrást és egy saját naplót MyLog néven a kiszolgálón. Eseményeket kell írni az egyéni naplóhoz. Melyik kódszegmenst használja? 
 [image_0083]
 +++
-A.A lehetoség
-B.B opció
-C.C opció
-D.D opció|x
+A lehetoség
+B opció
+C opció
+D opció|x
 
 
 
 
 Ön egy Account nevu osztályt fejleszt, melyet több alkalmazás fog használni. Azok azalkalmazások, amelyek használják az Account osztályt, asynchronous hívásokat fognak vérehajtani az Account osztályon annak érdekében, hogy több különbözo metódust hajtsanak végre. Biztosítani kell, hogy egyszerre csak egy hívás érkezzen a metódushoz. Melyik kulcsszót használja?
 +++
-A.sealed
-B.protected
-C.checked
-D.lock|x
+sealed
+protected
+checked
+lock|x
 
 
 
 
 Ön egy új metódust fejleszt ProcessData néven. A ProcessData () metódus egy olyan harmadik féltol származó összetevot hív, amely long-running muveletet hajt végre a készletinformáció letöltéséhez webszolgáltatásból. A harmadik fél összetevoje az IAsyncResult mintát használja a long-running muvelet befejezésének jelzésére, hogy az UI frissítheto legyen az új értékekkel. Biztosítani kell, hogy a hívó kód kezelje a long-running muveletet System.Threading.Tasks.Task objektumként, hogy elkerülje az UI szál blokkolását Mit kell tenni? Több válasz a jó!
 +++
-A.TaskCompletionSource <T> objektum létrehozása.|x
-B.Hívja meg az összetevot a TaskFactory.FromAsync () metódus használatával.|x
-C.Alkalmazza a következo attribútumot a ProcessData () metódus aláírására: [Methodlmpl (MethodlmplOptions.Synchronized)]
-D.Alkalmazza az async-módosítót a ProcessData () metódus aláírására.
+TaskCompletionSource <T> objektum létrehozása.|x
+Hívja meg az összetevot a TaskFactory.FromAsync () metódus használatával.|x
+Alkalmazza a következo attribútumot a ProcessData () metódus aláírására: [Methodlmpl (MethodlmplOptions.Synchronized)]
+Alkalmazza az async-módosítót a ProcessData () metódus aláírására.
 
 
 
@@ -1497,10 +1497,10 @@ Olyan alkalmazást fejlesztesz, amely több objektumot használ. Az alkalmazás 
 Meg kell vizsgálni, hogy az objektum nulla-e. Melyik kódszegmenst kell beilleszteni a 03 sorba?
 [image_0085]
 +++
-A.A lehetoség
-B.B opció|x
-C.C opció
-D.D opció
+A lehetoség
+B opció|x
+C opció
+D opció
 
 
 
@@ -1510,10 +1510,10 @@ Adott a következo kód:
 Biztosítani kell, hogy a metódus kiadja az URL-ek listáját, amelyek megfelelnek a következo mintának: @http: // (www \\.)? ([^ \\.] +) \\. com; Milyen kódot kell beillesztenie a 07-es sorba?
 [image_0087]
 +++
-A.A lehetoség|x
-B.B opció
-C.C opció
-D.D opció
+A lehetoség|x
+B opció
+C opció
+D opció
 
 
 
@@ -1521,10 +1521,10 @@ D.D opció
 Ön egy olyan alkalmazással foglalkozik, amely egy FullName névvel rendelkezo osztályt használ. Az osztály a DataContractAttribute attribútumot használ. Az alkalmazás a következo kódot tartalmazza Meg kell gyozodnie arról, hogy a teljes FullName objektum memóriafolyamba van sorolva. Milyen kódszegmenst kell beillesztenie a 09-es sorba?
 [image_0088]
 +++
-A.binary.WriteEndElement ();|x
-B.binary.NriteEndDocument ();
-C.ms.Close ();
-D.binary.Flush ();
+binary.WriteEndElement ();|x
+binary.NriteEndDocument ();
+ms.Close ();
+binary.Flush ();
 
 
 
@@ -1534,20 +1534,20 @@ A következo kódot látja: (a sorszámok csak a referenciaként szerepelnek):
 Biztosítani kell, hogy kivétel esetén a kivételt naplózzák. Melyik kódot kell beillesztenie a 28. sorba?
 [image_0090]
 +++
-A.A lehetoség|x
-B.B opció
-C.C opció
-D.D opció
+A lehetoség|x
+B opció
+C opció
+D opció
 
 
 
 
 Assembly-ket fejleszt. Azt tervezi, hogy aláírja az assemblyt, amikor az assemblyt fejleszti. Helyet kell foglalni a assembly aláíráshoz. Mit kéne tenni?
 +++
-A. Futtatni az Assembly Linker tool-t a Windows Software Development Kit-bol (Windows SDK).
-B. Futtatni az Strong Name tool -t a Windows Software Development Kit - bol(Windows SDK).
-C. Hozzáadni az AssemblySignatureKeyAttribute attribútumot az assemblyhez.
-D. Hozzáadni az AssemblyDelaySignAttribute attribútumot az assemblyhez.|x
+ Futtatni az Assembly Linker tool-t a Windows Software Development Kit-bol (Windows SDK).
+ Futtatni az Strong Name tool -t a Windows Software Development Kit - bol(Windows SDK).
+ Hozzáadni az AssemblySignatureKeyAttribute attribútumot az assemblyhez.
+ Hozzáadni az AssemblyDelaySignAttribute attribútumot az assemblyhez.|x
 
 
 
@@ -1557,10 +1557,10 @@ C # alkalmazást fejlesztesz. Az alkalmazás referenciákat és egy RESTful webe
 A következo kódszegmens hívja meg a szolgáltatást, és tárolja az eredményt: A visszaküldött JSON-adatokat az alkalmazást használó Employee objektumra kell konvertálni. Melyik kódszegmenst használja?
 [image_0092]
 +++
-A.A lehetoség
-B.B opció
-C.C opció|x
-D.D opció
+A lehetoség
+B opció
+C opció|x
+D opció
 
 
 
@@ -1568,10 +1568,10 @@ D.D opció
 Egy alkalmazás,a Server1 nevu webkiszolgálóhoz fér hozzá. Le kell tölteni az Imagel.jpg nevu képet a Server1-bol, és helyileg eltárolni a képet Filel.jpg néven. Melyik kódot kell használni?
 [image_0093]
 +++
-A.A lehetoség
-B.B opció
-C.C opció|x
-D.D opció
+A lehetoség
+B opció
+C opció|x
+D opció
 
 
 
@@ -1579,10 +1579,10 @@ D.D opció
 Olyan alkalmazást fejlesztesz, amely egy SendMessage nevu metódust tartalmaz. Meg kell gyozodni arról, hogy a SendMessage () metódus a szükséges paraméterekkel kerül hívásra. Milyen két kódszegmens használhatja ezt ? (Válasszkettot.)
 [image_0094]
 +++
-A.A lehetoség
-B.B opció
-C.C opció|x
-D.D opció|x
+A lehetoség
+B opció
+C opció|x
+D opció|x
 
 
 
@@ -1590,10 +1590,10 @@ D.D opció|x
 Ön fejleszt egy alkalmazást. Az alkalmazás a következo kódot tartalmazza: A kód foprdításakor a következo szintaktikai hibaüzenet jelenik meg: "A previous catch clause already catches all exceptions of this or a super type ('System.Exception')." Biztosítani kell, hogy a kód fordítható legyen. Mit kéne tenni? 
 [image_0095]
 +++
-A.Elkapni az ArgumentException kivételt az ArgumentNullException kivétel helyett.|x
-B.Dobjon egy új kivételt a második fogási blokkban.
-C.Eloször az ArgumentNullException kivételt elkapni.
-D.Újradobni a második fogási blokk által elkapott kivételt.
+Elkapni az ArgumentException kivételt az ArgumentNullException kivétel helyett.|x
+Dobjon egy új kivételt a második fogási blokkban.
+Eloször az ArgumentNullException kivételt elkapni.
+Újradobni a második fogási blokk által elkapott kivételt.
 
 
 
@@ -1652,19 +1652,19 @@ Van egy olyan metódus, amely értékelni fogja az Int32 típusú Status nevu pa
 Olyan alkalmazást fejleszt, amely több aszinkron feladatot használ a teljesítmény optimalizálásához. Az aszinkron feladat eredményét meg kell keresni. Melyik kódszegmens használja? 
 [image_0100]
 +++
-A. A lehetoség
-B. B opció
-C. C opció|x
-D. D opció
+ A lehetoség
+ B opció
+ C opció|x
+ D opció
 
 
 Olyan alkalmazást fejlesztesz, amely magában foglalja az Employee nevu osztályt és a munkavállalók általános listáját. a kódszegmens deklarálja az alkalmazottak listáját: List<Employee> employeesList = new List<Employee>(); A EmployeeList objektum több száz Employee objektummal tölt fel. Az alkalmazásnak egyidejuleg öt Employee objektum adatait kell megjelenítenie. Olyan eljárást kell létrehozni, amely visszaadja az Employee objektumok megfelelo számát. Melyik kódszegmenst használja?
 [image_0101]
 +++
-A.A lehetoség
-B.B opció |x
-C.C opció
-D.D opció
+A lehetoség
+B opció |x
+C opció
+D opció
 
 
 
@@ -1674,20 +1674,20 @@ Olyan alkalmazást fejleszt, amely egy .config fájlt használ. Az .config fájl
 Biztosítani kell, hogy az alkalmazáshoz tartozó diagnosztikai adatokat a konfiguráció használatával írják a .config fájlban megadott eseménynaplóba. Mit kell bevenni az alkalmazáskódba?
 [image_0103]
 +++
-A.A lehetoség|x
-B.B opció
-C.C opció
-D.D opció
+A lehetoség|x
+B opció
+C opció
+D opció
 
 
 
 
 Olyan alkalmazást fejlesztesz, amely személyi nyilvántartásokat dolgoz fel. Az alkalmazásnak nagyon érzékeny adatokat kell titkosítania. Meg kell gyozodni arról, hogy az alkalmazás a legerosebb elérheto titkosítást használja. Melyik osztályt kell használni?
 +++
-A.System.Security.Cryptography.DES
-B.System.Security.Cryptography.Aes|x
-C.System.Security.Cryptography.TripleDES
-D.System.Security.Cryptography.RC2
+System.Security.Cryptography.DES
+System.Security.Cryptography.Aes|x
+System.Security.Cryptography.TripleDES
+System.Security.Cryptography.RC2
 
 
 
@@ -1697,10 +1697,10 @@ Olyan alkalmazást fejlesztesz, amely kódot generál. Az alkalmazás a követke
 Biztosítani kell, hogy a GenerateCode () metódus által generált kód egy olyan osztály legyen, amelyet az alkalmazások tartományában található minden objektum elér. Melyik két kódszegmens kell 05-es sorban a cél eléréséhez?
 [image_0105]
 +++
-A.A lehetoség|x
-B.B opció
-C.C opció|x
-D.D opció
+A lehetoség|x
+B opció
+C opció|x
+D opció
 
 
 
@@ -1708,10 +1708,10 @@ D.D opció
 Az alkalmazás olyan kódot tartalmaz, amely a reakcióidoket méri. A kód az idõzítõt a kezelõfelületen elhelyezett szálon futtatja. Az alkalmazás a következo kódot tartalmazza. (A sorszámok csak a referenciaként szerepelnek.) Biztosítani kell, hogy az alkalmazás törli az idozítot, amikor a felhasználó megnyomja az Enter billentyut. Melyik kódszegmenst kell beilleszteni a 14. sorba?
 [image_0106]
 +++
-A.tokenSource.Token.Register (() => tokenSource.Cancel ());
-B.tokenSource.Cancel ();|x
-C.tokenSource.IsCancellationRequested = true;
-D.tokenSource.Dispose ();
+tokenSource.Token.Register (() => tokenSource.Cancel ());
+tokenSource.Cancel ();|x
+tokenSource.IsCancellationRequested = true;
+tokenSource.Dispose ();
 
 
 
@@ -1721,10 +1721,10 @@ Olyan alkalmazást módosít, amely hiteleket dolgoz fel. A következo kód hat�
 A hitelek legfeljebb 10 évre korlátozódhatnak. Az alkalmazásnak értesítést kell küldenie, ha hitel kérelem meghaladja a 10 évet. Implementálni kell az értesítési mechanizmust. Mely két lépést kell végrehajtania? (Minden helyes válasz a megoldás részét képezi. Válassz kettot.)
 [image_0108]
 +++
-A.A lehetoség
-B.B opció|x
-C.C opció
-D.D opció|x
+A lehetoség
+B opció|x
+C opció
+D opció|x
 E.E opció
 F.F Opció
 
@@ -1736,20 +1736,20 @@ F.F Opció
 A ProcessLoan () metódust támogató delegáltat kell deklarálni. Melyik kódszegmenst használja?
 [image_0110]
 +++
-A.A lehetoség
-B.B opció
-C.C opció|x
-D.D opció
+A lehetoség
+B opció
+C opció|x
+D opció
 
 
 
 
 Ön egy új metódust fejleszt ProcessData néven. A ProcessData () eljárás harmadik féltol származó komponenst hív, amely long-running muveletet hajt végre. A harmadik fél összetevoje az IAsyncResult mintát használja long-running muvelet befejezésének jelzésére. Biztosítani kell, hogy a hívó kód kezelje a long-running muveletet System.Threading.Tasks.Task objektumként. Mely két lépést kell végrehajtania? (Válassz kettot.)
 +++
-A.Hívd meg a komponenst aTaskFactory.FromAsync() methodus használatával.|x
-B.Hozzad létre a TaskCompletionSource<T> objektumot .|x
-C.Alkalmazza az async-módosítót a módszer aláírására.
-D.Alkalmazza a következo attribútumot a módszer aláírására: [MethodImpl (MethodImplOptions.Synchronized)]
+Hívd meg a komponenst aTaskFactory.FromAsync() methodus használatával.|x
+Hozzad létre a TaskCompletionSource<T> objektumot .|x
+Alkalmazza az async-módosítót a módszer aláírására.
+Alkalmazza a következo attribútumot a módszer aláírására: [MethodImpl (MethodImplOptions.Synchronized)]
 
 
 
@@ -1757,10 +1757,10 @@ D.Alkalmazza a következo attribútumot a módszer aláírására: [MethodImpl (
 Ön implementál egy olyan metódust, amely kiszámítja a hitel kamatot. Az alkalmazás a következo kódszegmenset tartalmazza. (A sorszámok csak a referenciaként szerepelnek.) Ha a loanTerm értéke 3 és a loanAmount értéke 9750, akkor a loanRate 8,25 százalékra kell beállítani. Be kell állítania a loanRate -t is hogy megfeleljen a követelményeknek. Mit kéne tenni?
 [image_0111]
 +++
-A.Cserélje a 04-es sort a következo kódszegmensre: decimal loanRate = 0.0325m;
-B.Cserélje ki a 17 sort a következo kódszegmenssel: interestAmount = loanAmount * 0.0825m * loanTerm;
-C.Cserélje ki a 15. sort a következo kódszegmenssel: loanRate = 0,0825m;
-D.Cserélje a 07-es sort a következo kódszegmenssel: loanRate = 0,0825m;
+Cserélje a 04-es sort a következo kódszegmensre: decimal loanRate = 0.0325m;
+Cserélje ki a 17 sort a következo kódszegmenssel: interestAmount = loanAmount * 0.0825m * loanTerm;
+Cserélje ki a 15. sort a következo kódszegmenssel: loanRate = 0,0825m;
+Cserélje a 07-es sort a következo kódszegmenssel: loanRate = 0,0825m;
 
 
 
@@ -1770,10 +1770,10 @@ D.Cserélje a 07-es sort a következo kódszegmenssel: loanRate = 0,0825m;
 Biztosítani kell, hogy a kód érvényesítse a JSON-karakterláncot. Melyik kódot kell beillesztenie a 03-as sorba?
 [image_0113]
 +++
-A.A lehetoség
-B.B opció|x
-C.C opció
-D.D opció
+A lehetoség
+B opció|x
+C opció
+D opció
 
 
 
@@ -1783,10 +1783,10 @@ A következo kódot kapja:
 A 80-nál nagyobb elemekbol kell lekérni az összes számot. Melyik kódot kell használni?
 [image_0115]
 +++
-A.A lehetoség|x
-B.B opció
-C.C opció
-D.D opció
+A lehetoség|x
+B opció
+C opció
+D opció
 
 
 
@@ -1796,10 +1796,10 @@ A következo kódot kapta: (a sorszámok csak a referenciaként szerepelnek):
 Biztosítani kell, hogy kivétel esetén a kivételt naplózzák. Melyik kódot kell beillesztenie a 28. sorba?
 [image_0117]
 +++
-A.A lehetoség
-B.B opció
-C.C opció
-D.D opció
+A lehetoség
+B opció
+C opció
+D opció
 
 
 
@@ -1809,10 +1809,10 @@ Hozzon létre egy App1 nevu konzolalkalmazást. Az App1 érvényesíteni fogja a
 Ki kell egészíteni a kódszegmenset. A megoldásnak biztosítania kell, hogy az árak pozitívak legyenek és két tizedes pontossággal rendelkezzenek. Melyik kódot kell beillesztenie a 03-as sorba?
 [image_0119]
 +++
-A.A lehetoség
-B.B opció|x
-C.C opció
-D.D opció
+A lehetoség
+B opció|x
+C opció
+D opció
 
 
 
@@ -1848,10 +1848,10 @@ User4
  
 Írjon egy olyan eljárást, amely adatokat nyer a Microsoft Access 2013 adatbázisból. A metódusnak meg kell felelnie a következo követelmények: Legyen csak olvasható. Képes elérni az adatokat, mielott megkapja a DataSetet Minimálisra csökkentse a rendszer memóriahasználat. Milyen típusú objektumot kell használni a metódusban?
 +++
-A.DbDataReader|x
-B.DataContext
-C.unTyped DataSet
-D.DbDataAdapter
+DbDataReader|x
+DataContext
+unTyped DataSet
+DbDataAdapter
 
 
 
@@ -1859,10 +1859,10 @@ D.DbDataAdapter
 Ön egy olyan alkalmazással foglalkozik, amely egy FullName névvel rendelkezo osztályt használ. Az osztály DataContractAttribute attribútummal rendelkezik. Az alkalmazás a következo kódot tartalmazza. (A sorszámok csak a referenciaként szerepelnek.) Biztosítani kell, hogy a teljes FullName objektum a memóriafolyamra szerializálódjon. Melyik kódszegmenst kell beillesztenie a 09-es sorba?
 [image_0122]
 +++
-A.binary.WriteEndDocument ();|x
-B.binary.WriteEndDocumentAsync ();
-C.binary.WriteEndElementAsync ();
-D.binary.Flush ();
+binary.WriteEndDocument ();|x
+binary.WriteEndDocumentAsync ();
+binary.WriteEndElementAsync ();
+binary.Flush ();
 
 
 
@@ -1905,9 +1905,9 @@ A GetValidEmailAddresses nevu metódust implementálja. A GetValidEmailAddresses
 [image_0126]
 +++
 A lehetoség
-B.B opció|x
-C.C opció
-D.D opció|x
+B opció|x
+C opció
+D opció|x
 
 
 
@@ -1920,20 +1920,20 @@ A CustomerCollection nevu Customer és Account objektumokat tartalmazó gyujtem�
 Hozzon létre egy largeCustomerAccounts gyujteményt az Account objektumok tárolásához az alábbi kód használatával segment:Collection<Account> largeCustomerAccounts = new Collection<Account> () Minden olyan számlát, amelynek mérlegszáma nagyobb vagy egyenlo mint 1 000 000, nyomon kell követni. A LargeCustomerAccounts gyujteményt fel kell tölteni a Account objektumokkal. Melyik kódszegmen használjon?
 [image_0129]
 +++
-A.A lehetoség
-B.B opció
-C.C opció|x
-D.D opció
+A lehetoség
+B opció
+C opció|x
+D opció
 
 
 
 
 Olyan alkalmazást fejlesztesz, amely a MyApp.exe nevu futtatható állományt és a MyApp.dll nevu assembly-t hozza létre. Az alkalmazást több ügyfél számára értékesítik. Biztosítani kell, hogy elegendo hibakeresési információ álljon rendelkezésre a MyApp.exe programhoz, így ha az alkalmazás hibát dob el az ügyfél környezetében, akkor hibát debbugolni lehessen saját fejlesztoi környezetében. Mit kéne tenned?
 +++
-A.Digitálisan írja alá a MyApp.dll-t.
-B.Produce program database (PDB) létrehozása a kód fordításakor.|x
-C.Fordítsad le a MyApp.exe programot a / unsafe fordító opcióval.
-D.Inicializálja a AssemblyDelaySignAttribute osztály egy új példányát a MyApp.dll konstruktorban.
+Digitálisan írja alá a MyApp.dll-t.
+Produce program database (PDB) létrehozása a kód fordításakor.|x
+Fordítsad le a MyApp.exe programot a / unsafe fordító opcióval.
+Inicializálja a AssemblyDelaySignAttribute osztály egy új példányát a MyApp.dll konstruktorban.
 
 
 
@@ -1945,20 +1945,20 @@ A következo metódust hozza létre a EmployeeRoster osztály futásának teszte
 Meg kell gyozodni arról, hogy az egység tesztje megfelelo. Mit kéne tenned?
 [image_0132]
 +++
-A.A lehetoség
-B.B opció
-C.C opció
-D.D opció
+A lehetoség
+B opció
+C opció
+D opció
 
 
 
 
 Van olyan alkalmazásod, amely bizalmas információkat küld egy webszervernek. Biztosítani kell, hogy az adatok titkosítva legyenek, amikor a hálózaton keresztül küldenek. Melyik osztályt kell használni?
 +++
-A.CryptoStream|x
-B.AuthenticatedStream
-C.PipeStream
-D.NegotiateStream
+CryptoStream|x
+AuthenticatedStream
+PipeStream
+NegotiateStream
 
 
 
@@ -1966,10 +1966,10 @@ D.NegotiateStream
 Olyan játékot fejlesztesz, amely lehetové teszi a játékosoknak, hogy 0 és 1000 érmét gyujtsenek össze. Egy metódust implementálsz amelyet a játékban használnak. A metódus a következo kódot tartalmazza. 01 public string FormatCoins (string name, int coins) 02 { 03 04} A metódusnak meg kell felelnie a következo követelményeknek: Visszaad egy olyan karakterláncot, amely magában foglalja a játékos nevét és az érmék számát. Jelölje meg az érmék számát nullák nélkül, ha a szám 1 vagy nagyobb. Az érmék számát egyetlen 0-ként jelenítse meg, ha a szám 0. Biztosítani kell, hogy a módszer metódus a követelményeknek. Melyik kódszegmenst kell beillesztenie a 03 vonalon?
 [image_0133]
 +++
-A.A lehetoség
-B.B opció
-C.C opció
-D.D opció|x
+A lehetoség
+B opció
+C opció
+D opció|x
 
 
 
@@ -1980,10 +1980,10 @@ alkalmazás tartalmaz egy Beteg nevu osztályt, amelynek ilyen a kódja:
 Be kell töltenie a betegosztályt a webszolgáltatásból visszaküldött adatokkal. Melyik kódszegmen használjon?
 [image_0135]
 +++
-A.A lehetoség|x
-B.B opció
-C.C opció
-D.D opció
+A lehetoség|x
+B opció
+C opció
+D opció
 
 
 
@@ -1994,30 +1994,30 @@ szerepelnek.)
 Meg kell oldania a kivételeket anélkül, hogy zavarja a meglévo hibakezelési infrastruktúrát. Mely két lépést kell végrehajtania?
 [image_0137]
 +++
-A.A lehetoség|x
-B.B opció
-C.C opció|x
-D.D opció
+A lehetoség|x
+B opció
+C opció|x
+D opció
 
 
 
 
 Az értékeket egy gyujteményben kell tárolnia. Az solutionnak meg kell felelnie az alábbi követelményeknek: Az értékeket a gyujteményhez adott sorrendben kell tárolni. Az értékeket first-in first-out módon kell elérni. Milyen típusú gyujteményt kell használni?
 +++
-A.SortedList
-B.Queue|x
-C.ArrayList
-D.Hashtable
+SortedList
+Queue|x
+ArrayList
+Hashtable
 
 
 
 
 Olyan osztálykönyvtárat hoz létre, amelyet egy webes alkalmazásban fog használni. Meg kell gyozodnie arról, hogy az osztálykönyvtár-összeállítás strongly-named módban van.Mit kéne tenni?
 +++
-A.Használja a gacutil.exe parancssori eszközt.
-B.Használja az xsd.exe parancssori eszközt.
-C.Használja az aspnet_regiis.exe parancssori eszközt.
-D.Használja az assembly attribútumokat.|x
+Használja a gacutil.exe parancssori eszközt.
+Használja az xsd.exe parancssori eszközt.
+Használja az aspnet_regiis.exe parancssori eszközt.
+Használja az assembly attribútumokat.|x
 
 
 
@@ -2027,10 +2027,10 @@ A következo metódust írja (a sorszámok csak a referenciaként szerepelnek):
 Biztosítani kell, hogy a módszer kiszedje az URL-ek listáját, amelyek megfelelnek a következo mintának: @http: // (www \\.)? ([^ \\.] +) \\. com; Milyen kódot kell beillesztenie a 07-es sorba?
 [image_0139]
 +++
-A.A lehetoség
-B.B Opció
-C.C opció
-D.D opció|x
+A lehetoség
+B Opció
+C opció
+D opció|x
 
 
 
@@ -2040,10 +2040,10 @@ A következo kódot írja (a sorszámok csak a referenciaként szerepelnek):
 Biztosítani kell, hogy kivétel esetén a kivételt naplózzák. Melyik kódot kell beillesztenie a 28. sorba?
 [image_0141]
 +++
-A.A lehetoség
-B.B opció|x
-C.C opció
-D.D opció
+A lehetoség
+B opció|x
+C opció
+D opció
 
 
 
@@ -2051,20 +2051,20 @@ D.D opció
 Ön egy alkalmazást fejleszt. Az alkalmazás a következo kódszegmenst tartalmazza (a sorszámok csak a referenciaként szerepelnek): A kód futtatásakor a következo hibaüzenet jelenik meg: "Cannot implicitly convert type 'object" to 'inf. An explicit conversion exists (are you missing a cast?). " Biztosítani kell, hogy a kód fordítható legyen. Melyik kódot kell használni a 05-ös sor cseréjéhez?
 [image_0142]
 +++
-A.var2 = ((List <int>) array1) [0];|x
-B.var2 = array1 [0] .Equals (typeof (int));
-C.var2 = Convert.ToInt32 (array1 [0]);
-D.var2 = ((int []) array1) [0];
+var2 = ((List <int>) array1) [0];|x
+var2 = array1 [0] .Equals (typeof (int));
+var2 = Convert.ToInt32 (array1 [0]);
+var2 = ((int []) array1) [0];
 
 
 
 
 Olyan metódust kell létrehoznod, amely különbözo paraméterek használatával hívható meg. Mit kell használni?
 +++
-A.Method overloading|x
-B.Interface
-C.Named parameters
-D.Lambda kifejezések
+Method overloading|x
+Interface
+Named parameters
+Lambda kifejezések
 
 
 
@@ -2188,10 +2188,10 @@ nem|x
 Olyan alkalmazást fejleszt, amely szöveges fájlból adatokat olvas és megjeleníti a fájl tartalmát. Be kell olvasni az adatokat a fájlból, majd megjeleníteni, és végül fel kell szabadítani a fájl eroforrásait. Melyik kódszegmenst használja?
 [image_0148]
 +++
-A.A lehetoség|x
-B.B opció
-C.C opció
-D.D opció
+A lehetoség|x
+B opció
+C opció
+D opció
 
 
 
@@ -2241,10 +2241,10 @@ D
 
 Olyan alkalmazást módosít, amely kezeli az alkalmazottak bérszámfejtését. Az alkalmazás tartalmaz egy osztályt PayrollProcessor néven. A PayrollProcessor osztály csatlakozik egy bérszámfejtési adatbázishoz, és feldolgozza a heti fizetéseket. Biztosítani kell, hogy a PayrollProcessor osztály támogatja az iterációt és az adatbázis-kapcsolatokat kiadja, a kötegelt feldolgozás befejezodik. Mely két interfészt kell végrehajtania?
 +++
-A.IEquatable|x
-B.IEnumerable
-C.IDisposable|x
-D.IComparable
+IEquatable|x
+IEnumerable
+IDisposable|x
+IComparable
 
 
 
@@ -2265,20 +2265,20 @@ D|x
 Kódot fejlesztesz olyan alkalmazáshoz, amely információkat szerez a Microsoft .NET- keretszerkezetekrol. A következo kódszegmens része az alkalmazásnak (a sorok csak a referenciaként szerepelnek):  A kódot be kell illeszteni a 04-es sorba. A kódnak be kell töltenie a szerkezeteket(assembly). Miután a rendszer betöltodött, a kódnak képesnek kell lennie arra, hogy elolvassa a szerkezeti metaadatokat, de a kódot meg kell tagadni az assembly hozzáférését. Melyik kódszegmenst kell beillesztenie a 04 sorba?
 [image_0155]
 +++
-A.Assembly.ReflectionOnlyLoadFrom(bytes);
-B.Assembly.ReflectionOniyLoad(bytes);|x
-C.Assembly.Load(bytes);
-D.Assembly.LoadFrom(bytes);
+Assembly.ReflectionOnlyLoadFrom(bytes);
+Assembly.ReflectionOniyLoad(bytes);|x
+Assembly.Load(bytes);
+Assembly.LoadFrom(bytes);
 
 
 
 
 Olyan alkalmazást fejlesztesz, amely nagy mennyiségu szöveget dolgoz fel. A szöveget külön sorokra kell elemeznie, és minimálisra kell csökkentenie a memóriahasználatot az adatok feldolgozása során. Melyik objektumtípust használja?
 +++
-A.DataContractSerializer
-B.StringBuilder
-C.StringReader|x
-D.JsonSerializer
+DataContractSerializer
+StringBuilder
+StringReader|x
+JsonSerializer
 
 
 
@@ -2315,10 +2315,10 @@ D|x
 Olyan alkalmazást fejleszt, amely a következo kódszegmenseket tartalmazza. Meg kell gyozodnie arról, hogy a DoWork (Widget widget) metódus fut. Melyik kódszegmenssel helyettesítené a 24-es sort?
 [image_0161]
 +++
-A.DoWork((Widget)o);|x
-B.DoWork(new Widget(o));
-C.DoWork(o is Widget);
-D.DoWork((ItemBase)o);
+DoWork((Widget)o);|x
+DoWork(new Widget(o));
+DoWork(o is Widget);
+DoWork((ItemBase)o);
 
 
 
@@ -2326,40 +2326,40 @@ D.DoWork((ItemBase)o);
 következo metódus: Hogyan gyozödne meg róla, hogy a CreateObject sikeresen lefutott?
 [image_0162]
 +++
-A.Insert the following code at line 02:  where T : new()|x
-B.Replace line 01 with the following code:public void CreateObject<T>()
-C.Replace line 01 with the following code: public Object CreateObject<T>()
-D.Insert the following code at line 02: where T : Object
+Insert the following code at line 02:  where T : new()|x
+Replace line 01 with the following code:public void CreateObject<T>()
+Replace line 01 with the following code: public Object CreateObject<T>()
+Insert the following code at line 02: where T : Object
 
 
 
 
 You need to declare a delegate for a method that accepts an integer as a parameter, and then returns an integer. Milyen típusú küldöttet kell használni?
 +++
-A.Action<int>
-B.Action<int, int>
-C.Func<int, int>|x
-D.Func<int>,0 134:
+Action<int>
+Action<int, int>
+Func<int, int>|x
+Func<int>,0 134:
 
 
 
 
 Olyan alkalmazást fejleszt, amelyet több számítógépre telepítenek. Az assembly nevet állítja be. Egy egyedi azonosítót kell létrehoznia az alkalmazás összeállításához. Mely két összevonási azonosító attribútumot kell tartalmaznia a forráskódnak?
 +++
-A.AssemblyTitleAttribute
-B.AssemblyCultureAttribute|x
-C.AssemblyVersionAttribute|x
-D.AssemblyKeyNameAttribute
+AssemblyTitleAttribute
+AssemblyCultureAttribute|x
+AssemblyVersionAttribute|x
+AssemblyKeyNameAttribute
 E.AssemblyFileVersion
 
 
 
 Implementál egy ProcessReports nevu metódust, amely hosszú távon fut. A ProcessReports () metódus a következo metódus aláírással rendelkezik: public void ProcessReports (Lista <decimális> értékek, CancellationTokenSource cts, CancellationToken ct) Ha a hívószám törlést kér, a metódusnak a következo muveleteket kell végrehajtania: Hosszan futó feladat törlése. Állítsa a feladat állapotát TaskStatus.Canceled. Meg kell gyozodnie arról, hogy a ProcessReports () metódus végrehajtja a szükséges muveleteket. Melyik kódszegmenst kell használni a metódusr testében?
 +++
-A.if (ct.IsCancellationRequested) return;
-B.ct.ThrowIfCancellationRequested();|x
-C.cts.Cancel();
-D.throw new AggregateException();
+if (ct.IsCancellationRequested) return;
+ct.ThrowIfCancellationRequested();|x
+cts.Cancel();
+throw new AggregateException();
 
 
 
@@ -2411,10 +2411,10 @@ D
 
 MEG KELL ADNIA EGY OLYAN ELJÁRÁST, AMELY ADATOKAT NYER A MICROSOFT ACCESS 2013 ADATBÁZISBÓL. A MÓDSZERNEK MEG KELL FELELNIE A KÖVETKEZO KÖVETELMÉNYEKNEK: LEGYEN CSAK OLVASHATÓ. HASZNÁLHATJA AZ ADATOKAT AZ EGÉSZ ADATKÉSZLET LEKÉRÉSE ELOTT. MINIMÁLISRA CSÖKKENTSE A RENDSZER FEJLETTSÉGÉT ÉS A MEMÓRIAHASZNÁLAT MENNYISÉGÉT. MILYEN TÍPUSÚ OBJEKTUMOT KELL HASZNÁLNI A MÓDSZERBEN?
 +++
-A.SqlDataAdapter
-B.DataContext
-C.DbDataAdapter
-D.OleDbDataReader|x
+SqlDataAdapter
+DataContext
+DbDataAdapter
+OleDbDataReader|x
 
 
 
@@ -2422,10 +2422,10 @@ D.OleDbDataReader|x
 Futtatásnál a következo hibaüzenet jelenik meg: "Cannot implicitly convert type "object" to "int". Melyik kódot kell használni a 05-as sor cseréjéhez?
 [image_0168]
 +++
-A.var2 = arrayl[0] is int;
-B.var2 = ((List<int>)arrayl) [0];
-C.var2 = arrayl[0].Equals(typeof(int));
-D.var2 = (int) arrayl [0];|x
+var2 = arrayl[0] is int;
+var2 = ((List<int>)arrayl) [0];
+var2 = arrayl[0].Equals(typeof(int));
+var2 = (int) arrayl [0];|x
 
 
 
@@ -2457,10 +2457,10 @@ A fejlesztett oztály neve Temperature. Biztosítani kell, hogy a homérsékleti
 Hozzon létre egy App1 nevu konzolalkalmazást. Az App1 az adatokat az Internetrol a JavaScript Object Notation (JSON) segítségével nyeri. Ön a következo kódszegmenseket fejleszti Biztosítani kell, hogy a kód érvényesítse a JSON-karakterláncot. Melyik kódot kell beillesztenie a 03-as sorba?
 [image_0172]
 +++
-A.DataContractSerializer serializer = new DataContractSerializer();
-B.var serializer = new DataContractSerializer();
-C.XmlSerlalizer serializer = new XmlSerlalizer();
-D.var serializer = new JavaScriptSerializer();|x
+DataContractSerializer serializer = new DataContractSerializer();
+var serializer = new DataContractSerializer();
+XmlSerlalizer serializer = new XmlSerlalizer();
+var serializer = new JavaScriptSerializer();|x
 
 
 
@@ -2493,10 +2493,10 @@ Biztosítani kell, hogy az lblMessage objektumban megjelenített üzenet megmuta
 Melyik sor illik a 15. sorba?
 [image_0176]
 +++
-A.using (fooSqlConn.BeginTransaction())
-B.while (fooSqlReader.Read())|x
-C.while (fooSqlReader.NextResult())
-D.while (fooSqlReader.GetBoolean(0))
+using (fooSqlConn.BeginTransaction())
+while (fooSqlReader.Read())|x
+while (fooSqlReader.NextResult())
+while (fooSqlReader.GetBoolean(0))
 
 
 
@@ -2507,10 +2507,10 @@ Olyan alkalmazást fejleszt, amely .config fájlt használ. Az .config fájl meg
 Biztosítani kell, hogy az alkalmazáshoz tartozó diagnosztikai adatok írják az eseményre az .config fájlban megadott konfiguráció használatával. Mit kell betennie az alkalmazáskódba?
 [image_0178]
 +++
-A.Option A
-B.Option B
-C.Option C
-D.Option D|x
+Option A
+Option B
+Option C
+Option D|x
 
 
 
@@ -2518,10 +2518,10 @@ D.Option D|x
 Az osztály neve Account, mely a következo metódust tartalmazza: Biztosítani kell, hogy hiba esetén a túlcsordulási kivételeket dobja ki. Melyik típusú blokkot használja?
 [image_0179]
 +++
-A.checked|x
-B.try
-C.using
-D.unchecked
+checked|x
+try
+using
+unchecked
 
 
 
@@ -2554,10 +2554,10 @@ Van egy GetCustomerID nevû nevû módszer, amely visszaadja az egész számok l
 
 Létrehozod a Game nevu osztályt. A Game osztálynak meg kell felelnie a következo követelményeknek: Adjon egy olyan tagot, amely a Game-példány pontszámát képviseli. Külso kód megadása érték hozzárendeléséhez a pontszám tagja számára. Határozza meg a pontszámokhoz hozzárendelheto értéktartományt. Meg kell valósítanod a pontszámot a követelményeknek való megfelelés érdekében. Milyen formában kell végrehajtania ezt?
 +++
-A.protected field
-B.public static field
-C.public static property
-D.public property|x
+protected field
+public static field
+public static property
+public property|x
 
 
 
@@ -2625,10 +2625,10 @@ D
 
 Olyan alkalmazást fejlesztesz, amely nagy mennyiségu adatot továbbít az ügyfélszámítógép és a szerver. Az adatok érvényességét egy kriptográfiai hasítási algoritmussal kell biztosítani. Melyik algoritmust használja?
 +++
-A.DES
-B.HMACSHA512|x
-C.RNGCryptoServiceProvider
-D.ECDsa
+DES
+HMACSHA512|x
+RNGCryptoServiceProvider
+ECDsa
 
 
 
@@ -2657,20 +2657,20 @@ Az alkalmazás másodpercenként több objektumot feldolgoz. Az objektum feldolg
 
 Olyan alkalmazást fejlesztesz, amely nagy mennyiségu adatot továbbít az ügyfélszámítógép és a Szerver között. Az adatok érvényességét egy kriptográfiai hasítási algoritmussal kell biztosítani. Melyik algoritmust használja?
 +++
-A.RSA
-B.Aes
-C.HMACSHA256|x
-D.DES
+RSA
+Aes
+HMACSHA256|x
+DES
 
 
 
 
 Az alkalmazás olyan objektumot tartalmaz, amely hosszú futási folyamatot hajt végre. Biztosítani kell, hogy a szemétgyujto ne engedje el az objektum eroforrásait a folyamatig teljessé. Melyik szemétgyujto módszert használja?
 +++
-A.RemoveMemoryPressure()
-B.ReRegisterForFinalize()
-C.WaitForFullGCComplete()
-D.KeepAlive()|x
+RemoveMemoryPressure()
+ReRegisterForFinalize()
+WaitForFullGCComplete()
+KeepAlive()|x
 
 
 
@@ -2678,10 +2678,10 @@ D.KeepAlive()|x
 Ön egy olyan osztályt hoz létre, amelynek neve Employee. Az osztály egy EmployeeType nevu karakterláncot tartalmaz. A a kódszegmens után a Munkavállalók osztályát határozza meg. Az EmployeeType tulajdonság értékének meg kell felelnie a következo követelményeknek: Az értéket kizárólag a Munkavállalói osztályon belül vagy a Munkavállalói osztályból származó osztályon belül érheti el. Az értéket csak a Employee osztályon belüli kóddal lehet módosítani. Biztosítania kell, hogy a EmployeeType tulajdonság végrehajtása megfeleljen a követelményeknek. Mely két lépést kell végrehajtania?
 [image_0195]
 +++
-A.Replace line 03 with the following code segment: public string EmployeeType
-B.Replace line 06 with the following code segment: protected set;
-C.Replace line 05 with the following code segment: private get;
-D.Replace line 05 with the following code segment: protected get;
+Replace line 03 with the following code segment: public string EmployeeType
+Replace line 06 with the following code segment: protected set;
+Replace line 05 with the following code segment: private get;
+Replace line 05 with the following code segment: protected get;
 E.Replace line 03 with the following code segment:  protected string EmployeeType|x
 F.Replace line 06 with the following code segment:  private set;|x
 
@@ -2715,10 +2715,10 @@ D
 
 Olyan alkalmazást fejlesztesz, amely nagy mennyiségu adatot továbbít az ügyfélszámítógép és a szerver. Az adatok érvényességét egy kriptográfiai hasítási algoritmussal kell biztosítani. Melyik algoritmust kell használni?
 +++
-A.RSA
-B.HMACSHA2S6|x
-C.Aes
-D.RNGCryptoServiceProvider
+RSA
+HMACSHA2S6|x
+Aes
+RNGCryptoServiceProvider
 
 
 
@@ -2776,10 +2776,10 @@ D|x
 
 Az alkalmazás olyan objektumot tartalmaz, amely hosszú futási folyamatot hajt végre. Biztosítani kell, hogy a szemétgyujto ne engedje el az objektum eroforrásait a folyamatig teljessé. Melyik szemétgyujto módszert használja?
 +++
-A.WaitForFullGCComplete()
-B.SuppressFinalize()|x
-C.WaitForFullGCApproach()
-D.WaitForPendingFinalizers()
+WaitForFullGCComplete()
+SuppressFinalize()|x
+WaitForFullGCApproach()
+WaitForPendingFinalizers()
 
 
 
@@ -2787,30 +2787,30 @@ D.WaitForPendingFinalizers()
 Ön olyan módszert alkalmaz, amelynek neve FloorTemperature elvégzi az értéktípusok és a referencia típusok közötti konverziót. A következo kódszegmens hajtja végre a módszert. Biztosítania kell, hogy az alkalmazás ne tegyen kivételeket az érvénytelen konverziókra. Melyik kódszegmenst kell beillesztenie a 04. sorba?
 [image_0206]
 +++
-A.int result = (int)degreesRef;
-B.int result = (int)(double)degreesRef;
-C.int result = degreesRef;
-D.int result = (int)(float)degreesRef;|x
+int result = (int)degreesRef;
+int result = (int)(double)degreesRef;
+int result = degreesRef;
+int result = (int)(float)degreesRef;|x
 
 
 
 
 Az alkalmazás olyan objektumot tartalmaz, amely hosszú futási folyamatot hajt végre. Meg kell gyozodnie arról, hogy a szemétgyujto nem engedje el az objektum eroforrásait, amíg a folyamat befejezodik. Melyik szemétgyujto módszert használja?
 +++
-A.WaitForFullGCComplete()
-B.SuppressFinalize()|x
-C.collect()
-D.RemoveMemoryPressure()
+WaitForFullGCComplete()
+SuppressFinalize()|x
+collect()
+RemoveMemoryPressure()
 
 
 
 
 Olyan alkalmazást fejlesztesz, amely nagy mennyiségu adatot továbbít az ügyfélszámítógép és a kiszolgáló között. Az adatok érvényességét egy kriptográfiai hasítási algoritmussal kell biztosítani. Melyik algoritmust kell használni?
 +++
-A.ECDsa
-B.RNGCryptoServiceProvider
-C.Rfc2898DeriveBytes
-D.HMACSHA512|x
+ECDsa
+RNGCryptoServiceProvider
+Rfc2898DeriveBytes
+HMACSHA512|x
 
 
 
@@ -2818,10 +2818,10 @@ D.HMACSHA512|x
 Olyan módszert fejlesztesz, amelynek neve CreateCounters, amely teljesítményalkalmazásokat hoz létre egy alkalmazás számára. A módszer a következo kódot tartalmazza. Biztosítani kell, hogy a Counter2 elérheto a Windows Performance Monitor (PerfMon) alkalmazásban. Melyik kódszegmenst kell beillesztenie a 16. sorba?
 [image_0207]
 +++
-A.CounterType = PerformanceCounterType.RawBase
-B.CounterType = PerformanceCounterType.AverageBase
-C.CounterType = PerformanceCounterType.SampleBase
-D.CounterType = PerformanceCounterType.CounterMultiBase|x
+CounterType = PerformanceCounterType.RawBase
+CounterType = PerformanceCounterType.AverageBase
+CounterType = PerformanceCounterType.SampleBase
+CounterType = PerformanceCounterType.CounterMultiBase|x
 
 
 
@@ -2829,10 +2829,10 @@ D.CounterType = PerformanceCounterType.CounterMultiBase|x
 Ön tesztel egy alkalmazást. Az alkalmazás a CalculateInterest és a LogLine nevu módszereket tartalmazza. A CalculateInterest () módszer kiszámítja a hitel kamatot. A LogLine () módszer diagnosztikai üzeneteket küld a konzol ablaknak. A következo kód végrehajtja a metódusokat. A következo követelményeknek kell megfelelnie: A Calculatelnterest () metódusnak minden építési konfigurációhoz futnia kell. A LogLine () metódus csak a hibakeresésekre használható. Biztosítani kell, hogy a módszerek megfeleloen muködjenek. Mi a két lehetséges út a cél eléréséhez?
 [image_0208]
 +++
-A.Insert the following code segment at line 01: #region DEBUG \nInsert the following code segment at line 10: #endregion
-B.Insert the following code segment at line 10:  [Conditional(MDEBUG")]|x
-C.Insert the following code segment at line 05: #region DEBUG \n Insert the following code segment at line 07: #endregion
-D.Insert the following code segment at line 01: #if DE30G \n Insert the following code segment at line 10: #endif
+Insert the following code segment at line 01: #region DEBUG \nInsert the following code segment at line 10: #endregion
+Insert the following code segment at line 10:  [Conditional(MDEBUG")]|x
+Insert the following code segment at line 05: #region DEBUG \n Insert the following code segment at line 07: #endregion
+Insert the following code segment at line 01: #if DE30G \n Insert the following code segment at line 10: #endif
 E.Insert the following code segment at line 01: [Conditional(MDEBUG")]
 F.Insert the following code segment at line 05:  #if DEBUG \n Insert the following code segment at line 07:  #endif|x
 G.Insert the following code segment at line 10: [Conditional("RELEASE")]
@@ -2854,10 +2854,10 @@ D
 A hitelkamatot kiszámító alkalmazás hibakeresésére szolgál. Az alkalmazás a következo kódot tartalmazza. A következo követelményeknek kell megfelelnie: A debuggernek meg kell szakítania a végrehajtást a Calculatelnterest () metóduson belül, ha a loanAmount változó nulla vagy nulla. A kód kiadási verzióját semmilyen változtatás nem befolyásolhatja. Meg kell felelnie a követelményeknek. Mit kéne tenned?
 [image_0210]
 +++
-A.Insert the following code segment at tine 05: Debug.Write(loanAmount > 0);
-B.Insert the following code segment at line 05: Trace.Write(loanAmount > 0);
-C.Insert the following code segment at line 03:  Debug.Assert(loanAmount > 0);|x
-D.Insert the following code segment at line 03: Trace.Assert(loanAmount > 0);
+Insert the following code segment at tine 05: Debug.Write(loanAmount > 0);
+Insert the following code segment at line 05: Trace.Write(loanAmount > 0);
+Insert the following code segment at line 03:  Debug.Assert(loanAmount > 0);|x
+Insert the following code segment at line 03: Trace.Assert(loanAmount > 0);
 
 
 
@@ -2865,20 +2865,20 @@ D.Insert the following code segment at line 03: Trace.Assert(loanAmount > 0);
 Biztosítani kell, hogy az alkalmazás csak egész számot fogadjon be, és minden alkalommal felhívja a felhasználót, ha nem egész számot ad meg. Melyik kódszegmenst kell hozzáadnia a 19. sorhoz?
 [image_0211]
 +++
-A.If (!int.TryParse(sLine, out number))|x
-B.If ((number = Int32.Parse(sLine)) == Single.NaN)
-C.If ((number = int.Parse(sLine)) > Int32.MaxValue)
-D.If (Int32.TryParse(sLine, out number))
+If (!int.TryParse(sLine, out number))|x
+If ((number = Int32.Parse(sLine)) == Single.NaN)
+If ((number = int.Parse(sLine)) > Int32.MaxValue)
+If (Int32.TryParse(sLine, out number))
 
 
 
 
 Olyan alkalmazást fejleszt, amely egy Order nevu osztályt tartalmaz. Az alkalmazás tárolja a Order objektumok gyujteményét. A gyujteménynek meg kell felelnie az alábbi követelményeknek: Belso tárolása kulcs és érték minden egyes gyujtemény elemhez. Objektumokat biztosít az iterátorok számára a kulcs alapján növekvo sorrendben. Biztosítsa, hogy az elem nulla alapú index vagy kulcs segítségével érheto el. Olyan gyujteményt kell használni, amely megfelel a követelményeknek. Milyen gyujteményt használjon?
 +++
-A.LinkedList
-B.Queue
-C.Array
-D.HashTable
+LinkedList
+Queue
+Array
+HashTable
 E.SortedList|x
 
 
@@ -2887,10 +2887,10 @@ E.SortedList|x
 Ön fejleszt egy alkalmazást. Az alkalmazás egy objektum objektumot egy stringre konvertálja a WriteObject nevu módszerrel. A WriteObject () módszer két paramétert, egy Location objektumot és egy XmlObjectSerializer objektum. Az alkalmazás a következo kódot tartalmazza. A Hely objektumot XML formátumban kell sorba állítani. Melyik kódszegmenst kell beillesztenie a 20 sorba? 
 [image_0212]
 +++
-A.new XmlSerializer(typeof(Location))
-B.new NetDataContractSerializer()
-C.new DataContractJsonSerializer(typeof (Location))
-D.new DataContractSerializer(typeof(Location))|x
+new XmlSerializer(typeof(Location))
+new NetDataContractSerializer()
+new DataContractJsonSerializer(typeof (Location))
+new DataContractSerializer(typeof(Location))|x
 
 
 
@@ -2924,10 +2924,10 @@ D|x
 A GetCustomers () módszernek meg kell felelnie a következo követelményeknek: Csatlakozás Microsoft SQL Server adatbázishoz. Az ügyfél objektumainak feltöltése az adatbázisból származó adatokkal. Visszaad egy IEnumerable <Ügyfél> gyujteményt, amely tartalmazza a lakott Vásárló objektumokat. Meg kell felelnie a követelményeknek. Mely két lépést kell végrehajtania? (Minden helyes válasz a megoldás részét képezi. Válassz kettot.)
 [image_0217]
 +++
-A.Insert the following code segment at line 17: while (sqlDataReader.GetValues())
-B.Insert the following code segment at line 14:  sqlConnection.Open();|x
-C.Insert the following code segment at line 14: sqlConnection.BeginTransaction();
-D.Insert the following code segment at line 17:  while (sqlDataReader.Read())|x
+Insert the following code segment at line 17: while (sqlDataReader.GetValues())
+Insert the following code segment at line 14:  sqlConnection.Open();|x
+Insert the following code segment at line 14: sqlConnection.BeginTransaction();
+Insert the following code segment at line 17:  while (sqlDataReader.Read())|x
 E.Insert the following code segment at line 17: while (sqlDataReader.NextResult())
 
 
@@ -2938,10 +2938,10 @@ Az alkalmazás a következo formátumú JSON adatokat kapja:
 Az alkalmazás a következo kódszegmenseket tartalmazza. Biztosítani kell, hogy a ConvertToName () metódus megadja a JSON beviteli karakterláncot Name objektumként. Melyik kódszegmenst kell beillesztenie a 10. sorba?
 [image_0219]
 +++
-A.Return ser.Desenalize (json, typeof(Name));
-B.Return ser.ConvertToType<Name>(json);
-C.Return ser.Deserialize<Name>(json);|x
-D.Return ser.ConvertToType (json, typeof (Name));
+Return ser.Desenalize (json, typeof(Name));
+Return ser.ConvertToType<Name>(json);
+Return ser.Deserialize<Name>(json);|x
+Return ser.ConvertToType (json, typeof (Name));
 
 
 
@@ -2960,10 +2960,10 @@ Olyan osztályt fejlesztesz, amelynek neve ExtensionMethods. Meg kell gyozodnie 
 Egy alkalmazást fejlesztesz a C # segítségével. Az alkalmazás a következo kódszegmenseket tartalmazza A DoWork () metódusnak egy InvalidCastException kivételt kell dobnia, ha az obj objektum nem IDataContainer típusú, amikor elérte az Adattulajdonságot. Meg kell felelnie a követelményeknek. Melyik kódszegmenst kell beillesztenie a 07-es sorba?
 [image_0221]
 +++
-A.var dataContainer = (IDataContainer) obj;|x
-B.var dataContainer = obj as IDataContainer;
-C.var dataContainer = obj is IDataContainer;
-D.dynamic dataContainer = obj;
+var dataContainer = (IDataContainer) obj;|x
+var dataContainer = obj as IDataContainer;
+var dataContainer = obj is IDataContainer;
+dynamic dataContainer = obj;
 
 
 
@@ -3003,10 +3003,10 @@ D|x
 
 Az alkalmazás tartalmaz egy személy nevu osztályt. A Személy osztály egy GetData nevu metódust tartalmaz. Biztosítania kell, hogy a GetData () metódus csak a Személy osztályon használható, és ne a Személy osztályból származóként. Melyik hozzáférési módosítót kell használni a GetData () módszerhez?
 +++
-A.Public
-B.Protected internal
-C.Internal
-D.Private|x
+Public
+Protected internal
+Internal
+Private|x
 E.Protected
 
 
@@ -3014,10 +3014,10 @@ E.Protected
 
 Egy alkalmazást fejlesztesz a C # segítségével. Az alkalmazás olyan objektumot tartalmaz, amely hosszú futási folyamatot hajt végre. Meg kell gyozodnie arról, hogy a szemétgyujto nem engedje el az objektum eroforrásait, amíg a folyamat befejezodik. Melyik szemétgyujto módszert használja?
 +++
-A.WaitForFullGCComplete()
-B.WaitForFullGCApproach()
-C.KeepAlive()|x
-D.WaitForPendingFinalizers()
+WaitForFullGCComplete()
+WaitForFullGCApproach()
+KeepAlive()|x
+WaitForPendingFinalizers()
 
 
 
@@ -3036,10 +3036,10 @@ D.WaitForPendingFinalizers()
 
 Konzolalkalmazást hoz létre a C # segítségével. El kell érnie a car.dll nevu fájlban található összeállítást. Melyik kódszegmen használjon?
 +++
-A.Assembly.Load();
-B.Assembly.GetExecutingAssembly();
-C.This.GetType();
-D.Assembly.LoadFile("car.dll");|x
+Assembly.Load();
+Assembly.GetExecutingAssembly();
+This.GetType();
+Assembly.LoadFile("car.dll");|x
 
 
 
@@ -3094,10 +3094,10 @@ Egy alkalmazást fejlesztesz a C # segítségével. Az alkalmazás másodpercenk
 
 Egy alkalmazást fejlesztesz a C # segítségével. Nyilvános kulcsot ad a fejleszto csapatnak a fejlesztés során. Meg kell adnia, hogy az összeszerelés nem teljesen alá van írva, ha épül.Mely két összeállítási attribútumot kell tartalmaznia a forráskódban?
 +++
-A.AssemblyKeyNameAttribute
-B.ObfuscateAssemblyAttribute
-C.AssemblyDelaySignAttribute|x
-D.AssemblyKeyFileAttribute|x
+AssemblyKeyNameAttribute
+ObfuscateAssemblyAttribute
+AssemblyDelaySignAttribute|x
+AssemblyKeyFileAttribute|x
 
 
 
@@ -3116,10 +3116,10 @@ D
 A hitelkamatot kiszámító alkalmazás hibakeresésére szolgál. Az alkalmazás a következo kódot tartalmazza. Biztosítani kell, hogy a debugger a CalculateInterest () metódusban szüneteltesse a végrehajtást, ha a loanAmount változó nulla vagy egyenlo nulla az alkalmazás összes összetevojében. Mit kéne tenned?
 [image_0233]
 +++
-A.Insert the following code segment at line 03:  Trace.Assert(loanAmount > 0);|x
-B.Insert the following code segment at line 03: Debug.Assert(loanAmount > 0);
-C.Insert the following code segment at line 05: Debug.Write(loanAmount > 0);
-D.Insert the following code segment at line 05: Trace.Write(loanAmount > 0);
+Insert the following code segment at line 03:  Trace.Assert(loanAmount > 0);|x
+Insert the following code segment at line 03: Debug.Assert(loanAmount > 0);
+Insert the following code segment at line 05: Debug.Write(loanAmount > 0);
+Insert the following code segment at line 05: Trace.Write(loanAmount > 0);
 
 
 
@@ -3137,10 +3137,10 @@ D.Insert the following code segment at line 05: Trace.Write(loanAmount > 0);
 
 Olyan összeszerelést fejlesztesz, amelyet több alkalmazás fog használni. Telepítenie kell az összeszerelést a globális összeszerelési gyorsítótárban (GAC). Melyik két cselekvés elvégezheti ezt a célt? (Minden helyes válasz teljes megoldást nyújt. Válassz kettot.)
 +++
-A.Use the Assembly Registration tool (regasm.exe) to register the assembly and to copy the assembly to the GAC.
-B.Use the Strong Name tool (sn.exe) to copy the assembly into the GAC.
-C.Use Microsoft Register Server (regsvr32.exe) to add the assembly to the GAC.
-D.Use the Global Assembly Cache tool (gacutil.exe) to add the assembly to the GAC.|x
+Use the Assembly Registration tool (regasm.exe) to register the assembly and to copy the assembly to the GAC.
+Use the Strong Name tool (sn.exe) to copy the assembly into the GAC.
+Use Microsoft Register Server (regsvr32.exe) to add the assembly to the GAC.
+Use the Global Assembly Cache tool (gacutil.exe) to add the assembly to the GAC.|x
 E.Use Windows Installer 2.0 to add the assembly to the GAC.|x
 
 
@@ -3148,10 +3148,10 @@ E.Use Windows Installer 2.0 to add the assembly to the GAC.|x
 
 Olyan alkalmazást fejlesztesz, amely nagy mennyiségu adatot továbbít az ügyfélszámítógép és a kiszolgáló között. Az adatok érvényességét egy kriptográfiai hasítási algoritmussal kell biztosítani. Melyik algoritmust kell használni?
 +++
-A.HMACSHA256|x
-B.RNGCryptoServiceProvider
-C.DES
-D.Aes
+HMACSHA256|x
+RNGCryptoServiceProvider
+DES
+Aes
 
 
 
@@ -3159,20 +3159,20 @@ D.Aes
 Olyan módszert fejlesztesz, amelynek neve CreateCounters, amely teljesítményalkalmazásokat hoz létre egy alkalmazás számára. A módszer a következo kódot tartalmazza. Biztosítani kell, hogy az Counter1 elérheto a Windows Teljesítményfigyelo (PerfMon) használatához. Melyik kódszegmenst kell beillesztenie a 16. sorba?
 [image_0235]
 +++
-A.CounterType = PerformanccCounterType.RawBase
-B.CounterType = PerformanceCounterType.AverageBase
-C.CounterType = PerformanceCounterType.SampleBase|x
-D.CounterType = PerformanceCounterType.CounterMultiBase
+CounterType = PerformanccCounterType.RawBase
+CounterType = PerformanceCounterType.AverageBase
+CounterType = PerformanceCounterType.SampleBase|x
+CounterType = PerformanceCounterType.CounterMultiBase
 
 
 
 
 Egy alkalmazást fejlesztesz a C # segítségével. A következo követelményeknek kell megfelelnie: Támogatja a 32 bites és 64 bites rendszer-konfigurációkat. A rendszerkonfigurációra jellemzo elofeldolgozó irányelveket kell tartalmaznia. Olyan alkalmazásverziót kell telepíteni, amely mindkét rendszerkonfigurációt tartalmazza a teszteloknek. Gyozodjön meg róla, hogy a verem nyomai pontos sorszámokat tartalmaznak. Be kell állítania a projektet, hogy elkerülje az egyes konfigurációs beállítások módosítását minden egyes telepítéskor alkalmazások tesztelok számára. Mely két lépést kell végrehajtania? (Minden helyes válasz a megoldás részét képezi. Válassz kettot.)
 +++
-A.Update the platform target and conditional compilation symbols for each application configuration.
-B.Create two application configurations based on the default Release configuration.|x
-C.Optimize the application through address rebasing in the 64-bit configuration.
-D.Create two application configurations based on the default Debug configuration.|x
+Update the platform target and conditional compilation symbols for each application configuration.
+Create two application configurations based on the default Release configuration.|x
+Optimize the application through address rebasing in the 64-bit configuration.
+Create two application configurations based on the default Debug configuration.|x
 
 
 
@@ -3282,10 +3282,10 @@ F
 
 A Task.Run () módszerrel hosszú távú adatfeldolgozási mûveletet indíthat el. Az adatfeldolgozási mûvelet gyakran sikertelen a nehéz hálózati torlódások idején. Ha az adatfeldolgozási mûvelet meghiúsul, egy második mûveletnek meg kell tisztítania az elsõ mûvelet eredményeit. Biztosítani kell, hogy a második mûvelet csak akkor kerüljön meghívásra, ha az adatfeldolgozási mûvelet nem kezelt kivételt eredményez. Mit kéne tenned?
 +++
-A.Create a TaskCompletionSource<T> object and call the TrySetException() method of the object.
-B.Create a task by calling the Task.ContinueWith() method.|x
-C.Examine the Task.Status property immediately after the call to the Task.Run() method.
-D.Create a task inside the existing Task.Run() method by using the AttachedToParent option
+Create a TaskCompletionSource<T> object and call the TrySetException() method of the object.
+Create a task by calling the Task.ContinueWith() method.|x
+Examine the Task.Status property immediately after the call to the Task.Run() method.
+Create a task inside the existing Task.Run() method by using the AttachedToParent option
 
 
 
@@ -3303,10 +3303,10 @@ IF-IF-ELSE-DEFAULT
 
 Konzolalkalmazást hoz létre a C # segítségével. Hozzá kell férni az alkalmazás összeállításához. Melyik kódszegmen használjon?
 +++
-A.Assembly.GetAssembly(this);
-B.this.GetType();
-C.Assembly.Load();
-D.Assembly.GetExecutingAssembly();|x
+Assembly.GetAssembly(this);
+this.GetType();
+Assembly.Load();
+Assembly.GetExecutingAssembly();|x
 
 
 
@@ -3314,10 +3314,10 @@ D.Assembly.GetExecutingAssembly();|x
 Olyan számítási módot hajt végre, amely az értéktípusok és a referenciatípusok közötti konverziókat hajtja végre. A következo kódszegmens hajtja végre a módszert. Biztosítania kell, hogy az alkalmazás ne tegyen kivételeket az érvénytelen konverziókra. Melyik kódszegmenst kell beillesztenie a 04 sorba?
 [image_0251]
 +++
-A.int balance = (int) (float)amountRef;|x
-B.int balance = (int)amountRef;
-C.int balance = amountRef;
-D.int balance = (int) (double) amountRef;
+int balance = (int) (float)amountRef;|x
+int balance = (int)amountRef;
+int balance = amountRef;
+int balance = (int) (double) amountRef;
 
 
 
@@ -3325,10 +3325,10 @@ D.int balance = (int) (double) amountRef;
 Ön egy olyan osztályt hoz létre, amelynek neve Employee. Az osztály egy EmployeeType nevu karakterláncot tartalmaz. A következo kódszegmens a Munkavállalók osztályát határozza meg. Az EmployeeType tulajdonság értékét csak a Employee osztályon belül vagy a Employee osztályból származó osztályon belül lehet hozzáférni és módosítani. Biztosítania kell, hogy a EmployeeType tulajdonság végrehajtása megfeleljen a követelményeknek. Mely két lépést kell végrehajtania?
 [image_0252]
 +++
-A.Replace line 05 with the following code segment: protected get;
-B.Replace line 06 with the following code segment:  private set;
-C.Replace line 03 with the following code segment: public string EmployeeType
-D.Replace line 05 with the following code segment: private get;
+Replace line 05 with the following code segment: protected get;
+Replace line 06 with the following code segment:  private set;
+Replace line 03 with the following code segment: public string EmployeeType
+Replace line 05 with the following code segment: private get;
 E.Replace line 03 with the following code segment:  protected string EmployeeType
 F.Replace line 06 with the following code segment: protected set;
 
@@ -3338,10 +3338,10 @@ F.Replace line 06 with the following code segment: protected set;
 
 Egy alkalmazást fejlesztesz a C # segítségével. Az alkalmazás olyan objektumot tartalmaz, amely hosszú futási folyamatot hajt végre. Meg kell gyozodnie arról, hogy a szemétgyujto nem engedje el az objektum eroforrásait, amíg a folyamat befejezodik. Melyik szemétgyujto módszert használja?
 +++
-A.ReRegisterForFinalize()
-B.SuppressFinalize()|x
-C.Collect()
-D.WaitForFullGCApproach()
+ReRegisterForFinalize()
+SuppressFinalize()|x
+Collect()
+WaitForFullGCApproach()
 
 
 
@@ -3398,20 +3398,20 @@ D
 A DoWork () metódus nem adhat kivételt az obj objektum átalakításakor az IDataContainer felületen vagy az Adatok tulajdonság elérésekor. Meg kell felelnie a követelményeknek. Melyik kódszegmenst kell beillesztenie a 07-es sorba?
 [image_0259]
 +++
-A.var dataContainer = (IDataContainer)obj;
-B.dynamic dataContainer = obj;
-C.var dataContainer = obj is IDataContainer;
-D.var dataContainer = obj as IDataContainer;|x
+var dataContainer = (IDataContainer)obj;
+dynamic dataContainer = obj;
+var dataContainer = obj is IDataContainer;
+var dataContainer = obj as IDataContainer;|x
 
 
 
 
 Az alkalmazás tartalmaz egy személy nevu osztályt. A Személy osztály egy GetData nevu metódust tartalmaz. Meg kell gyozodnie arról, hogy a GetData () a Személy osztályból származik. Melyik hozzáférési módosítót kell használni a GetData () módszerhez?
 +++
-A.Internal
-B.Protected|x
-C.Private
-D.Protected internal
+Internal
+Protected|x
+Private
+Protected internal
 E.Public
 
 
@@ -3433,10 +3433,10 @@ Az alkalmazás az XML streameket az alábbi kódszegmens által deklarált DataC
 Ön fejleszt egy alkalmazást. Az alkalmazás helyobjektumot string-ként alakít ki egy WriteObject nevu módszerrel. A WriteObject () módszer két paramétert, egy Location objektumot és egy XmlObjectSerializer objektumot fogad be. Az alkalmazás a következo kódot tartalmazza. A Hely objektumot JSON objektumként kell sorba állítani. Melyik kódszegmenst kell beillesztenie a 20 sorba?
 [image_0262]
 +++
-A.New DataContractSerializer(typeof(Location))
-B.New XmlSerializer(typeof(Location))
-C.New NetDataContractSenalizer()
-D.New DataContractJsonSerializer(typeof(Location))|x
+New DataContractSerializer(typeof(Location))
+New XmlSerializer(typeof(Location))
+New NetDataContractSenalizer()
+New DataContractJsonSerializer(typeof(Location))|x
 
 
 
@@ -3446,10 +3446,10 @@ Az alkalmazás a következo formátumú JSON adatokat kapja:
 Biztosítani kell, hogy a ConvertToName () metódus megadja a JSON beviteli karakterláncot Name objektumként. Melyik kódszegmenst kell beillesztenie a 10. sorba? Az alkalmazás a következo kódszegmenseket tartalmazza.
 [image_0264]
 +++
-A.Return ser.ConvertToType<Name>(json);
-B.Return ser.DeserializeObject(json);
-C.Return ser.Deserialize<Name>(json);|x
-D.Return (Name)ser.Serialize(json);
+Return ser.ConvertToType<Name>(json);
+Return ser.DeserializeObject(json);
+Return ser.Deserialize<Name>(json);|x
+Return (Name)ser.Serialize(json);
 
 
 
@@ -3467,10 +3467,10 @@ Egy alkalmazást fejlesztesz a C # segítségével. Az alkalmazás magában fogl
 
 Ön fejleszt egy alkalmazást. Az alkalmazás tartalmaz egy ReadFile nevu eljárást, amely adatokat olvas fel egy fájlból. A ReadFile () eljárásnak meg kell felelnie a következo követelményeknek: Nem változtathat az adatfájlon. Lehetové kell tennie más folyamatok számára az adatfájl elérését. Nem szabad kivételt tenni, ha az alkalmazás megpróbál megnyitni egy nem létezo adatfájlt. A ReadFile () metódust végre kell hajtania. Melyik kódszegmen használjon?
 +++
-A.var fs = File.Open(Filename, FileMode.OpenOrCreate, FileAccess.Read, FileShare.ReadWrite);|x
-B.var fs = File.Open(Filename, FileMode.Open, FileAccess.Read, FileShare.ReadWrite);
-C.var fs = File.Open(Filename, FileMode.OpenOrCreate, FileAccess.Read, FileShare.Write);
-D.var fs = File.ReadAllLines(Filename);
+var fs = File.Open(Filename, FileMode.OpenOrCreate, FileAccess.Read, FileShare.ReadWrite);|x
+var fs = File.Open(Filename, FileMode.Open, FileAccess.Read, FileShare.ReadWrite);
+var fs = File.Open(Filename, FileMode.OpenOrCreate, FileAccess.Read, FileShare.Write);
+var fs = File.ReadAllLines(Filename);
 E.var fs = File.ReadAllBytes(Filename);
 
 
@@ -3479,10 +3479,10 @@ E.var fs = File.ReadAllBytes(Filename);
 Olyan alkalmazást fejleszt, amely a Microsoft ADO.NET Entity Framework programot használja a rendelési információk Microsoft SQL Server adatbázisból való letöltésére. Az alkalmazás a következo kódot tartalmazza.  A kérelemnek a következo követelményeknek kell megfelelnie: Csak olyan megrendelések visszaküldése, amelyek rendelkeznek a nulltól eltéro OrderDate értékkel. Csak olyan rendeléseket küld vissza, amelyek a OrderDate tulajdonában meghatározott évre vagy egy késobbi évben kerültek elhelyezésre. Biztosítania kell, hogy az alkalmazás megfeleljen a követelményeknek. Melyik kódszegmenst kell beillesztenie a 08-as sorra?
 [image_0266]
 +++
-A.Where order.OrderDate.Value != null && order.OrderDate.Value.Year > = year|x
-B.Where order.OrderDate.Value = = null && order.OrderDate.Value.Year = = year
-C.Where order.OrderDate.HasValue && order.OrderDate.Value.Year = = year
-D.Where order.OrderDate.Value.Year = = year
+Where order.OrderDate.Value != null && order.OrderDate.Value.Year > = year|x
+Where order.OrderDate.Value = = null && order.OrderDate.Value.Year = = year
+Where order.OrderDate.HasValue && order.OrderDate.Value.Year = = year
+Where order.OrderDate.Value.Year = = year
 
 
 

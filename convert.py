@@ -7,8 +7,12 @@ def parse_questions(text):
 
     for part in parts:
         test_arr = part.strip().split('+++')
+        try:
         question_text = test_arr[0].strip()
         answers_text = test_arr[1].strip()
+        except IndexError:
+            print(f"Error: No answers found for question: {test_arr}")
+            continue
         if not test_arr:
             continue        
 
