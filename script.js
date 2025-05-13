@@ -80,7 +80,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Get asnwers
     const correctAnswers = [...questionData.answers];
-    if (correctAnswers.length == 0) alert('No correct answers provided for this question!');
+    if (correctAnswers.length == 0) {
+      alert('No correct answers provided for this question!', ...questionData.answers);
+    }
 
     // Shuffle options
     const shuffledOptions = shuffleArray([...questionData.options]);
@@ -109,7 +111,11 @@ document.addEventListener('DOMContentLoaded', () => {
       </ul>
       <div class="options-container">
         ${shuffledOptions
-          .map((option, index) => `<button class="option-button" data-index="${index}">${option}</button>`)
+          .map(
+            (option, index) => `<button class="option-button" data-index="${index}">
+          <em>${option}</em>
+          </button>`
+          )
           .join('')}
       </div>
       <div id="status-bar" class="status-bar">

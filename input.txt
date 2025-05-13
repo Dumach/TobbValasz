@@ -1,6 +1,5 @@
-.NET Programozás tárgy NAPPALIS/LEVELEZO vizsgakérdések COEDU-hoz: Minden kérdés feleletválasztós, zölddel jelölve a jó válaszok
-
-
+.NET Programozás tárgy NAPPALIS/LEVELEZO vizsgakérdések COEDU-hoz
+---------------
 Kérdés: Nagyon sok elem feldolgozására van szükség. Minden elemen egy komplx számítást kell ehhez elvégezni. Melyik technikát alkalmazná?
 +++
 Minden elemre egy Task létrehozása, majd megvárni, míg minden Task befejezodik.
@@ -294,8 +293,7 @@ X509Certificate2.SignHash|x
 RSACryptoServiceProvider.Encrypt
 UnicodeEncoding.GetBytes|x
 Marshal.ZeroFreeBSTR
-
-
+---------------
 Kérdés: Jelenleg épp egy strong-named/eros nevu assemblyn dolgozik, és egy normál assembly hivatkozást szeretne használni, kódújrafelhasználás miatt. Melyik megoldás a helyes?
 +++
 Eloször az assmblyt a GAC-ban kell elhelyezni.
@@ -366,8 +364,6 @@ FileInfo.Create
 File.Create
 File.AppendText|x
 ---------------
-
-
 Kérdés: Épp elkészült egy bonyolult számítási algoritmussal. Futása sok idot vesz igénybe, de biztosítani szeretné, hogy futás közben is az alkalmazás reszponzív marad. Mi a teendo?
 +++
 Async/await használata
@@ -946,8 +942,7 @@ derived classes
 interface
 enumeration
 method overloading|x
-
-
+---------------
 Implementál egy GetValidPhoneNumbers nevu metódust. A GetValidPhoneNumbers() metódus egy telefonszámokat tartlmazó karakterláncok listája.A GetValidPhoneNumbers () metódusnak csak olyan telefonszámokat kell visszaadnia, amelyek érvényes formátumban vannak. Implementálni kella GetValidPhoneNumbers () metódust. Melyik két kódszegmens jó? Adja meg a helyes válaszok betujelét! 
 [image_0067]
 +++
@@ -1210,8 +1205,7 @@ Olyan alkalmazást fejleszt, amely több aszinkron feladatot használ a teljesí
  B opció
  C opció|x
  D opció
-
-
+---------------
 Olyan alkalmazást fejlesztesz, amely magában foglalja az Employee nevu osztályt és a munkavállalók általános listáját. a kódszegmens deklarálja az alkalmazottak listáját: List<Employee> employeesList = new List<Employee>(); A EmployeeList objektum több száz Employee objektummal tölt fel. Az alkalmazásnak egyidejuleg öt Employee objektum adatait kell megjelenítenie. Olyan eljárást kell létrehozni, amely visszaadja az Employee objektumok megfelelo számát. Melyik kódszegmenst használja?
 [image_0101]
 +++

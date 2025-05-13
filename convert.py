@@ -2,22 +2,26 @@ import re
 import json
 
 def escape(htmlstring):
-    escapes = {'\"': '&quot;',
-               '\'': '&#39;',
-               '<': '&lt;',
-               '>': '&gt;'}
-    # This is done first to prevent escaping other escapes.
-    htmlstring = htmlstring.replace('&', '&amp;')
+    escapes = {
+        '&': '&amp;',  # Escape '&' first to avoid double escaping
+        '<': '&lt;',
+        '>': '&gt;',
+        '"': '&quot;',
+        "'": '&#39;'
+    }
     for seq, esc in escapes.items():
         htmlstring = htmlstring.replace(seq, esc)
     return htmlstring
 
 def parse_questions(text):
     questions = []
-    parts = re.split('---------------', text.strip())  # Split by blank lines between questions
+    
+    title = text.splitlines()[0].strip()
+    print(title)
+    parts = re.split('---------------', text.strip())[1::]  # Split by blank lines between questions
 
     for part in parts:
-        part = escape(part)
+        # part = escape(part)
         test_arr = part.strip().split('+++')
         try:
             question_text = test_arr[0].strip()
@@ -57,7 +61,7 @@ def parse_questions(text):
             "images": images if len(images) > 0 else None
         })
 
-    return {"questions": questions}
+    return {"title": title,"questions": questions}
 
 
 if __name__ == "__main__":
