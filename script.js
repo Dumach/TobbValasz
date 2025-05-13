@@ -85,9 +85,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // Shuffle options
     const shuffledOptions = shuffleArray([...questionData.options]);
     const questionImages = questionData.images;
-    if (questionImages && questionImages.includes('images/image_0125.png')) {
-      alert(questionData);
-    }
 
     questionContainer.innerHTML = `
       Showing question ${currentQuestionIndex + 1} of ${quizData.questions.length}, ${points} points

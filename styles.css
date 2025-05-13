@@ -26,6 +26,7 @@ body {
   align-items: start;
   justify-content: space-between;
   overflow-wrap: break-word;
+  overflow-x: scroll;
   gap: 5px;
   margin-top: 20px;
   padding-bottom: 1.2rem;
@@ -119,7 +120,7 @@ button:hover {
   list-style: none;
 }
 
-.image-container figure{
+.image-container figure {
   margin: 4px 8px;
 }
 

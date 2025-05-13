@@ -708,11 +708,8 @@ Target2: D|x
 Target2: E
 Targe3: E|x
 Target1: A
-Target2: B
-Targe3: F
 Target 4: B|x
 Target 4: G
-Target1: D
 Targe3: C
 Target 4: C
 ---------------
@@ -1186,16 +1183,9 @@ sn.exe|x
 Van olyan alkalmazás, amely hozzáfér a Microsoft SQL Server adatbázishoz. Az adatbázis tartalmazza a Proc1 nevu tárolt eljárást Az adatbázis tartalmazza a Proc1 nevu tárolt eljárást. A Proc1 számos adatcsatornába több táblázatot is elér. Biztosítani kell, hogy a Proc1 végrehajtása után az adatbázis konzisztens állapotban maradjon. A Proc1 végrehajtása során egyetlen más muvelet sem módosíthatja a Proc1 által már olvasott vagy módosított adatokat. Adja meg a helyes kódsorrendet! Nem feltéátlen kell mindent felhasználni!
 [image_0097]
 +++
-1|x
-2
-3
-4|x
-5|x
-6
-7|x
-8|x
-9|x
-10|x
+7,1,5,10,8,9,4|x
+2,3,4,10,7,9,4
+1,3,10,2,8,6,4
 ---------------
 Van olyan alkalmazás, amely paging.et használ. Minden page 10 elemet jelenít meg egy listából. Meg kell jeleníteni a harmadik page-t. (Nem feltétlenül szükséges az összes kódrészlet.) Írja fel a helyes kódsorrendet!
 [image_0098]
@@ -1532,7 +1522,7 @@ Interface
 Named parameters
 Lambda kifejezések
 ---------------
-A következo kódot látja (a sorszámok csak a referenciaként szerepelnek): Ahhoz, hogy válaszoljon, töltse ki az egyes utasításokat a kódban szereplo információk alapján. Az adatbázis kapcsolat a(z)
+A következo kódot látja (a sorszámok csak a referenciaként szerepelnek): Ahhoz, hogy válaszoljon, töltse ki az egyes utasításokat a kódban szereplo információk alapján. Az adatbázis kapcsolat a(z) x.-ik sorban záródik.
 [image_0143]
 +++
 15,
@@ -1540,7 +1530,8 @@ A következo kódot látja (a sorszámok csak a referenciaként szerepelnek): Ah
 17,
 18,
 19|x
----------------A következo kódot látja (a sorszámok csak a referenciaként szerepelnek): Ahhoz, hogy válaszoljon, töltse ki az egyes utasításokat a kódban szereplo információk alapján. Az adapter objektumok a(z)
+---------------
+A következo kódot látja (a sorszámok csak a referenciaként szerepelnek): Ahhoz, hogy válaszoljon, töltse ki az egyes utasításokat a kódban szereplo információk alapján. Az adapter objektumok a(z) x.-ik sorban szűnnek meg.
 [image_0143]
 +++
 15,
@@ -1682,7 +1673,7 @@ StringBuilder
 StringReader|x
 JsonSerializer
 ---------------
-Fejlesztesz egy Scorecard nevû osztályt. A következõ kód implementálja a Scorecard osztályt. A scorecard-osztály végrehajtásának teszteléséhez a következõ egységvizsgálati módszert hozza létre:
+Fejlesztesz egy Scorecard nevű osztályt. A következõ kód implementálja a Scorecard osztályt. A scorecard-osztály végrehajtásának teszteléséhez a következõ egységvizsgálati módszert hozza létre:
 [image_0156]
 A scorecard-osztály végrehajtásának teszteléséhez a következõ unit test metódust hozza létre:
 [image_0157]
@@ -1694,8 +1685,8 @@ B
 C
 D
 ---------------
-Az alkalmazás X509 tanúsítványokat használ az adatok titkosításához és visszafejtéséhez. Az alkalmazás tárolja a tanúsítványokat a Current User tároló Personal tanúsítványainak gyûjteményében. Minden egyes számítógépen minden
-tanúsítványtípus egységes. Az alkalmazás egy LoadCertificate nevû metódust tartalmaz. A LoadCertificate () metódus kódja:
+Az alkalmazás X509 tanúsítványokat használ az adatok titkosításához és visszafejtéséhez. Az alkalmazás tárolja a tanúsítványokat a Current User tároló Personal tanúsítványainak gyűjteményében. Minden egyes számítógépen minden
+tanúsítványtípus egységes. Az alkalmazás egy LoadCertificate nevű metódust tartalmaz. A LoadCertificate () metódus kódja:
 [image_0159]
 A LoadCertificate () metódus csak olyan tanúsítványokat tölt be, amelyekhez a tárgy pontosan megfelel a searchValue paraméter értékének. Biztosítani kell, hogy a LoadCertificate () módszer betölti a megfelelo tanúsítványokat. Melyik kódszegmenst kell beillesztenie a 06 sorba?
 [image_0160]
@@ -1874,7 +1865,7 @@ B
 C|x
 D
 ---------------
-Van egy GetCustomerID nevû nevû módszer, amely visszaadja az egész számok listáját. A listában szereplõ minden egyes bejegyzés olyan ügyfél-azonosítót jelent, amelyet az Ügyfelek listájáról talál. Az Ügyfelek listája 1000 sorból áll. Egy másik fejleszto létrehoz egy ValidateCustomer nevu eljárást, amely elfogad egy egész paramétert, és visszaküldi a logikai értéket. A ValidateCustomer értéke igaz, ha az egész szám egy érvényes ügyfélre utal. A ValidateCustomer legfeljebb egy másodpercig futhat. Olyan módszert kell létrehoznia, amely visszaadja az érvényes ügyfél-azonosítók listáját. A kódot a legrövidebb ido alatt végre kell hajtani. Mit kéne tenned?
+Van egy GetCustomerID nevű nevű módszer, amely visszaadja az egész számok listáját. A listában szereplõ minden egyes bejegyzés olyan ügyfél-azonosítót jelent, amelyet az Ügyfelek listájáról talál. Az Ügyfelek listája 1000 sorból áll. Egy másik fejleszto létrehoz egy ValidateCustomer nevu eljárást, amely elfogad egy egész paramétert, és visszaküldi a logikai értéket. A ValidateCustomer értéke igaz, ha az egész szám egy érvényes ügyfélre utal. A ValidateCustomer legfeljebb egy másodpercig futhat. Olyan módszert kell létrehoznia, amely visszaadja az érvényes ügyfél-azonosítók listáját. A kódot a legrövidebb ido alatt végre kell hajtani. Mit kéne tenned?
 [image_0183]
 +++
 8-6-7
@@ -2343,7 +2334,7 @@ Create two application configurations based on the default Debug configuration.|
 ---------------
 Olyan alkalmazást fejlesztesz, amely egyéni kivétel típusokat alkalmaz. Ön kijelenti az egyéni kivétel típusokat az alábbi kódszegmensek használatával:
 [image_0236]
-Az alkalmazás tartalmaz egy DoWork nevû funkciót, amely a .NET-keret kivételeket és egyedi kivételeket dobja. Az alkalmazás csak a következõ naplózási módszereket tartalmaz
+Az alkalmazás tartalmaz egy DoWork nevű funkciót, amely a .NET-keret kivételeket és egyedi kivételeket dobja. Az alkalmazás csak a következõ naplózási módszereket tartalmaz
 [image_0237]
 A kérelemnek a következõ követelményeknek kell megfelelnie: Amikor a AdventureWorksValidationException kivételeket elkapják, jegyezze be az adatokat a statikus üres napló segítségével (AdventureWorksValidationException ex) módszer. Amikor a AdventureWorksDbException vagy más AdventureWorksException kivételeket elkapják, jegyezze meg az adatokat a statikus üres I oq (AdventureWorksException ex) módszerrel. Meg kell felelnie a követelményeknek. Hogyan kell kitöltenie az adott kódot?
 [image_0238]
@@ -2419,7 +2410,7 @@ D
 E
 F
 ---------------
-A Task.Run () módszerrel hosszú távú adatfeldolgozási mûveletet indíthat el. Az adatfeldolgozási mûvelet gyakran sikertelen a nehéz hálózati torlódások idején. Ha az adatfeldolgozási mûvelet meghiúsul, egy második mûveletnek meg kell tisztítania az elsõ mûvelet eredményeit. Biztosítani kell, hogy a második mûvelet csak akkor kerüljön meghívásra, ha az adatfeldolgozási mûvelet nem kezelt kivételt eredményez. Mit kéne tenned?
+A Task.Run () módszerrel hosszú távú adatfeldolgozási műveletet indíthat el. Az adatfeldolgozási művelet gyakran sikertelen a nehéz hálózati torlódások idején. Ha az adatfeldolgozási művelet meghiúsul, egy második műveletnek meg kell tisztítania az elsõ művelet eredményeit. Biztosítani kell, hogy a második művelet csak akkor kerüljön meghívásra, ha az adatfeldolgozási művelet nem kezelt kivételt eredményez. Mit kéne tenned?
 +++
 Create a TaskCompletionSource<T> object and call the TrySetException() method of the object.
 Create a task by calling the Task.ContinueWith() method.|x
