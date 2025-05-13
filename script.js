@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Shuffle options
-    const shuffledOptions = shuffleArray([...questionData.options]);
+    const shuffledOptions = shuffleArray(questionData.options);
     const questionImages = questionData.images;
 
     questionContainer.innerHTML = `
@@ -111,11 +111,7 @@ document.addEventListener('DOMContentLoaded', () => {
       </ul>
       <div class="options-container">
         ${shuffledOptions
-          .map(
-            (option, index) => `<button class="option-button" data-index="${index}">
-          <em>${option}</em>
-          </button>`
-          )
+          .map((option, index) => `<button class="option-button" data-index="${index}">${escape(option)}</button>`)
           .join('')}
       </div>
       <div id="status-bar" class="status-bar">
@@ -167,7 +163,7 @@ document.addEventListener('DOMContentLoaded', () => {
         statusMessage.textContent = 'Wrong!';
         statusMessage.textContent += ' Correct answers: ';
         correctAnswers.forEach((answer) => {
-          statusMessage.innerHTML += `<p>${answer}</p>`;
+          statusMessage.innerHTML += `<p>${escape(answer)}</p>`;
         });
         statusBar.style.backgroundColor = '#dc3545'; // Red for wrong
       }
@@ -182,3 +178,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
+
+function escape(str) {
+  return str.replace(/</g, '&lt;').replace(/>/g, '&gt;');
+}

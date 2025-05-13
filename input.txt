@@ -666,7 +666,6 @@ Target1 , Target2 Target3-hoz mely attribútumokat kell megadni, hogy teljes leg
 [image_0031]
 +++
 Target1 : D|x
-Target1 : A
 Target2: D
 Target3: E
 Target2: B|x
@@ -1711,7 +1710,7 @@ You need to declare a delegate for a method that accepts an integer as a paramet
 Action<int>
 Action<int, int>
 Func<int, int>|x
-Func<int>,0 134:
+Func<int>
 ---------------
 Olyan alkalmazást fejleszt, amelyet több számítógépre telepítenek. Az assembly nevet állítja be. Egy egyedi azonosítót kell létrehoznia az alkalmazás összeállításához. Mely két összevonási azonosító attribútumot kell tartalmaznia a forráskódnak?
 +++
