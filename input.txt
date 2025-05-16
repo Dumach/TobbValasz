@@ -721,7 +721,8 @@ Target 1:A
 Target 2:C
 Target 3:D
 Target 2:D|x
-Target 4:C|x
+Target 4:C
+Target 4:G|x
 Target 4:E
 Target 1:G
 Target 2:D
@@ -1101,9 +1102,9 @@ Adott a következo kód:
 Biztosítani kell, hogy a metódus kiadja az URL-ek listáját, amelyek megfelelnek a következo mintának: @http: // (www \\.)? ([^ \\.] +) \\. com; Milyen kódot kell beillesztenie a 07-es sorba?
 [image_0087]
 +++
-A lehetoség|x
+A lehetoség
 B opció
-C opció
+C opció|x
 D opció
 ---------------
 Ön egy olyan alkalmazással foglalkozik, amely egy FullName névvel rendelkezo osztályt használ. Az osztály a DataContractAttribute attribútumot használ. Az alkalmazás a következo kódot tartalmazza Meg kell gyozodnie arról, hogy a teljes FullName objektum memóriafolyamba van sorolva. Milyen kódszegmenst kell beillesztenie a 09-es sorba?
@@ -1168,7 +1169,7 @@ Eloször az ArgumentNullException kivételt elkapni.
 A Assembly1.dll nevu assembly-t hozza létre. Biztosítani kell, hogy a Assembly1.dll telepítheto legyen a global assembly cache - be(GAC). Milyen parancsokat kell futtatnia? Adja meg a szükséges exe fájlokat a helyes sorrendben! 
 [image_0096]
 +++
-al.exe|#
+al.exe|x
 gacutil.exe
 ildasm.exe
 resgen.exe

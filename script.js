@@ -73,6 +73,7 @@ document.addEventListener('DOMContentLoaded', () => {
   function showQuestion() {
     if (!quizData || currentQuestionIndex >= quizData.questions.length) {
       quizContainer.innerHTML = '<h2>Quiz Completed!</h2>';
+      quizContainer.innerHTML += `<p>You scored ${points} out of ${quizData.questions.length} points.</p>`;
       return;
     }
 

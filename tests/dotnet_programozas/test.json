@@ -834,7 +834,7 @@
         "Target 3:F",
         "Target 4:B"
       ],
-      "answers": ["Target 1:B", "Target 2:D", "Target 3:F", "Target 4:C"],
+      "answers": ["Target 1:B", "Target 2:D", "Target 3:F", "Target 4:G"],
       "images": ["images/image_0038.png", "images/image_0039.png", "images/image_0040.png"]
     },
     {
@@ -1163,7 +1163,7 @@
     {
       "question": "Adott a következo kód:\n[image_0086]\nBiztosítani kell, hogy a metódus kiadja az URL-ek listáját, amelyek megfelelnek a következo mintának: @http: // (www \\\\.)? ([^ \\\\.] +) \\\\. com; Milyen kódot kell beillesztenie a 07-es sorba?\n[image_0087]",
       "options": ["A lehetoség", "B opció", "C opció", "D opció"],
-      "answers": ["A lehetoség"],
+      "answers": ["C opció"],
       "images": ["images/image_0086.png", "images/image_0087.png"]
     },
     {
@@ -1220,8 +1220,8 @@
     },
     {
       "question": "A Assembly1.dll nevu assembly-t hozza létre. Biztosítani kell, hogy a Assembly1.dll telepítheto legyen a global assembly cache - be(GAC). Milyen parancsokat kell futtatnia? Adja meg a szükséges exe fájlokat a helyes sorrendben! \n[image_0096]",
-      "options": ["al.exe|#", "gacutil.exe", "ildasm.exe", "resgen.exe", "sn.exe"],
-      "answers": ["sn.exe"],
+      "options": ["al.exe", "gacutil.exe", "ildasm.exe", "resgen.exe", "sn.exe"],
+      "answers": ["sn.exe", "al.exe"],
       "images": ["images/image_0096.png"]
     },
     {
